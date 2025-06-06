@@ -1,0 +1,40 @@
+
+name: ConstMaker Cross-Platform Release
+
+permissions:
+  contents: write
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        platform:
+          - { goos: freebsd, goarch: amd64 }
+          - { goos: freebsd, goarch: arm64 } 
+          - { goos: darwin, goarch: amd64 }
+          - { goos: darwin, goarch: arm64 }
+          - { goos: linux, goarch: amd64 }
+          - { goos: linux, goarch: arm64 }
+          - { goos: windows, goarch: amd64 }
+          - { goos: windows, goarch: arm64 }
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Build and Release
+        uses: wangyoucao577/go-release-action@v1.53
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          goos: ${{ matrix.platform.goos }}
+          goarch: ${{ matrix.platform.goarch }}
+          binary_name: constmaker
+          asset_name: "constmaker-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}"
+          ldflags: "-s -w"
+          pre_command: export CGO_ENABLED=0
+          overwrite: true

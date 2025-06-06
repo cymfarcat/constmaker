@@ -1,0 +1,305 @@
+{
+  "id": "",
+  "type": "",
+  "value": "",
+  "CommentDoc": "",
+  "comment": "",
+  "consts": [
+    {
+      "id": "table",
+      "type": "str",
+      "value": "\"table\"",
+      "CommentDoc": "/**\r\n *this is a test\r\n */",
+      "comment": "/// hello word"
+    },
+    {
+      "id": "allow_test",
+      "type": "str",
+      "value": "\"at\"",
+      "CommentDoc": "",
+      "comment": ""
+    },
+    {
+      "id": "percent",
+      "type": "u8",
+      "value": "100",
+      "CommentDoc": "",
+      "comment": ""
+    },
+    {
+      "id": "pi",
+      "type": "f32",
+      "value": "3.14159",
+      "CommentDoc": "/** pi */",
+      "comment": ""
+    }
+  ],
+  "enums": [
+    {
+      "id": "Colors",
+      "type": "u16",
+      "value": "",
+      "CommentDoc": "/**\r\n * colors\r\n */",
+      "comment": "",
+      "consts": [
+        {
+          "id": "NONE",
+          "type": "u16",
+          "value": "0",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "BLUE",
+          "type": "u16",
+          "value": "(1 \u003c\u003c 0)",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "GREEN",
+          "type": "u16",
+          "value": "(1 \u003c\u003c 1)",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "RED",
+          "type": "u16",
+          "value": "(1 \u003c\u003c 2)",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "ALL",
+          "type": "u16",
+          "value": "0x7",
+          "CommentDoc": "",
+          "comment": ""
+        }
+      ]
+    }
+  ],
+  "namespaces": [
+    {
+      "id": "Node",
+      "type": "",
+      "value": "",
+      "CommentDoc": "",
+      "comment": "",
+      "consts": [
+        {
+          "id": "Block",
+          "type": "str",
+          "value": "\"Block\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "Table",
+          "type": "str",
+          "value": "\"Table\"",
+          "CommentDoc": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "ITEM",
+      "type": "",
+      "value": "",
+      "CommentDoc": "",
+      "comment": "",
+      "consts": [
+        {
+          "id": "allow_test",
+          "type": "str",
+          "value": "\"at\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "pi",
+          "type": "f32",
+          "value": "3.14159",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "table",
+          "type": "str",
+          "value": "\"table\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "_percent",
+          "type": "i8",
+          "value": "100",
+          "CommentDoc": "",
+          "comment": ""
+        }
+      ],
+      "enums": [
+        {
+          "id": "Colors",
+          "type": "u8",
+          "value": "",
+          "CommentDoc": "",
+          "comment": "",
+          "consts": [
+            {
+              "id": "BLUE",
+              "type": "u8",
+              "value": "0",
+              "CommentDoc": "",
+              "comment": ""
+            },
+            {
+              "id": "GREEN",
+              "type": "u8",
+              "value": "1",
+              "CommentDoc": "",
+              "comment": "/// green"
+            },
+            {
+              "id": "RED",
+              "type": "u8",
+              "value": "2",
+              "CommentDoc": "",
+              "comment": ""
+            }
+          ]
+        }
+      ],
+      "namespaces": [
+        {
+          "id": "NODE",
+          "type": "",
+          "value": "",
+          "CommentDoc": "",
+          "comment": "",
+          "consts": [
+            {
+              "id": "border",
+              "type": "str",
+              "value": "\"border\"",
+              "CommentDoc": "",
+              "comment": ""
+            }
+          ],
+          "enums": [
+            {
+              "id": "Colors",
+              "type": "u8",
+              "value": "",
+              "CommentDoc": "",
+              "comment": "",
+              "consts": [
+                {
+                  "id": "RED",
+                  "type": "u8",
+                  "value": "0",
+                  "CommentDoc": "",
+                  "comment": ""
+                },
+                {
+                  "id": "GREEN",
+                  "type": "u8",
+                  "value": "1",
+                  "CommentDoc": "",
+                  "comment": "/// green"
+                },
+                {
+                  "id": "BLUE",
+                  "type": "u8",
+                  "value": "2",
+                  "CommentDoc": "",
+                  "comment": ""
+                }
+              ]
+            }
+          ],
+          "namespaces": [
+            {
+              "id": "Quick",
+              "type": "",
+              "value": "",
+              "CommentDoc": "",
+              "comment": "",
+              "consts": [
+                {
+                  "id": "item",
+                  "type": "str",
+                  "value": "\"item\"",
+                  "CommentDoc": "",
+                  "comment": ""
+                }
+              ],
+              "namespaces": [
+                {
+                  "id": "NODE",
+                  "type": "",
+                  "value": "",
+                  "CommentDoc": "",
+                  "comment": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "css3",
+      "type": "",
+      "value": "",
+      "CommentDoc": "",
+      "comment": "",
+      "consts": [
+        {
+          "id": "x_webkit_airplay",
+          "type": "str",
+          "value": "\"x-webkit-airplay\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "_webkit_text_zoom",
+          "type": "str",
+          "value": "\"-webkit-text-zoom\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "_webkit_backdrop_filter",
+          "type": "str",
+          "value": "\"-webkit-backdrop-filter\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "_webkit_border_horizontal_spacing",
+          "type": "str",
+          "value": "\"-webkit-border-horizontal-spacing\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "_webkit_border_vertical_spacing",
+          "type": "str",
+          "value": "\"-webkit-border-vertical-spacing\"",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "_webkit_box_align",
+          "type": "str",
+          "value": "\"-webkit-box-align\"",
+          "CommentDoc": "",
+          "comment": ""
+        }
+      ]
+    }
+  ]
+}

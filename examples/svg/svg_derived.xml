@@ -1,0 +1,993 @@
+<Svg id="" type="" value="" comment="">
+  <CommentDoc></CommentDoc>
+  <enum id="Element" type="u8" value="" comment="">
+    <CommentDoc></CommentDoc>
+    <const id="a" type="u8" value="0" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="altGlyph" type="u8" value="1" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="altGlyphDef" type="u8" value="2" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="altGlyphItem" type="u8" value="3" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="animate" type="u8" value="4" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="animateColor" type="u8" value="5" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="animateMotion" type="u8" value="6" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="animateTransform" type="u8" value="7" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="circle" type="u8" value="8" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="clipPath" type="u8" value="9" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="color_profile" type="u8" value="10" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="cursor" type="u8" value="11" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="definition_src" type="u8" value="12" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="defs" type="u8" value="13" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="desc" type="u8" value="14" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="ellipse" type="u8" value="15" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feBlend" type="u8" value="16" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feColorMatrix" type="u8" value="17" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feComponentTransfer" type="u8" value="18" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feComposite" type="u8" value="19" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feConvolveMatrix" type="u8" value="20" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feDiffuseLighting" type="u8" value="21" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feDisplacementMap" type="u8" value="22" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feDistantLight" type="u8" value="23" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feFlood" type="u8" value="24" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feFuncA" type="u8" value="25" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feFuncB" type="u8" value="26" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feFuncG" type="u8" value="27" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feFuncR" type="u8" value="28" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feGaussianBlur" type="u8" value="29" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feImage" type="u8" value="30" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feMerge" type="u8" value="31" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feMergeNode" type="u8" value="32" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feMorphology" type="u8" value="33" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feOffset" type="u8" value="34" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="fePointLight" type="u8" value="35" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feSpecularLighting" type="u8" value="36" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feSpotLight" type="u8" value="37" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feTile" type="u8" value="38" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feTurbulence" type="u8" value="39" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="filter" type="u8" value="40" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font" type="u8" value="41" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_face" type="u8" value="42" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_face_format" type="u8" value="43" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_face_name" type="u8" value="44" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_face_src" type="u8" value="45" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_face_uri" type="u8" value="46" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="foreignObject" type="u8" value="47" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="g" type="u8" value="48" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="glyph" type="u8" value="49" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="glyphRef" type="u8" value="50" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="hkern" type="u8" value="51" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="image" type="u8" value="52" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="line" type="u8" value="53" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="linearGradient" type="u8" value="54" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="marker" type="u8" value="55" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="mask" type="u8" value="56" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="metadata" type="u8" value="57" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="missing_glyph" type="u8" value="58" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="mpath" type="u8" value="59" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="path" type="u8" value="60" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="pattern" type="u8" value="61" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="polygon" type="u8" value="62" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="polyline" type="u8" value="63" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="radialGradient" type="u8" value="64" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="rect" type="u8" value="65" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="script" type="u8" value="66" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="set" type="u8" value="67" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stop" type="u8" value="68" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="style" type="u8" value="69" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="svg" type="u8" value="70" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="switch" type="u8" value="71" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="symbol" type="u8" value="72" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="text" type="u8" value="73" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="textPath" type="u8" value="74" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="title" type="u8" value="75" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="tref" type="u8" value="76" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="tspan" type="u8" value="77" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="use" type="u8" value="78" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="view" type="u8" value="79" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="vkern" type="u8" value="80" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+  </enum>
+  <enum id="Attrib" type="u8" value="" comment="">
+    <CommentDoc></CommentDoc>
+    <const id="accent_height" type="u8" value="0" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="accumulate" type="u8" value="1" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="additive" type="u8" value="2" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="alignment_baseline" type="u8" value="3" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="alphabetic" type="u8" value="4" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="amplitude" type="u8" value="5" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="animate" type="u8" value="6" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="arabic_form" type="u8" value="7" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="ascent" type="u8" value="8" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="attributeName" type="u8" value="9" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="attributeType" type="u8" value="10" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="azimuth" type="u8" value="11" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="baseFrequency" type="u8" value="12" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="baseProfile" type="u8" value="13" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="baseline_shift" type="u8" value="14" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="bbox" type="u8" value="15" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="begin" type="u8" value="16" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="bias" type="u8" value="17" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="by" type="u8" value="18" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="calcMode" type="u8" value="19" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="cap_height" type="u8" value="20" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="clip" type="u8" value="21" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="clipPathUnits" type="u8" value="22" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="clip_path" type="u8" value="23" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="clip_rule" type="u8" value="24" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="color" type="u8" value="25" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="color_interpolation" type="u8" value="26" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="color_interpolation_filters" type="u8" value="27" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="color_profile" type="u8" value="28" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="color_rendering" type="u8" value="29" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="contentScriptType" type="u8" value="30" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="contentStyleType" type="u8" value="31" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="cursor" type="u8" value="32" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="cx" type="u8" value="33" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="cy" type="u8" value="34" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="d" type="u8" value="35" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="descent" type="u8" value="36" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="diffuseConstant" type="u8" value="37" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="direction" type="u8" value="38" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="display" type="u8" value="39" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="divisor" type="u8" value="40" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="dominant_baseline" type="u8" value="41" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="dur" type="u8" value="42" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="dx" type="u8" value="43" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="dy" type="u8" value="44" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="edgeMode" type="u8" value="45" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="elevation" type="u8" value="46" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="enable_background" type="u8" value="47" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="end" type="u8" value="48" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="exponent" type="u8" value="49" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="externalResourcesRequired" type="u8" value="50" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feColorMatrix" type="u8" value="51" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feComposite" type="u8" value="52" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feGaussianBlur" type="u8" value="53" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feMorphology" type="u8" value="54" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="feTile" type="u8" value="55" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="fill" type="u8" value="56" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="fill_opacity" type="u8" value="57" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="fill_rule" type="u8" value="58" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="filter" type="u8" value="59" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="filterRes" type="u8" value="60" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="filterUnits" type="u8" value="61" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="flood_color" type="u8" value="62" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="flood_opacity" type="u8" value="63" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_family" type="u8" value="64" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_size" type="u8" value="65" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_size_adjust" type="u8" value="66" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_stretch" type="u8" value="67" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_style" type="u8" value="68" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_variant" type="u8" value="69" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="font_weight" type="u8" value="70" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="format" type="u8" value="71" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="from" type="u8" value="72" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="fx" type="u8" value="73" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="fy" type="u8" value="74" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="g1" type="u8" value="75" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="g2" type="u8" value="76" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="glyphRef" type="u8" value="77" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="glyph_name" type="u8" value="78" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="glyph_orientation_horizontal" type="u8" value="79" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="glyph_orientation_vertical" type="u8" value="80" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="gradientTransform" type="u8" value="81" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="gradientUnits" type="u8" value="82" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="hanging" type="u8" value="83" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="height" type="u8" value="84" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="horiz_adv_x" type="u8" value="85" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="horiz_origin_x" type="u8" value="86" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="horiz_origin_y" type="u8" value="87" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="ideographic" type="u8" value="88" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="image_rendering" type="u8" value="89" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="in" type="u8" value="90" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="in2" type="u8" value="91" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="intercept" type="u8" value="92" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="k" type="u8" value="93" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="k1" type="u8" value="94" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="k2" type="u8" value="95" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="k3" type="u8" value="96" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="k4" type="u8" value="97" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="kernelMatrix" type="u8" value="98" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="kernelUnitLength" type="u8" value="99" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="kerning" type="u8" value="100" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="keyPoints" type="u8" value="101" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="keySplines" type="u8" value="102" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="keyTimes" type="u8" value="103" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="lang" type="u8" value="104" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="lengthAdjust" type="u8" value="105" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="letter_spacing" type="u8" value="106" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="lighting_color" type="u8" value="107" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="limitingConeAngle" type="u8" value="108" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="local" type="u8" value="109" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="markerHeight" type="u8" value="110" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="markerUnits" type="u8" value="111" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="markerWidth" type="u8" value="112" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="marker_end" type="u8" value="113" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="marker_mid" type="u8" value="114" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="marker_start" type="u8" value="115" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="mask" type="u8" value="116" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="maskContentUnits" type="u8" value="117" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="maskUnits" type="u8" value="118" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="mathematical" type="u8" value="119" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="max" type="u8" value="120" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="media" type="u8" value="121" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="method" type="u8" value="122" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="min" type="u8" value="123" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="mode" type="u8" value="124" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="name" type="u8" value="125" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="numOctaves" type="u8" value="126" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="offset" type="u8" value="127" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="onactivate" type="u8" value="128" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="onbegin" type="u8" value="129" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="onend" type="u8" value="130" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="onfocusin" type="u8" value="131" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="onfocusout" type="u8" value="132" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="onrepeat" type="u8" value="133" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="onzoom" type="u8" value="134" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="opacity" type="u8" value="135" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="operator" type="u8" value="136" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="order" type="u8" value="137" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="orient" type="u8" value="138" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="orientation" type="u8" value="139" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="origin" type="u8" value="140" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="overflow" type="u8" value="141" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="overline_position" type="u8" value="142" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="overline_thickness" type="u8" value="143" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="panose_1" type="u8" value="144" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="path" type="u8" value="145" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="pathLength" type="u8" value="146" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="patternContentUnits" type="u8" value="147" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="patternTransform" type="u8" value="148" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="patternUnits" type="u8" value="149" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="pointer_events" type="u8" value="150" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="points" type="u8" value="151" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="pointsAtX" type="u8" value="152" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="pointsAtY" type="u8" value="153" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="pointsAtZ" type="u8" value="154" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="preserveAlpha" type="u8" value="155" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="preserveAspectRatio" type="u8" value="156" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="primitiveUnits" type="u8" value="157" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="r" type="u8" value="158" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="radius" type="u8" value="159" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="refX" type="u8" value="160" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="refY" type="u8" value="161" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="rendering_intent" type="u8" value="162" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="repeatCount" type="u8" value="163" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="repeatDur" type="u8" value="164" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="requiredExtensions" type="u8" value="165" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="requiredFeatures" type="u8" value="166" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="restart" type="u8" value="167" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="result" type="u8" value="168" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="rotate" type="u8" value="169" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="rx" type="u8" value="170" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="ry" type="u8" value="171" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="scale" type="u8" value="172" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="seed" type="u8" value="173" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="shape_rendering" type="u8" value="174" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="slope" type="u8" value="175" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="spacing" type="u8" value="176" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="specularConstant" type="u8" value="177" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="specularExponent" type="u8" value="178" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="spreadMethod" type="u8" value="179" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="startOffset" type="u8" value="180" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stdDeviation" type="u8" value="181" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stemh" type="u8" value="182" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stemv" type="u8" value="183" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stitchTiles" type="u8" value="184" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stop_color" type="u8" value="185" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stop_opacity" type="u8" value="186" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="strikethrough_position" type="u8" value="187" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="strikethrough_thickness" type="u8" value="188" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke" type="u8" value="189" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke_dasharray" type="u8" value="190" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke_dashoffset" type="u8" value="191" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke_linecap" type="u8" value="192" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke_linejoin" type="u8" value="193" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke_miterlimit" type="u8" value="194" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke_opacity" type="u8" value="195" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="stroke_width" type="u8" value="196" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="style" type="u8" value="197" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="surfaceScale" type="u8" value="198" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="systemLanguage" type="u8" value="199" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="tableValues" type="u8" value="200" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="target" type="u8" value="201" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="targetX" type="u8" value="202" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="targetY" type="u8" value="203" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="textLength" type="u8" value="204" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="text_anchor" type="u8" value="205" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="text_decoration" type="u8" value="206" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="text_rendering" type="u8" value="207" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="title" type="u8" value="208" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="to" type="u8" value="209" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="transform" type="u8" value="210" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="type" type="u8" value="211" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="u1" type="u8" value="212" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="u2" type="u8" value="213" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="underline_position" type="u8" value="214" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="underline_thickness" type="u8" value="215" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="unicode" type="u8" value="216" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="unicode_bidi" type="u8" value="217" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="unicode_range" type="u8" value="218" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="units_per_em" type="u8" value="219" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="v_alphabetic" type="u8" value="220" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="v_hanging" type="u8" value="221" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="v_ideographic" type="u8" value="222" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="v_mathematical" type="u8" value="223" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="values" type="u8" value="224" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="version" type="u8" value="225" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="vert_adv_y" type="u8" value="226" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="vert_origin_x" type="u8" value="227" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="vert_origin_y" type="u8" value="228" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="viewBox" type="u8" value="229" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="viewTarget" type="u8" value="230" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="visibility" type="u8" value="231" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="width" type="u8" value="232" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="widths" type="u8" value="233" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="word_spacing" type="u8" value="234" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="writing_mode" type="u8" value="235" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="x" type="u8" value="236" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="x1" type="u8" value="237" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="x2" type="u8" value="238" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="xChannelSelector" type="u8" value="239" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="x_height" type="u8" value="240" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="y" type="u8" value="241" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="y1" type="u8" value="242" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="y2" type="u8" value="243" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="yChannelSelector" type="u8" value="244" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="z" type="u8" value="245" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+    <const id="zoomAndPan" type="u8" value="246" comment="">
+      <CommentDoc></CommentDoc>
+    </const>
+  </enum>
+</Svg>

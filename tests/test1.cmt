@@ -1,0 +1,71 @@
+// Copyright © 2025 cymlifework (cymlifework@163.com). All rights reserved.
+// Licensed under the Apache License, Version 2.0 (see LICENSE file).
+
+/**
+ *this is a test
+ */
+table [action: ""] /// hello word
+
+allow_test = "at"
+percent : u8 = 100
+
+/** pi */
+pi = 3.14159 // pi is circle
+
+/**
+ * colors
+ */
+enum Colors : u16 [prefix: "K", suffix: "Def", property: "", action: "bit-flag|gen-str|sort-asc"] { 
+	RED = 0x100 [prefix: "", suffix: "STR", action: ""]
+	GREEN
+	BLUE
+}
+
+namespace Node [prefix: "html", suffix: "ID"] {
+    Block                               
+    Table                               
+}
+
+/**
+ * ITEM
+ */
+
+percent : u8 = 80
+
+namespace ITEM [prefix: "", action: "bit-flag|gen-id|sort-asc-lex"] {
+	table [prefix: "", action: ""]
+	allow_test = "at"
+	_percent = 100
+	pi = 3.14159
+	
+	enum Colors [action: "sort-asc"] { 
+		RED
+		GREEN /// green
+		BLUE
+	}
+
+	namespace NODE {
+		border
+
+		enum Colors [prefix: "", action: "gen-str"] { 
+			RED 
+			GREEN /// green
+			BLUE
+		}
+
+		namespace Quick {
+			item
+
+			namespace NODE {}
+		}
+	}
+}
+
+namespace css3 [prefix: "", property: "", action: "gen-id|bit-flag"] {
+	x-webkit-airplay
+	-webkit-text-zoom
+    -webkit-backdrop-filter
+    -webkit-border-horizontal-spacing
+    -webkit-border-vertical-spacing
+    -webkit-box-align
+}

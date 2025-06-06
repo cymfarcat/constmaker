@@ -1,0 +1,68 @@
+// Copyright © 2025 cymlifework (cymlifework@163.com). All rights reserved.
+// Licensed under the Apache License, Version 2.0 (see LICENSE file).
+
+//************************************************************************************************
+// generate cmd
+// constmaker -v -g -i./src/const_define.cmt -o./src --file-name=const --namespace-to-prefix --go-package=src
+//************************************************************************************************
+
+// special str
+HyphenChar 	= "-"
+UnderScore 	= "_"
+ActionSep 	= "|"
+ConstID		= "ID"
+ConstSTR	= "STR"
+DerivedSign = "derived"
+BitFlagMax  = 64
+
+/**ConstMaker support typo*/
+namespace Typo {
+    Bool  = "bool"
+    I8    = "i8"
+    U8    = "u8"
+    I16   = "i16"
+    U16   = "u16"
+    I32   = "i32"
+    U32   = "u32"
+    I64   = "i64"
+    U64   = "u64"
+    F32   = "f32"
+    F64   = "f64"
+    Str   = "str"
+}
+
+/**ConstMaker options and args*/
+namespace Option {
+    Prefix        = "prefix"
+	Suffix		  = "suffix"
+	Property      = "property"
+	Action        = "action"
+
+	// property
+	EnumToPrefix    = "enum-to-prefix"
+	NamespaceToPrefix = "namespace-to-prefix"
+	NSToPrefix 		= "ns-to-prefix"
+	Freeze          = "freeze"
+	MacroDefine     = "macro-define"
+	UpperIdent      = "upper-ident"
+	LowerIdent      = "lower-ident"
+	UpperIdentCamel = "upper-ident-camel" /// UpperCamelCase
+	LowerIdentCamel = "lower-ident-camel" /// LowerCamelCase
+
+	// action
+	BitFlag   		= "bit-flag"
+	BitFlagHex   	= "bit-flag-hex"
+	GenStr    		= "gen-str"
+	GenId     		= "gen-id"
+	SortAsc   		= "sort-asc"		/// ASCII Order
+	SortDesc  		= "sort-desc"		/// ASCII Order
+	SortAscLex   	= "sort-asc-lex"   	/// Lexicographical Order
+	SortDescLex  	= "sort-desc-lex"  	/// Lexicographical Order
+	
+	MD5       		= "md5"
+	SHA256    		= "sha256"
+	SHA384    		= "sha384"
+	SHA512    		= "sha512"
+	Base64    		= "base64"
+	Hex       		= "hex"
+}

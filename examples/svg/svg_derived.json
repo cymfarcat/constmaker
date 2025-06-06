@@ -1,0 +1,2323 @@
+{
+  "id": "",
+  "type": "",
+  "value": "",
+  "CommentDoc": "",
+  "comment": "",
+  "enums": [
+    {
+      "id": "Element",
+      "type": "u8",
+      "value": "",
+      "CommentDoc": "",
+      "comment": "",
+      "consts": [
+        {
+          "id": "a",
+          "type": "u8",
+          "value": "0",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "altGlyph",
+          "type": "u8",
+          "value": "1",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "altGlyphDef",
+          "type": "u8",
+          "value": "2",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "altGlyphItem",
+          "type": "u8",
+          "value": "3",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "animate",
+          "type": "u8",
+          "value": "4",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "animateColor",
+          "type": "u8",
+          "value": "5",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "animateMotion",
+          "type": "u8",
+          "value": "6",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "animateTransform",
+          "type": "u8",
+          "value": "7",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "circle",
+          "type": "u8",
+          "value": "8",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "clipPath",
+          "type": "u8",
+          "value": "9",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "color_profile",
+          "type": "u8",
+          "value": "10",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "cursor",
+          "type": "u8",
+          "value": "11",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "definition_src",
+          "type": "u8",
+          "value": "12",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "defs",
+          "type": "u8",
+          "value": "13",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "desc",
+          "type": "u8",
+          "value": "14",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "ellipse",
+          "type": "u8",
+          "value": "15",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feBlend",
+          "type": "u8",
+          "value": "16",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feColorMatrix",
+          "type": "u8",
+          "value": "17",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feComponentTransfer",
+          "type": "u8",
+          "value": "18",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feComposite",
+          "type": "u8",
+          "value": "19",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feConvolveMatrix",
+          "type": "u8",
+          "value": "20",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feDiffuseLighting",
+          "type": "u8",
+          "value": "21",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feDisplacementMap",
+          "type": "u8",
+          "value": "22",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feDistantLight",
+          "type": "u8",
+          "value": "23",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feFlood",
+          "type": "u8",
+          "value": "24",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feFuncA",
+          "type": "u8",
+          "value": "25",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feFuncB",
+          "type": "u8",
+          "value": "26",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feFuncG",
+          "type": "u8",
+          "value": "27",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feFuncR",
+          "type": "u8",
+          "value": "28",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feGaussianBlur",
+          "type": "u8",
+          "value": "29",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feImage",
+          "type": "u8",
+          "value": "30",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feMerge",
+          "type": "u8",
+          "value": "31",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feMergeNode",
+          "type": "u8",
+          "value": "32",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feMorphology",
+          "type": "u8",
+          "value": "33",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feOffset",
+          "type": "u8",
+          "value": "34",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "fePointLight",
+          "type": "u8",
+          "value": "35",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feSpecularLighting",
+          "type": "u8",
+          "value": "36",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feSpotLight",
+          "type": "u8",
+          "value": "37",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feTile",
+          "type": "u8",
+          "value": "38",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feTurbulence",
+          "type": "u8",
+          "value": "39",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "filter",
+          "type": "u8",
+          "value": "40",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font",
+          "type": "u8",
+          "value": "41",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_face",
+          "type": "u8",
+          "value": "42",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_face_format",
+          "type": "u8",
+          "value": "43",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_face_name",
+          "type": "u8",
+          "value": "44",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_face_src",
+          "type": "u8",
+          "value": "45",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_face_uri",
+          "type": "u8",
+          "value": "46",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "foreignObject",
+          "type": "u8",
+          "value": "47",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "g",
+          "type": "u8",
+          "value": "48",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "glyph",
+          "type": "u8",
+          "value": "49",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "glyphRef",
+          "type": "u8",
+          "value": "50",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "hkern",
+          "type": "u8",
+          "value": "51",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "image",
+          "type": "u8",
+          "value": "52",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "line",
+          "type": "u8",
+          "value": "53",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "linearGradient",
+          "type": "u8",
+          "value": "54",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "marker",
+          "type": "u8",
+          "value": "55",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "mask",
+          "type": "u8",
+          "value": "56",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "metadata",
+          "type": "u8",
+          "value": "57",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "missing_glyph",
+          "type": "u8",
+          "value": "58",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "mpath",
+          "type": "u8",
+          "value": "59",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "path",
+          "type": "u8",
+          "value": "60",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "pattern",
+          "type": "u8",
+          "value": "61",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "polygon",
+          "type": "u8",
+          "value": "62",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "polyline",
+          "type": "u8",
+          "value": "63",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "radialGradient",
+          "type": "u8",
+          "value": "64",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "rect",
+          "type": "u8",
+          "value": "65",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "script",
+          "type": "u8",
+          "value": "66",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "set",
+          "type": "u8",
+          "value": "67",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stop",
+          "type": "u8",
+          "value": "68",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "style",
+          "type": "u8",
+          "value": "69",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "svg",
+          "type": "u8",
+          "value": "70",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "switch",
+          "type": "u8",
+          "value": "71",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "symbol",
+          "type": "u8",
+          "value": "72",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "text",
+          "type": "u8",
+          "value": "73",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "textPath",
+          "type": "u8",
+          "value": "74",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "title",
+          "type": "u8",
+          "value": "75",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "tref",
+          "type": "u8",
+          "value": "76",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "tspan",
+          "type": "u8",
+          "value": "77",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "use",
+          "type": "u8",
+          "value": "78",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "view",
+          "type": "u8",
+          "value": "79",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "vkern",
+          "type": "u8",
+          "value": "80",
+          "CommentDoc": "",
+          "comment": ""
+        }
+      ]
+    },
+    {
+      "id": "Attrib",
+      "type": "u8",
+      "value": "",
+      "CommentDoc": "",
+      "comment": "",
+      "consts": [
+        {
+          "id": "accent_height",
+          "type": "u8",
+          "value": "0",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "accumulate",
+          "type": "u8",
+          "value": "1",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "additive",
+          "type": "u8",
+          "value": "2",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "alignment_baseline",
+          "type": "u8",
+          "value": "3",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "alphabetic",
+          "type": "u8",
+          "value": "4",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "amplitude",
+          "type": "u8",
+          "value": "5",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "animate",
+          "type": "u8",
+          "value": "6",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "arabic_form",
+          "type": "u8",
+          "value": "7",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "ascent",
+          "type": "u8",
+          "value": "8",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "attributeName",
+          "type": "u8",
+          "value": "9",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "attributeType",
+          "type": "u8",
+          "value": "10",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "azimuth",
+          "type": "u8",
+          "value": "11",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "baseFrequency",
+          "type": "u8",
+          "value": "12",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "baseProfile",
+          "type": "u8",
+          "value": "13",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "baseline_shift",
+          "type": "u8",
+          "value": "14",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "bbox",
+          "type": "u8",
+          "value": "15",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "begin",
+          "type": "u8",
+          "value": "16",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "bias",
+          "type": "u8",
+          "value": "17",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "by",
+          "type": "u8",
+          "value": "18",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "calcMode",
+          "type": "u8",
+          "value": "19",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "cap_height",
+          "type": "u8",
+          "value": "20",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "clip",
+          "type": "u8",
+          "value": "21",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "clipPathUnits",
+          "type": "u8",
+          "value": "22",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "clip_path",
+          "type": "u8",
+          "value": "23",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "clip_rule",
+          "type": "u8",
+          "value": "24",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "color",
+          "type": "u8",
+          "value": "25",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "color_interpolation",
+          "type": "u8",
+          "value": "26",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "color_interpolation_filters",
+          "type": "u8",
+          "value": "27",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "color_profile",
+          "type": "u8",
+          "value": "28",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "color_rendering",
+          "type": "u8",
+          "value": "29",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "contentScriptType",
+          "type": "u8",
+          "value": "30",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "contentStyleType",
+          "type": "u8",
+          "value": "31",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "cursor",
+          "type": "u8",
+          "value": "32",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "cx",
+          "type": "u8",
+          "value": "33",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "cy",
+          "type": "u8",
+          "value": "34",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "d",
+          "type": "u8",
+          "value": "35",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "descent",
+          "type": "u8",
+          "value": "36",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "diffuseConstant",
+          "type": "u8",
+          "value": "37",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "direction",
+          "type": "u8",
+          "value": "38",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "display",
+          "type": "u8",
+          "value": "39",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "divisor",
+          "type": "u8",
+          "value": "40",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "dominant_baseline",
+          "type": "u8",
+          "value": "41",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "dur",
+          "type": "u8",
+          "value": "42",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "dx",
+          "type": "u8",
+          "value": "43",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "dy",
+          "type": "u8",
+          "value": "44",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "edgeMode",
+          "type": "u8",
+          "value": "45",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "elevation",
+          "type": "u8",
+          "value": "46",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "enable_background",
+          "type": "u8",
+          "value": "47",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "end",
+          "type": "u8",
+          "value": "48",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "exponent",
+          "type": "u8",
+          "value": "49",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "externalResourcesRequired",
+          "type": "u8",
+          "value": "50",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feColorMatrix",
+          "type": "u8",
+          "value": "51",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feComposite",
+          "type": "u8",
+          "value": "52",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feGaussianBlur",
+          "type": "u8",
+          "value": "53",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feMorphology",
+          "type": "u8",
+          "value": "54",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "feTile",
+          "type": "u8",
+          "value": "55",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "fill",
+          "type": "u8",
+          "value": "56",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "fill_opacity",
+          "type": "u8",
+          "value": "57",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "fill_rule",
+          "type": "u8",
+          "value": "58",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "filter",
+          "type": "u8",
+          "value": "59",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "filterRes",
+          "type": "u8",
+          "value": "60",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "filterUnits",
+          "type": "u8",
+          "value": "61",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "flood_color",
+          "type": "u8",
+          "value": "62",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "flood_opacity",
+          "type": "u8",
+          "value": "63",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_family",
+          "type": "u8",
+          "value": "64",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_size",
+          "type": "u8",
+          "value": "65",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_size_adjust",
+          "type": "u8",
+          "value": "66",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_stretch",
+          "type": "u8",
+          "value": "67",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_style",
+          "type": "u8",
+          "value": "68",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_variant",
+          "type": "u8",
+          "value": "69",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "font_weight",
+          "type": "u8",
+          "value": "70",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "format",
+          "type": "u8",
+          "value": "71",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "from",
+          "type": "u8",
+          "value": "72",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "fx",
+          "type": "u8",
+          "value": "73",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "fy",
+          "type": "u8",
+          "value": "74",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "g1",
+          "type": "u8",
+          "value": "75",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "g2",
+          "type": "u8",
+          "value": "76",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "glyphRef",
+          "type": "u8",
+          "value": "77",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "glyph_name",
+          "type": "u8",
+          "value": "78",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "glyph_orientation_horizontal",
+          "type": "u8",
+          "value": "79",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "glyph_orientation_vertical",
+          "type": "u8",
+          "value": "80",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "gradientTransform",
+          "type": "u8",
+          "value": "81",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "gradientUnits",
+          "type": "u8",
+          "value": "82",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "hanging",
+          "type": "u8",
+          "value": "83",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "height",
+          "type": "u8",
+          "value": "84",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "horiz_adv_x",
+          "type": "u8",
+          "value": "85",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "horiz_origin_x",
+          "type": "u8",
+          "value": "86",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "horiz_origin_y",
+          "type": "u8",
+          "value": "87",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "ideographic",
+          "type": "u8",
+          "value": "88",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "image_rendering",
+          "type": "u8",
+          "value": "89",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "in",
+          "type": "u8",
+          "value": "90",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "in2",
+          "type": "u8",
+          "value": "91",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "intercept",
+          "type": "u8",
+          "value": "92",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "k",
+          "type": "u8",
+          "value": "93",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "k1",
+          "type": "u8",
+          "value": "94",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "k2",
+          "type": "u8",
+          "value": "95",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "k3",
+          "type": "u8",
+          "value": "96",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "k4",
+          "type": "u8",
+          "value": "97",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "kernelMatrix",
+          "type": "u8",
+          "value": "98",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "kernelUnitLength",
+          "type": "u8",
+          "value": "99",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "kerning",
+          "type": "u8",
+          "value": "100",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "keyPoints",
+          "type": "u8",
+          "value": "101",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "keySplines",
+          "type": "u8",
+          "value": "102",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "keyTimes",
+          "type": "u8",
+          "value": "103",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "lang",
+          "type": "u8",
+          "value": "104",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "lengthAdjust",
+          "type": "u8",
+          "value": "105",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "letter_spacing",
+          "type": "u8",
+          "value": "106",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "lighting_color",
+          "type": "u8",
+          "value": "107",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "limitingConeAngle",
+          "type": "u8",
+          "value": "108",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "local",
+          "type": "u8",
+          "value": "109",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "markerHeight",
+          "type": "u8",
+          "value": "110",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "markerUnits",
+          "type": "u8",
+          "value": "111",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "markerWidth",
+          "type": "u8",
+          "value": "112",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "marker_end",
+          "type": "u8",
+          "value": "113",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "marker_mid",
+          "type": "u8",
+          "value": "114",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "marker_start",
+          "type": "u8",
+          "value": "115",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "mask",
+          "type": "u8",
+          "value": "116",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "maskContentUnits",
+          "type": "u8",
+          "value": "117",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "maskUnits",
+          "type": "u8",
+          "value": "118",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "mathematical",
+          "type": "u8",
+          "value": "119",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "max",
+          "type": "u8",
+          "value": "120",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "media",
+          "type": "u8",
+          "value": "121",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "method",
+          "type": "u8",
+          "value": "122",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "min",
+          "type": "u8",
+          "value": "123",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "mode",
+          "type": "u8",
+          "value": "124",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "name",
+          "type": "u8",
+          "value": "125",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "numOctaves",
+          "type": "u8",
+          "value": "126",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "offset",
+          "type": "u8",
+          "value": "127",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "onactivate",
+          "type": "u8",
+          "value": "128",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "onbegin",
+          "type": "u8",
+          "value": "129",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "onend",
+          "type": "u8",
+          "value": "130",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "onfocusin",
+          "type": "u8",
+          "value": "131",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "onfocusout",
+          "type": "u8",
+          "value": "132",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "onrepeat",
+          "type": "u8",
+          "value": "133",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "onzoom",
+          "type": "u8",
+          "value": "134",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "opacity",
+          "type": "u8",
+          "value": "135",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "operator",
+          "type": "u8",
+          "value": "136",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "order",
+          "type": "u8",
+          "value": "137",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "orient",
+          "type": "u8",
+          "value": "138",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "orientation",
+          "type": "u8",
+          "value": "139",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "origin",
+          "type": "u8",
+          "value": "140",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "overflow",
+          "type": "u8",
+          "value": "141",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "overline_position",
+          "type": "u8",
+          "value": "142",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "overline_thickness",
+          "type": "u8",
+          "value": "143",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "panose_1",
+          "type": "u8",
+          "value": "144",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "path",
+          "type": "u8",
+          "value": "145",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "pathLength",
+          "type": "u8",
+          "value": "146",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "patternContentUnits",
+          "type": "u8",
+          "value": "147",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "patternTransform",
+          "type": "u8",
+          "value": "148",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "patternUnits",
+          "type": "u8",
+          "value": "149",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "pointer_events",
+          "type": "u8",
+          "value": "150",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "points",
+          "type": "u8",
+          "value": "151",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "pointsAtX",
+          "type": "u8",
+          "value": "152",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "pointsAtY",
+          "type": "u8",
+          "value": "153",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "pointsAtZ",
+          "type": "u8",
+          "value": "154",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "preserveAlpha",
+          "type": "u8",
+          "value": "155",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "preserveAspectRatio",
+          "type": "u8",
+          "value": "156",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "primitiveUnits",
+          "type": "u8",
+          "value": "157",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "r",
+          "type": "u8",
+          "value": "158",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "radius",
+          "type": "u8",
+          "value": "159",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "refX",
+          "type": "u8",
+          "value": "160",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "refY",
+          "type": "u8",
+          "value": "161",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "rendering_intent",
+          "type": "u8",
+          "value": "162",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "repeatCount",
+          "type": "u8",
+          "value": "163",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "repeatDur",
+          "type": "u8",
+          "value": "164",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "requiredExtensions",
+          "type": "u8",
+          "value": "165",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "requiredFeatures",
+          "type": "u8",
+          "value": "166",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "restart",
+          "type": "u8",
+          "value": "167",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "result",
+          "type": "u8",
+          "value": "168",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "rotate",
+          "type": "u8",
+          "value": "169",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "rx",
+          "type": "u8",
+          "value": "170",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "ry",
+          "type": "u8",
+          "value": "171",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "scale",
+          "type": "u8",
+          "value": "172",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "seed",
+          "type": "u8",
+          "value": "173",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "shape_rendering",
+          "type": "u8",
+          "value": "174",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "slope",
+          "type": "u8",
+          "value": "175",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "spacing",
+          "type": "u8",
+          "value": "176",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "specularConstant",
+          "type": "u8",
+          "value": "177",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "specularExponent",
+          "type": "u8",
+          "value": "178",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "spreadMethod",
+          "type": "u8",
+          "value": "179",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "startOffset",
+          "type": "u8",
+          "value": "180",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stdDeviation",
+          "type": "u8",
+          "value": "181",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stemh",
+          "type": "u8",
+          "value": "182",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stemv",
+          "type": "u8",
+          "value": "183",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stitchTiles",
+          "type": "u8",
+          "value": "184",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stop_color",
+          "type": "u8",
+          "value": "185",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stop_opacity",
+          "type": "u8",
+          "value": "186",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "strikethrough_position",
+          "type": "u8",
+          "value": "187",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "strikethrough_thickness",
+          "type": "u8",
+          "value": "188",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke",
+          "type": "u8",
+          "value": "189",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke_dasharray",
+          "type": "u8",
+          "value": "190",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke_dashoffset",
+          "type": "u8",
+          "value": "191",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke_linecap",
+          "type": "u8",
+          "value": "192",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke_linejoin",
+          "type": "u8",
+          "value": "193",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke_miterlimit",
+          "type": "u8",
+          "value": "194",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke_opacity",
+          "type": "u8",
+          "value": "195",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "stroke_width",
+          "type": "u8",
+          "value": "196",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "style",
+          "type": "u8",
+          "value": "197",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "surfaceScale",
+          "type": "u8",
+          "value": "198",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "systemLanguage",
+          "type": "u8",
+          "value": "199",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "tableValues",
+          "type": "u8",
+          "value": "200",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "target",
+          "type": "u8",
+          "value": "201",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "targetX",
+          "type": "u8",
+          "value": "202",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "targetY",
+          "type": "u8",
+          "value": "203",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "textLength",
+          "type": "u8",
+          "value": "204",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "text_anchor",
+          "type": "u8",
+          "value": "205",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "text_decoration",
+          "type": "u8",
+          "value": "206",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "text_rendering",
+          "type": "u8",
+          "value": "207",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "title",
+          "type": "u8",
+          "value": "208",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "to",
+          "type": "u8",
+          "value": "209",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "transform",
+          "type": "u8",
+          "value": "210",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "type",
+          "type": "u8",
+          "value": "211",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "u1",
+          "type": "u8",
+          "value": "212",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "u2",
+          "type": "u8",
+          "value": "213",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "underline_position",
+          "type": "u8",
+          "value": "214",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "underline_thickness",
+          "type": "u8",
+          "value": "215",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "unicode",
+          "type": "u8",
+          "value": "216",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "unicode_bidi",
+          "type": "u8",
+          "value": "217",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "unicode_range",
+          "type": "u8",
+          "value": "218",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "units_per_em",
+          "type": "u8",
+          "value": "219",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "v_alphabetic",
+          "type": "u8",
+          "value": "220",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "v_hanging",
+          "type": "u8",
+          "value": "221",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "v_ideographic",
+          "type": "u8",
+          "value": "222",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "v_mathematical",
+          "type": "u8",
+          "value": "223",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "values",
+          "type": "u8",
+          "value": "224",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "version",
+          "type": "u8",
+          "value": "225",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "vert_adv_y",
+          "type": "u8",
+          "value": "226",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "vert_origin_x",
+          "type": "u8",
+          "value": "227",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "vert_origin_y",
+          "type": "u8",
+          "value": "228",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "viewBox",
+          "type": "u8",
+          "value": "229",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "viewTarget",
+          "type": "u8",
+          "value": "230",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "visibility",
+          "type": "u8",
+          "value": "231",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "width",
+          "type": "u8",
+          "value": "232",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "widths",
+          "type": "u8",
+          "value": "233",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "word_spacing",
+          "type": "u8",
+          "value": "234",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "writing_mode",
+          "type": "u8",
+          "value": "235",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "x",
+          "type": "u8",
+          "value": "236",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "x1",
+          "type": "u8",
+          "value": "237",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "x2",
+          "type": "u8",
+          "value": "238",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "xChannelSelector",
+          "type": "u8",
+          "value": "239",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "x_height",
+          "type": "u8",
+          "value": "240",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "y",
+          "type": "u8",
+          "value": "241",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "y1",
+          "type": "u8",
+          "value": "242",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "y2",
+          "type": "u8",
+          "value": "243",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "yChannelSelector",
+          "type": "u8",
+          "value": "244",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "z",
+          "type": "u8",
+          "value": "245",
+          "CommentDoc": "",
+          "comment": ""
+        },
+        {
+          "id": "zoomAndPan",
+          "type": "u8",
+          "value": "246",
+          "CommentDoc": "",
+          "comment": ""
+        }
+      ]
+    }
+  ]
+}
