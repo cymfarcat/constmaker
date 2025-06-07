@@ -80,12 +80,6 @@ func (s *BaseConstMakerListener) EnterOption(ctx *OptionContext) {}
 // ExitOption is called when production option is exited.
 func (s *BaseConstMakerListener) ExitOption(ctx *OptionContext) {}
 
-// EnterConstant is called when production constant is entered.
-func (s *BaseConstMakerListener) EnterConstant(ctx *ConstantContext) {}
-
-// ExitConstant is called when production constant is exited.
-func (s *BaseConstMakerListener) ExitConstant(ctx *ConstantContext) {}
-
 // EnterValue is called when production value is entered.
 func (s *BaseConstMakerListener) EnterValue(ctx *ValueContext) {}
 

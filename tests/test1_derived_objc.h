@@ -10,7 +10,7 @@
  */
 NSString *const Table = @"table"; // hello word
 NSString *const AllowTest = @"at";
-const uint8_t Percent = 100;
+const int8_t Percent = -100;
 
 /** pi */
 const float Pi = 3.14159;

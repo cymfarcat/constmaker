@@ -6,7 +6,7 @@ public static class Test1 {
      */
     public const string Table = "table"; // hello word
     public const string AllowTest = "at";
-    public const byte Percent = 100;
+    public const sbyte Percent = -100;
 
     /** pi */
     public const float Pi = 3.14159f;

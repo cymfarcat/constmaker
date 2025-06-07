@@ -245,9 +245,9 @@ func (obj *NameSpace) genDart(option *ConstOption, builder *strings.Builder) {
 
 				option.level++
 				for _, constObj := range enumObj.Children {
-					builder.WriteString("\n" + option.getTabWidth() + "case " + calcShift(constObj.Value) + ": return " + enumName + "." + option.genIdentNameObj("", constObj) + ";")
+					builder.WriteString("\n" + option.getTabWidth() + "case " + calcShift(constObj.Value) + ": return " + option.getIdentNameObj(enumName, enumObj) + "." + option.genIdentNameObj("", constObj) + ";")
 				}
-				builder.WriteString("\n" + option.getTabWidth() + "default: throw StateError('" + enumName + ".fromValue: invalid value=$value');")
+				builder.WriteString("\n" + option.getTabWidth() + "default: throw StateError('" + option.getIdentNameObj(enumName, enumObj) + ".fromValue: invalid value=$value');")
 
 				option.level--
 				builder.WriteString("\n" + option.getTabWidth() + "}")

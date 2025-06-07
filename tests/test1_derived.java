@@ -8,7 +8,7 @@ interface test1 {
      */
     public static final String Table = "table"; // hello word
     public static final String AllowTest = "at";
-    public static final byte Percent = 100;
+    public static final byte Percent = -100;
 
     /** pi */
     public static final float Pi = 3.14159f;

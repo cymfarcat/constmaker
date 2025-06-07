@@ -37,9 +37,6 @@ type ConstMakerListener interface {
 	// EnterOption is called when entering the option production.
 	EnterOption(c *OptionContext)
 
-	// EnterConstant is called when entering the constant production.
-	EnterConstant(c *ConstantContext)
-
 	// EnterValue is called when entering the value production.
 	EnterValue(c *ValueContext)
 
@@ -87,9 +84,6 @@ type ConstMakerListener interface {
 
 	// ExitOption is called when exiting the option production.
 	ExitOption(c *OptionContext)
-
-	// ExitConstant is called when exiting the constant production.
-	ExitConstant(c *ConstantContext)
 
 	// ExitValue is called when exiting the value production.
 	ExitValue(c *ValueContext)

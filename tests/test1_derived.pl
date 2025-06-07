@@ -5,7 +5,7 @@
 # 
 use constant Table => "table"; # hello word
 use constant AllowTest => "at";
-use constant Percent => 100;
+use constant Percent => -100;
 # pi 
 use constant Pi => 3.14159;
 

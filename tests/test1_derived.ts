@@ -5,7 +5,7 @@
  */
 const Table = "table"; // hello word
 const AllowTest = "at";
-const Percent = 100;
+const Percent = -100;
 
 /** pi */
 const Pi = 3.14159;

@@ -5,7 +5,7 @@
  *)
 const Table: String = "table"; (* hello word *)
 const AllowTest: String = "at";
-const Percent: Byte = 100;
+const Percent: Shortint = -100;
 (* pi *)
 const Pi: Real = 3.14159;
 

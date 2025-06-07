@@ -47,10 +47,6 @@ func (v *BaseConstMakerVisitor) VisitOption(ctx *OptionContext) interface{} {
 	return v.VisitChildren(ctx)
 }
 
-func (v *BaseConstMakerVisitor) VisitConstant(ctx *ConstantContext) interface{} {
-	return v.VisitChildren(ctx)
-}
-
 func (v *BaseConstMakerVisitor) VisitValue(ctx *ValueContext) interface{} {
 	return v.VisitChildren(ctx)
 }

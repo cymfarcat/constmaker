@@ -4,7 +4,7 @@
 >|---|---|---|---|
 >|Table|string|"table"|this is a test; hello word|
 >|AllowTest|string|"at"||
->|Percent|uint8|100||
+>|Percent|int8|-100||
 >|Pi|float32|3.14159|pi|
 ### enum Colors
 colors

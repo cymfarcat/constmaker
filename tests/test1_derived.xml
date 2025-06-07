@@ -6,7 +6,7 @@
   <const id="allow_test" type="str" value="&#34;at&#34;" comment="">
     <CommentDoc></CommentDoc>
   </const>
-  <const id="percent" type="u8" value="100" comment="">
+  <const id="percent" type="i8" value="-100" comment="">
     <CommentDoc></CommentDoc>
   </const>
   <const id="pi" type="f32" value="3.14159" comment="">

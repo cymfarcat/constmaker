@@ -21,8 +21,8 @@
     },
     {
       "id": "percent",
-      "type": "u8",
-      "value": "100",
+      "type": "i8",
+      "value": "-100",
       "CommentDoc": "",
       "comment": ""
     },

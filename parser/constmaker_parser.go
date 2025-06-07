@@ -36,138 +36,134 @@ func constmakerParserInit() {
 	}
 	staticData.SymbolicNames = []string{
 		"", "", "", "", "", "", "", "", "ENUM", "NAMESPACE", "STRING", "TYPE",
-		"IDENT", "DEC_INTEGER", "HEX_INTEGER", "FLOAT", "DOC_COMMENT", "TRIPLE_COMMENT",
+		"DEC_INTEGER", "HEX_INTEGER", "FLOAT", "IDENT", "DOC_COMMENT", "TRIPLE_COMMENT",
 		"BLOCK_COMMENT", "LINE_COMMENT", "NL", "WS",
 	}
 	staticData.RuleNames = []string{
 		"file", "rules", "const", "enum", "namespace", "type", "enumValue",
-		"identAssignValue", "identAssignValueLoop", "option", "constant", "value",
-		"integer", "ident", "keywords", "docComment", "tripleComment",
+		"identAssignValue", "identAssignValueLoop", "option", "value", "integer",
+		"ident", "keywords", "docComment", "tripleComment",
 	}
 	staticData.PredictionContextCache = antlr.NewPredictionContextCache()
 	staticData.serializedATN = []int32{
-		4, 1, 21, 269, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
+		4, 1, 21, 262, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
 		4, 2, 5, 7, 5, 2, 6, 7, 6, 2, 7, 7, 7, 2, 8, 7, 8, 2, 9, 7, 9, 2, 10, 7,
 		10, 2, 11, 7, 11, 2, 12, 7, 12, 2, 13, 7, 13, 2, 14, 7, 14, 2, 15, 7, 15,
-		2, 16, 7, 16, 1, 0, 1, 0, 5, 0, 37, 8, 0, 10, 0, 12, 0, 40, 9, 0, 5, 0,
-		42, 8, 0, 10, 0, 12, 0, 45, 9, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 3, 1, 52,
-		8, 1, 1, 2, 5, 2, 55, 8, 2, 10, 2, 12, 2, 58, 9, 2, 1, 2, 3, 2, 61, 8,
-		2, 1, 2, 5, 2, 64, 8, 2, 10, 2, 12, 2, 67, 9, 2, 1, 2, 1, 2, 1, 2, 3, 2,
-		72, 8, 2, 1, 2, 1, 2, 3, 2, 76, 8, 2, 1, 2, 3, 2, 79, 8, 2, 1, 2, 3, 2,
-		82, 8, 2, 1, 2, 5, 2, 85, 8, 2, 10, 2, 12, 2, 88, 9, 2, 1, 3, 5, 3, 91,
-		8, 3, 10, 3, 12, 3, 94, 9, 3, 1, 3, 3, 3, 97, 8, 3, 1, 3, 5, 3, 100, 8,
-		3, 10, 3, 12, 3, 103, 9, 3, 1, 3, 1, 3, 1, 3, 1, 3, 3, 3, 109, 8, 3, 1,
-		3, 3, 3, 112, 8, 3, 1, 3, 5, 3, 115, 8, 3, 10, 3, 12, 3, 118, 9, 3, 1,
-		3, 1, 3, 5, 3, 122, 8, 3, 10, 3, 12, 3, 125, 9, 3, 1, 3, 5, 3, 128, 8,
-		3, 10, 3, 12, 3, 131, 9, 3, 1, 3, 5, 3, 134, 8, 3, 10, 3, 12, 3, 137, 9,
-		3, 1, 3, 1, 3, 5, 3, 141, 8, 3, 10, 3, 12, 3, 144, 9, 3, 1, 4, 5, 4, 147,
-		8, 4, 10, 4, 12, 4, 150, 9, 4, 1, 4, 3, 4, 153, 8, 4, 1, 4, 5, 4, 156,
-		8, 4, 10, 4, 12, 4, 159, 9, 4, 1, 4, 1, 4, 1, 4, 3, 4, 164, 8, 4, 1, 4,
-		5, 4, 167, 8, 4, 10, 4, 12, 4, 170, 9, 4, 1, 4, 1, 4, 5, 4, 174, 8, 4,
-		10, 4, 12, 4, 177, 9, 4, 1, 4, 1, 4, 1, 4, 5, 4, 182, 8, 4, 10, 4, 12,
-		4, 185, 9, 4, 1, 4, 5, 4, 188, 8, 4, 10, 4, 12, 4, 191, 9, 4, 1, 4, 1,
-		4, 5, 4, 195, 8, 4, 10, 4, 12, 4, 198, 9, 4, 1, 5, 1, 5, 1, 5, 1, 5, 3,
-		5, 204, 8, 5, 1, 5, 1, 5, 1, 5, 1, 5, 3, 5, 210, 8, 5, 1, 6, 1, 6, 1, 6,
-		3, 6, 215, 8, 6, 1, 6, 3, 6, 218, 8, 6, 1, 6, 3, 6, 221, 8, 6, 1, 6, 5,
-		6, 224, 8, 6, 10, 6, 12, 6, 227, 9, 6, 1, 7, 1, 7, 1, 7, 3, 7, 232, 8,
-		7, 1, 8, 1, 8, 1, 8, 5, 8, 237, 8, 8, 10, 8, 12, 8, 240, 9, 8, 1, 9, 1,
-		9, 1, 9, 1, 9, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 3, 10, 251, 8, 10, 1,
-		11, 1, 11, 3, 11, 255, 8, 11, 1, 12, 1, 12, 1, 13, 1, 13, 3, 13, 261, 8,
-		13, 1, 14, 1, 14, 1, 15, 1, 15, 1, 16, 1, 16, 1, 16, 0, 0, 17, 0, 2, 4,
-		6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 0, 2, 1, 0, 13, 14,
-		1, 0, 8, 9, 299, 0, 43, 1, 0, 0, 0, 2, 51, 1, 0, 0, 0, 4, 56, 1, 0, 0,
-		0, 6, 92, 1, 0, 0, 0, 8, 148, 1, 0, 0, 0, 10, 209, 1, 0, 0, 0, 12, 211,
-		1, 0, 0, 0, 14, 228, 1, 0, 0, 0, 16, 233, 1, 0, 0, 0, 18, 241, 1, 0, 0,
-		0, 20, 250, 1, 0, 0, 0, 22, 254, 1, 0, 0, 0, 24, 256, 1, 0, 0, 0, 26, 260,
-		1, 0, 0, 0, 28, 262, 1, 0, 0, 0, 30, 264, 1, 0, 0, 0, 32, 266, 1, 0, 0,
-		0, 34, 38, 3, 2, 1, 0, 35, 37, 5, 20, 0, 0, 36, 35, 1, 0, 0, 0, 37, 40,
-		1, 0, 0, 0, 38, 36, 1, 0, 0, 0, 38, 39, 1, 0, 0, 0, 39, 42, 1, 0, 0, 0,
-		40, 38, 1, 0, 0, 0, 41, 34, 1, 0, 0, 0, 42, 45, 1, 0, 0, 0, 43, 41, 1,
-		0, 0, 0, 43, 44, 1, 0, 0, 0, 44, 46, 1, 0, 0, 0, 45, 43, 1, 0, 0, 0, 46,
-		47, 5, 0, 0, 1, 47, 1, 1, 0, 0, 0, 48, 52, 3, 4, 2, 0, 49, 52, 3, 6, 3,
-		0, 50, 52, 3, 8, 4, 0, 51, 48, 1, 0, 0, 0, 51, 49, 1, 0, 0, 0, 51, 50,
-		1, 0, 0, 0, 52, 3, 1, 0, 0, 0, 53, 55, 5, 20, 0, 0, 54, 53, 1, 0, 0, 0,
-		55, 58, 1, 0, 0, 0, 56, 54, 1, 0, 0, 0, 56, 57, 1, 0, 0, 0, 57, 60, 1,
-		0, 0, 0, 58, 56, 1, 0, 0, 0, 59, 61, 3, 30, 15, 0, 60, 59, 1, 0, 0, 0,
-		60, 61, 1, 0, 0, 0, 61, 65, 1, 0, 0, 0, 62, 64, 5, 20, 0, 0, 63, 62, 1,
-		0, 0, 0, 64, 67, 1, 0, 0, 0, 65, 63, 1, 0, 0, 0, 65, 66, 1, 0, 0, 0, 66,
-		68, 1, 0, 0, 0, 67, 65, 1, 0, 0, 0, 68, 71, 3, 26, 13, 0, 69, 70, 5, 1,
-		0, 0, 70, 72, 3, 10, 5, 0, 71, 69, 1, 0, 0, 0, 71, 72, 1, 0, 0, 0, 72,
-		75, 1, 0, 0, 0, 73, 74, 5, 2, 0, 0, 74, 76, 3, 20, 10, 0, 75, 73, 1, 0,
-		0, 0, 75, 76, 1, 0, 0, 0, 76, 78, 1, 0, 0, 0, 77, 79, 3, 18, 9, 0, 78,
-		77, 1, 0, 0, 0, 78, 79, 1, 0, 0, 0, 79, 81, 1, 0, 0, 0, 80, 82, 3, 32,
-		16, 0, 81, 80, 1, 0, 0, 0, 81, 82, 1, 0, 0, 0, 82, 86, 1, 0, 0, 0, 83,
-		85, 5, 20, 0, 0, 84, 83, 1, 0, 0, 0, 85, 88, 1, 0, 0, 0, 86, 84, 1, 0,
-		0, 0, 86, 87, 1, 0, 0, 0, 87, 5, 1, 0, 0, 0, 88, 86, 1, 0, 0, 0, 89, 91,
-		5, 20, 0, 0, 90, 89, 1, 0, 0, 0, 91, 94, 1, 0, 0, 0, 92, 90, 1, 0, 0, 0,
-		92, 93, 1, 0, 0, 0, 93, 96, 1, 0, 0, 0, 94, 92, 1, 0, 0, 0, 95, 97, 3,
-		30, 15, 0, 96, 95, 1, 0, 0, 0, 96, 97, 1, 0, 0, 0, 97, 101, 1, 0, 0, 0,
-		98, 100, 5, 20, 0, 0, 99, 98, 1, 0, 0, 0, 100, 103, 1, 0, 0, 0, 101, 99,
-		1, 0, 0, 0, 101, 102, 1, 0, 0, 0, 102, 104, 1, 0, 0, 0, 103, 101, 1, 0,
-		0, 0, 104, 105, 5, 8, 0, 0, 105, 108, 3, 26, 13, 0, 106, 107, 5, 1, 0,
-		0, 107, 109, 3, 10, 5, 0, 108, 106, 1, 0, 0, 0, 108, 109, 1, 0, 0, 0, 109,
-		111, 1, 0, 0, 0, 110, 112, 3, 18, 9, 0, 111, 110, 1, 0, 0, 0, 111, 112,
-		1, 0, 0, 0, 112, 116, 1, 0, 0, 0, 113, 115, 5, 20, 0, 0, 114, 113, 1, 0,
-		0, 0, 115, 118, 1, 0, 0, 0, 116, 114, 1, 0, 0, 0, 116, 117, 1, 0, 0, 0,
-		117, 119, 1, 0, 0, 0, 118, 116, 1, 0, 0, 0, 119, 123, 5, 3, 0, 0, 120,
-		122, 5, 20, 0, 0, 121, 120, 1, 0, 0, 0, 122, 125, 1, 0, 0, 0, 123, 121,
-		1, 0, 0, 0, 123, 124, 1, 0, 0, 0, 124, 129, 1, 0, 0, 0, 125, 123, 1, 0,
-		0, 0, 126, 128, 3, 12, 6, 0, 127, 126, 1, 0, 0, 0, 128, 131, 1, 0, 0, 0,
-		129, 127, 1, 0, 0, 0, 129, 130, 1, 0, 0, 0, 130, 135, 1, 0, 0, 0, 131,
-		129, 1, 0, 0, 0, 132, 134, 5, 20, 0, 0, 133, 132, 1, 0, 0, 0, 134, 137,
-		1, 0, 0, 0, 135, 133, 1, 0, 0, 0, 135, 136, 1, 0, 0, 0, 136, 138, 1, 0,
-		0, 0, 137, 135, 1, 0, 0, 0, 138, 142, 5, 4, 0, 0, 139, 141, 5, 20, 0, 0,
-		140, 139, 1, 0, 0, 0, 141, 144, 1, 0, 0, 0, 142, 140, 1, 0, 0, 0, 142,
-		143, 1, 0, 0, 0, 143, 7, 1, 0, 0, 0, 144, 142, 1, 0, 0, 0, 145, 147, 5,
-		20, 0, 0, 146, 145, 1, 0, 0, 0, 147, 150, 1, 0, 0, 0, 148, 146, 1, 0, 0,
-		0, 148, 149, 1, 0, 0, 0, 149, 152, 1, 0, 0, 0, 150, 148, 1, 0, 0, 0, 151,
-		153, 3, 30, 15, 0, 152, 151, 1, 0, 0, 0, 152, 153, 1, 0, 0, 0, 153, 157,
-		1, 0, 0, 0, 154, 156, 5, 20, 0, 0, 155, 154, 1, 0, 0, 0, 156, 159, 1, 0,
-		0, 0, 157, 155, 1, 0, 0, 0, 157, 158, 1, 0, 0, 0, 158, 160, 1, 0, 0, 0,
-		159, 157, 1, 0, 0, 0, 160, 161, 5, 9, 0, 0, 161, 163, 3, 26, 13, 0, 162,
-		164, 3, 18, 9, 0, 163, 162, 1, 0, 0, 0, 163, 164, 1, 0, 0, 0, 164, 168,
-		1, 0, 0, 0, 165, 167, 5, 20, 0, 0, 166, 165, 1, 0, 0, 0, 167, 170, 1, 0,
-		0, 0, 168, 166, 1, 0, 0, 0, 168, 169, 1, 0, 0, 0, 169, 171, 1, 0, 0, 0,
-		170, 168, 1, 0, 0, 0, 171, 175, 5, 3, 0, 0, 172, 174, 5, 20, 0, 0, 173,
-		172, 1, 0, 0, 0, 174, 177, 1, 0, 0, 0, 175, 173, 1, 0, 0, 0, 175, 176,
-		1, 0, 0, 0, 176, 183, 1, 0, 0, 0, 177, 175, 1, 0, 0, 0, 178, 182, 3, 8,
-		4, 0, 179, 182, 3, 4, 2, 0, 180, 182, 3, 6, 3, 0, 181, 178, 1, 0, 0, 0,
-		181, 179, 1, 0, 0, 0, 181, 180, 1, 0, 0, 0, 182, 185, 1, 0, 0, 0, 183,
-		181, 1, 0, 0, 0, 183, 184, 1, 0, 0, 0, 184, 189, 1, 0, 0, 0, 185, 183,
-		1, 0, 0, 0, 186, 188, 5, 20, 0, 0, 187, 186, 1, 0, 0, 0, 188, 191, 1, 0,
-		0, 0, 189, 187, 1, 0, 0, 0, 189, 190, 1, 0, 0, 0, 190, 192, 1, 0, 0, 0,
-		191, 189, 1, 0, 0, 0, 192, 196, 5, 4, 0, 0, 193, 195, 5, 20, 0, 0, 194,
-		193, 1, 0, 0, 0, 195, 198, 1, 0, 0, 0, 196, 194, 1, 0, 0, 0, 196, 197,
-		1, 0, 0, 0, 197, 9, 1, 0, 0, 0, 198, 196, 1, 0, 0, 0, 199, 200, 5, 5, 0,
-		0, 200, 203, 3, 10, 5, 0, 201, 202, 5, 1, 0, 0, 202, 204, 3, 24, 12, 0,
-		203, 201, 1, 0, 0, 0, 203, 204, 1, 0, 0, 0, 204, 205, 1, 0, 0, 0, 205,
-		206, 5, 6, 0, 0, 206, 210, 1, 0, 0, 0, 207, 210, 5, 11, 0, 0, 208, 210,
-		3, 26, 13, 0, 209, 199, 1, 0, 0, 0, 209, 207, 1, 0, 0, 0, 209, 208, 1,
-		0, 0, 0, 210, 11, 1, 0, 0, 0, 211, 214, 3, 26, 13, 0, 212, 213, 5, 2, 0,
-		0, 213, 215, 3, 24, 12, 0, 214, 212, 1, 0, 0, 0, 214, 215, 1, 0, 0, 0,
-		215, 217, 1, 0, 0, 0, 216, 218, 3, 18, 9, 0, 217, 216, 1, 0, 0, 0, 217,
-		218, 1, 0, 0, 0, 218, 220, 1, 0, 0, 0, 219, 221, 3, 32, 16, 0, 220, 219,
-		1, 0, 0, 0, 220, 221, 1, 0, 0, 0, 221, 225, 1, 0, 0, 0, 222, 224, 5, 20,
-		0, 0, 223, 222, 1, 0, 0, 0, 224, 227, 1, 0, 0, 0, 225, 223, 1, 0, 0, 0,
-		225, 226, 1, 0, 0, 0, 226, 13, 1, 0, 0, 0, 227, 225, 1, 0, 0, 0, 228, 231,
-		3, 26, 13, 0, 229, 230, 5, 1, 0, 0, 230, 232, 3, 22, 11, 0, 231, 229, 1,
-		0, 0, 0, 231, 232, 1, 0, 0, 0, 232, 15, 1, 0, 0, 0, 233, 238, 3, 14, 7,
-		0, 234, 235, 5, 7, 0, 0, 235, 237, 3, 14, 7, 0, 236, 234, 1, 0, 0, 0, 237,
-		240, 1, 0, 0, 0, 238, 236, 1, 0, 0, 0, 238, 239, 1, 0, 0, 0, 239, 17, 1,
-		0, 0, 0, 240, 238, 1, 0, 0, 0, 241, 242, 5, 5, 0, 0, 242, 243, 3, 16, 8,
-		0, 243, 244, 5, 6, 0, 0, 244, 19, 1, 0, 0, 0, 245, 251, 5, 13, 0, 0, 246,
-		251, 5, 14, 0, 0, 247, 251, 5, 15, 0, 0, 248, 251, 5, 10, 0, 0, 249, 251,
-		3, 26, 13, 0, 250, 245, 1, 0, 0, 0, 250, 246, 1, 0, 0, 0, 250, 247, 1,
-		0, 0, 0, 250, 248, 1, 0, 0, 0, 250, 249, 1, 0, 0, 0, 251, 21, 1, 0, 0,
-		0, 252, 255, 3, 20, 10, 0, 253, 255, 5, 10, 0, 0, 254, 252, 1, 0, 0, 0,
-		254, 253, 1, 0, 0, 0, 255, 23, 1, 0, 0, 0, 256, 257, 7, 0, 0, 0, 257, 25,
-		1, 0, 0, 0, 258, 261, 5, 12, 0, 0, 259, 261, 3, 28, 14, 0, 260, 258, 1,
-		0, 0, 0, 260, 259, 1, 0, 0, 0, 261, 27, 1, 0, 0, 0, 262, 263, 7, 1, 0,
-		0, 263, 29, 1, 0, 0, 0, 264, 265, 5, 16, 0, 0, 265, 31, 1, 0, 0, 0, 266,
-		267, 5, 17, 0, 0, 267, 33, 1, 0, 0, 0, 42, 38, 43, 51, 56, 60, 65, 71,
-		75, 78, 81, 86, 92, 96, 101, 108, 111, 116, 123, 129, 135, 142, 148, 152,
-		157, 163, 168, 175, 181, 183, 189, 196, 203, 209, 214, 217, 220, 225, 231,
-		238, 250, 254, 260,
+		1, 0, 1, 0, 5, 0, 35, 8, 0, 10, 0, 12, 0, 38, 9, 0, 5, 0, 40, 8, 0, 10,
+		0, 12, 0, 43, 9, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 3, 1, 50, 8, 1, 1, 2,
+		5, 2, 53, 8, 2, 10, 2, 12, 2, 56, 9, 2, 1, 2, 3, 2, 59, 8, 2, 1, 2, 5,
+		2, 62, 8, 2, 10, 2, 12, 2, 65, 9, 2, 1, 2, 1, 2, 1, 2, 3, 2, 70, 8, 2,
+		1, 2, 1, 2, 3, 2, 74, 8, 2, 1, 2, 3, 2, 77, 8, 2, 1, 2, 3, 2, 80, 8, 2,
+		1, 2, 5, 2, 83, 8, 2, 10, 2, 12, 2, 86, 9, 2, 1, 3, 5, 3, 89, 8, 3, 10,
+		3, 12, 3, 92, 9, 3, 1, 3, 3, 3, 95, 8, 3, 1, 3, 5, 3, 98, 8, 3, 10, 3,
+		12, 3, 101, 9, 3, 1, 3, 1, 3, 1, 3, 1, 3, 3, 3, 107, 8, 3, 1, 3, 3, 3,
+		110, 8, 3, 1, 3, 5, 3, 113, 8, 3, 10, 3, 12, 3, 116, 9, 3, 1, 3, 1, 3,
+		5, 3, 120, 8, 3, 10, 3, 12, 3, 123, 9, 3, 1, 3, 5, 3, 126, 8, 3, 10, 3,
+		12, 3, 129, 9, 3, 1, 3, 5, 3, 132, 8, 3, 10, 3, 12, 3, 135, 9, 3, 1, 3,
+		1, 3, 5, 3, 139, 8, 3, 10, 3, 12, 3, 142, 9, 3, 1, 4, 5, 4, 145, 8, 4,
+		10, 4, 12, 4, 148, 9, 4, 1, 4, 3, 4, 151, 8, 4, 1, 4, 5, 4, 154, 8, 4,
+		10, 4, 12, 4, 157, 9, 4, 1, 4, 1, 4, 1, 4, 3, 4, 162, 8, 4, 1, 4, 5, 4,
+		165, 8, 4, 10, 4, 12, 4, 168, 9, 4, 1, 4, 1, 4, 5, 4, 172, 8, 4, 10, 4,
+		12, 4, 175, 9, 4, 1, 4, 1, 4, 1, 4, 5, 4, 180, 8, 4, 10, 4, 12, 4, 183,
+		9, 4, 1, 4, 5, 4, 186, 8, 4, 10, 4, 12, 4, 189, 9, 4, 1, 4, 1, 4, 5, 4,
+		193, 8, 4, 10, 4, 12, 4, 196, 9, 4, 1, 5, 1, 5, 1, 5, 1, 5, 3, 5, 202,
+		8, 5, 1, 5, 1, 5, 1, 5, 1, 5, 3, 5, 208, 8, 5, 1, 6, 1, 6, 1, 6, 3, 6,
+		213, 8, 6, 1, 6, 3, 6, 216, 8, 6, 1, 6, 3, 6, 219, 8, 6, 1, 6, 5, 6, 222,
+		8, 6, 10, 6, 12, 6, 225, 9, 6, 1, 7, 1, 7, 1, 7, 3, 7, 230, 8, 7, 1, 8,
+		1, 8, 1, 8, 5, 8, 235, 8, 8, 10, 8, 12, 8, 238, 9, 8, 1, 9, 1, 9, 1, 9,
+		1, 9, 1, 10, 1, 10, 1, 10, 1, 10, 3, 10, 248, 8, 10, 1, 11, 1, 11, 1, 12,
+		1, 12, 3, 12, 254, 8, 12, 1, 13, 1, 13, 1, 14, 1, 14, 1, 15, 1, 15, 1,
+		15, 0, 0, 16, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30,
+		0, 2, 1, 0, 12, 13, 1, 0, 8, 9, 291, 0, 41, 1, 0, 0, 0, 2, 49, 1, 0, 0,
+		0, 4, 54, 1, 0, 0, 0, 6, 90, 1, 0, 0, 0, 8, 146, 1, 0, 0, 0, 10, 207, 1,
+		0, 0, 0, 12, 209, 1, 0, 0, 0, 14, 226, 1, 0, 0, 0, 16, 231, 1, 0, 0, 0,
+		18, 239, 1, 0, 0, 0, 20, 247, 1, 0, 0, 0, 22, 249, 1, 0, 0, 0, 24, 253,
+		1, 0, 0, 0, 26, 255, 1, 0, 0, 0, 28, 257, 1, 0, 0, 0, 30, 259, 1, 0, 0,
+		0, 32, 36, 3, 2, 1, 0, 33, 35, 5, 20, 0, 0, 34, 33, 1, 0, 0, 0, 35, 38,
+		1, 0, 0, 0, 36, 34, 1, 0, 0, 0, 36, 37, 1, 0, 0, 0, 37, 40, 1, 0, 0, 0,
+		38, 36, 1, 0, 0, 0, 39, 32, 1, 0, 0, 0, 40, 43, 1, 0, 0, 0, 41, 39, 1,
+		0, 0, 0, 41, 42, 1, 0, 0, 0, 42, 44, 1, 0, 0, 0, 43, 41, 1, 0, 0, 0, 44,
+		45, 5, 0, 0, 1, 45, 1, 1, 0, 0, 0, 46, 50, 3, 4, 2, 0, 47, 50, 3, 6, 3,
+		0, 48, 50, 3, 8, 4, 0, 49, 46, 1, 0, 0, 0, 49, 47, 1, 0, 0, 0, 49, 48,
+		1, 0, 0, 0, 50, 3, 1, 0, 0, 0, 51, 53, 5, 20, 0, 0, 52, 51, 1, 0, 0, 0,
+		53, 56, 1, 0, 0, 0, 54, 52, 1, 0, 0, 0, 54, 55, 1, 0, 0, 0, 55, 58, 1,
+		0, 0, 0, 56, 54, 1, 0, 0, 0, 57, 59, 3, 28, 14, 0, 58, 57, 1, 0, 0, 0,
+		58, 59, 1, 0, 0, 0, 59, 63, 1, 0, 0, 0, 60, 62, 5, 20, 0, 0, 61, 60, 1,
+		0, 0, 0, 62, 65, 1, 0, 0, 0, 63, 61, 1, 0, 0, 0, 63, 64, 1, 0, 0, 0, 64,
+		66, 1, 0, 0, 0, 65, 63, 1, 0, 0, 0, 66, 69, 3, 24, 12, 0, 67, 68, 5, 1,
+		0, 0, 68, 70, 3, 10, 5, 0, 69, 67, 1, 0, 0, 0, 69, 70, 1, 0, 0, 0, 70,
+		73, 1, 0, 0, 0, 71, 72, 5, 2, 0, 0, 72, 74, 3, 20, 10, 0, 73, 71, 1, 0,
+		0, 0, 73, 74, 1, 0, 0, 0, 74, 76, 1, 0, 0, 0, 75, 77, 3, 18, 9, 0, 76,
+		75, 1, 0, 0, 0, 76, 77, 1, 0, 0, 0, 77, 79, 1, 0, 0, 0, 78, 80, 3, 30,
+		15, 0, 79, 78, 1, 0, 0, 0, 79, 80, 1, 0, 0, 0, 80, 84, 1, 0, 0, 0, 81,
+		83, 5, 20, 0, 0, 82, 81, 1, 0, 0, 0, 83, 86, 1, 0, 0, 0, 84, 82, 1, 0,
+		0, 0, 84, 85, 1, 0, 0, 0, 85, 5, 1, 0, 0, 0, 86, 84, 1, 0, 0, 0, 87, 89,
+		5, 20, 0, 0, 88, 87, 1, 0, 0, 0, 89, 92, 1, 0, 0, 0, 90, 88, 1, 0, 0, 0,
+		90, 91, 1, 0, 0, 0, 91, 94, 1, 0, 0, 0, 92, 90, 1, 0, 0, 0, 93, 95, 3,
+		28, 14, 0, 94, 93, 1, 0, 0, 0, 94, 95, 1, 0, 0, 0, 95, 99, 1, 0, 0, 0,
+		96, 98, 5, 20, 0, 0, 97, 96, 1, 0, 0, 0, 98, 101, 1, 0, 0, 0, 99, 97, 1,
+		0, 0, 0, 99, 100, 1, 0, 0, 0, 100, 102, 1, 0, 0, 0, 101, 99, 1, 0, 0, 0,
+		102, 103, 5, 8, 0, 0, 103, 106, 3, 24, 12, 0, 104, 105, 5, 1, 0, 0, 105,
+		107, 3, 10, 5, 0, 106, 104, 1, 0, 0, 0, 106, 107, 1, 0, 0, 0, 107, 109,
+		1, 0, 0, 0, 108, 110, 3, 18, 9, 0, 109, 108, 1, 0, 0, 0, 109, 110, 1, 0,
+		0, 0, 110, 114, 1, 0, 0, 0, 111, 113, 5, 20, 0, 0, 112, 111, 1, 0, 0, 0,
+		113, 116, 1, 0, 0, 0, 114, 112, 1, 0, 0, 0, 114, 115, 1, 0, 0, 0, 115,
+		117, 1, 0, 0, 0, 116, 114, 1, 0, 0, 0, 117, 121, 5, 3, 0, 0, 118, 120,
+		5, 20, 0, 0, 119, 118, 1, 0, 0, 0, 120, 123, 1, 0, 0, 0, 121, 119, 1, 0,
+		0, 0, 121, 122, 1, 0, 0, 0, 122, 127, 1, 0, 0, 0, 123, 121, 1, 0, 0, 0,
+		124, 126, 3, 12, 6, 0, 125, 124, 1, 0, 0, 0, 126, 129, 1, 0, 0, 0, 127,
+		125, 1, 0, 0, 0, 127, 128, 1, 0, 0, 0, 128, 133, 1, 0, 0, 0, 129, 127,
+		1, 0, 0, 0, 130, 132, 5, 20, 0, 0, 131, 130, 1, 0, 0, 0, 132, 135, 1, 0,
+		0, 0, 133, 131, 1, 0, 0, 0, 133, 134, 1, 0, 0, 0, 134, 136, 1, 0, 0, 0,
+		135, 133, 1, 0, 0, 0, 136, 140, 5, 4, 0, 0, 137, 139, 5, 20, 0, 0, 138,
+		137, 1, 0, 0, 0, 139, 142, 1, 0, 0, 0, 140, 138, 1, 0, 0, 0, 140, 141,
+		1, 0, 0, 0, 141, 7, 1, 0, 0, 0, 142, 140, 1, 0, 0, 0, 143, 145, 5, 20,
+		0, 0, 144, 143, 1, 0, 0, 0, 145, 148, 1, 0, 0, 0, 146, 144, 1, 0, 0, 0,
+		146, 147, 1, 0, 0, 0, 147, 150, 1, 0, 0, 0, 148, 146, 1, 0, 0, 0, 149,
+		151, 3, 28, 14, 0, 150, 149, 1, 0, 0, 0, 150, 151, 1, 0, 0, 0, 151, 155,
+		1, 0, 0, 0, 152, 154, 5, 20, 0, 0, 153, 152, 1, 0, 0, 0, 154, 157, 1, 0,
+		0, 0, 155, 153, 1, 0, 0, 0, 155, 156, 1, 0, 0, 0, 156, 158, 1, 0, 0, 0,
+		157, 155, 1, 0, 0, 0, 158, 159, 5, 9, 0, 0, 159, 161, 3, 24, 12, 0, 160,
+		162, 3, 18, 9, 0, 161, 160, 1, 0, 0, 0, 161, 162, 1, 0, 0, 0, 162, 166,
+		1, 0, 0, 0, 163, 165, 5, 20, 0, 0, 164, 163, 1, 0, 0, 0, 165, 168, 1, 0,
+		0, 0, 166, 164, 1, 0, 0, 0, 166, 167, 1, 0, 0, 0, 167, 169, 1, 0, 0, 0,
+		168, 166, 1, 0, 0, 0, 169, 173, 5, 3, 0, 0, 170, 172, 5, 20, 0, 0, 171,
+		170, 1, 0, 0, 0, 172, 175, 1, 0, 0, 0, 173, 171, 1, 0, 0, 0, 173, 174,
+		1, 0, 0, 0, 174, 181, 1, 0, 0, 0, 175, 173, 1, 0, 0, 0, 176, 180, 3, 8,
+		4, 0, 177, 180, 3, 4, 2, 0, 178, 180, 3, 6, 3, 0, 179, 176, 1, 0, 0, 0,
+		179, 177, 1, 0, 0, 0, 179, 178, 1, 0, 0, 0, 180, 183, 1, 0, 0, 0, 181,
+		179, 1, 0, 0, 0, 181, 182, 1, 0, 0, 0, 182, 187, 1, 0, 0, 0, 183, 181,
+		1, 0, 0, 0, 184, 186, 5, 20, 0, 0, 185, 184, 1, 0, 0, 0, 186, 189, 1, 0,
+		0, 0, 187, 185, 1, 0, 0, 0, 187, 188, 1, 0, 0, 0, 188, 190, 1, 0, 0, 0,
+		189, 187, 1, 0, 0, 0, 190, 194, 5, 4, 0, 0, 191, 193, 5, 20, 0, 0, 192,
+		191, 1, 0, 0, 0, 193, 196, 1, 0, 0, 0, 194, 192, 1, 0, 0, 0, 194, 195,
+		1, 0, 0, 0, 195, 9, 1, 0, 0, 0, 196, 194, 1, 0, 0, 0, 197, 198, 5, 5, 0,
+		0, 198, 201, 3, 10, 5, 0, 199, 200, 5, 1, 0, 0, 200, 202, 3, 22, 11, 0,
+		201, 199, 1, 0, 0, 0, 201, 202, 1, 0, 0, 0, 202, 203, 1, 0, 0, 0, 203,
+		204, 5, 6, 0, 0, 204, 208, 1, 0, 0, 0, 205, 208, 5, 11, 0, 0, 206, 208,
+		3, 24, 12, 0, 207, 197, 1, 0, 0, 0, 207, 205, 1, 0, 0, 0, 207, 206, 1,
+		0, 0, 0, 208, 11, 1, 0, 0, 0, 209, 212, 3, 24, 12, 0, 210, 211, 5, 2, 0,
+		0, 211, 213, 3, 22, 11, 0, 212, 210, 1, 0, 0, 0, 212, 213, 1, 0, 0, 0,
+		213, 215, 1, 0, 0, 0, 214, 216, 3, 18, 9, 0, 215, 214, 1, 0, 0, 0, 215,
+		216, 1, 0, 0, 0, 216, 218, 1, 0, 0, 0, 217, 219, 3, 30, 15, 0, 218, 217,
+		1, 0, 0, 0, 218, 219, 1, 0, 0, 0, 219, 223, 1, 0, 0, 0, 220, 222, 5, 20,
+		0, 0, 221, 220, 1, 0, 0, 0, 222, 225, 1, 0, 0, 0, 223, 221, 1, 0, 0, 0,
+		223, 224, 1, 0, 0, 0, 224, 13, 1, 0, 0, 0, 225, 223, 1, 0, 0, 0, 226, 229,
+		3, 24, 12, 0, 227, 228, 5, 1, 0, 0, 228, 230, 3, 20, 10, 0, 229, 227, 1,
+		0, 0, 0, 229, 230, 1, 0, 0, 0, 230, 15, 1, 0, 0, 0, 231, 236, 3, 14, 7,
+		0, 232, 233, 5, 7, 0, 0, 233, 235, 3, 14, 7, 0, 234, 232, 1, 0, 0, 0, 235,
+		238, 1, 0, 0, 0, 236, 234, 1, 0, 0, 0, 236, 237, 1, 0, 0, 0, 237, 17, 1,
+		0, 0, 0, 238, 236, 1, 0, 0, 0, 239, 240, 5, 5, 0, 0, 240, 241, 3, 16, 8,
+		0, 241, 242, 5, 6, 0, 0, 242, 19, 1, 0, 0, 0, 243, 248, 3, 22, 11, 0, 244,
+		248, 5, 14, 0, 0, 245, 248, 5, 10, 0, 0, 246, 248, 3, 24, 12, 0, 247, 243,
+		1, 0, 0, 0, 247, 244, 1, 0, 0, 0, 247, 245, 1, 0, 0, 0, 247, 246, 1, 0,
+		0, 0, 248, 21, 1, 0, 0, 0, 249, 250, 7, 0, 0, 0, 250, 23, 1, 0, 0, 0, 251,
+		254, 5, 15, 0, 0, 252, 254, 3, 26, 13, 0, 253, 251, 1, 0, 0, 0, 253, 252,
+		1, 0, 0, 0, 254, 25, 1, 0, 0, 0, 255, 256, 7, 1, 0, 0, 256, 27, 1, 0, 0,
+		0, 257, 258, 5, 16, 0, 0, 258, 29, 1, 0, 0, 0, 259, 260, 5, 17, 0, 0, 260,
+		31, 1, 0, 0, 0, 41, 36, 41, 49, 54, 58, 63, 69, 73, 76, 79, 84, 90, 94,
+		99, 106, 109, 114, 121, 127, 133, 140, 146, 150, 155, 161, 166, 173, 179,
+		181, 187, 194, 201, 207, 212, 215, 218, 223, 229, 236, 247, 253,
 	}
 	deserializer := antlr.NewATNDeserializer(nil)
 	staticData.atn = deserializer.Deserialize(staticData.serializedATN)
@@ -217,10 +213,10 @@ const (
 	ConstMakerParserNAMESPACE      = 9
 	ConstMakerParserSTRING         = 10
 	ConstMakerParserTYPE           = 11
-	ConstMakerParserIDENT          = 12
-	ConstMakerParserDEC_INTEGER    = 13
-	ConstMakerParserHEX_INTEGER    = 14
-	ConstMakerParserFLOAT          = 15
+	ConstMakerParserDEC_INTEGER    = 12
+	ConstMakerParserHEX_INTEGER    = 13
+	ConstMakerParserFLOAT          = 14
+	ConstMakerParserIDENT          = 15
 	ConstMakerParserDOC_COMMENT    = 16
 	ConstMakerParserTRIPLE_COMMENT = 17
 	ConstMakerParserBLOCK_COMMENT  = 18
@@ -241,13 +237,12 @@ const (
 	ConstMakerParserRULE_identAssignValue     = 7
 	ConstMakerParserRULE_identAssignValueLoop = 8
 	ConstMakerParserRULE_option               = 9
-	ConstMakerParserRULE_constant             = 10
-	ConstMakerParserRULE_value                = 11
-	ConstMakerParserRULE_integer              = 12
-	ConstMakerParserRULE_ident                = 13
-	ConstMakerParserRULE_keywords             = 14
-	ConstMakerParserRULE_docComment           = 15
-	ConstMakerParserRULE_tripleComment        = 16
+	ConstMakerParserRULE_value                = 10
+	ConstMakerParserRULE_integer              = 11
+	ConstMakerParserRULE_ident                = 12
+	ConstMakerParserRULE_keywords             = 13
+	ConstMakerParserRULE_docComment           = 14
+	ConstMakerParserRULE_tripleComment        = 15
 )
 
 // IFileContext is an interface to support dynamic dispatch.
@@ -391,19 +386,19 @@ func (p *ConstMakerParser) File() (localctx IFileContext) {
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(43)
+	p.SetState(41)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
 	}
 	_la = p.GetTokenStream().LA(1)
 
-	for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&1118976) != 0 {
+	for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&1147648) != 0 {
 		{
-			p.SetState(34)
+			p.SetState(32)
 			p.Rules()
 		}
-		p.SetState(38)
+		p.SetState(36)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -415,7 +410,7 @@ func (p *ConstMakerParser) File() (localctx IFileContext) {
 		for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 			if _alt == 1 {
 				{
-					p.SetState(35)
+					p.SetState(33)
 					p.Match(ConstMakerParserNL)
 					if p.HasError() {
 						// Recognition error - abort rule
@@ -424,7 +419,7 @@ func (p *ConstMakerParser) File() (localctx IFileContext) {
 				}
 
 			}
-			p.SetState(40)
+			p.SetState(38)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
@@ -435,7 +430,7 @@ func (p *ConstMakerParser) File() (localctx IFileContext) {
 			}
 		}
 
-		p.SetState(45)
+		p.SetState(43)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -443,7 +438,7 @@ func (p *ConstMakerParser) File() (localctx IFileContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(46)
+		p.SetState(44)
 		p.Match(ConstMakerParserEOF)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -593,7 +588,7 @@ func (s *RulesContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 func (p *ConstMakerParser) Rules() (localctx IRulesContext) {
 	localctx = NewRulesContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 2, ConstMakerParserRULE_rules)
-	p.SetState(51)
+	p.SetState(49)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -603,21 +598,21 @@ func (p *ConstMakerParser) Rules() (localctx IRulesContext) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(48)
+			p.SetState(46)
 			p.Const_()
 		}
 
 	case 2:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(49)
+			p.SetState(47)
 			p.Enum()
 		}
 
 	case 3:
 		p.EnterOuterAlt(localctx, 3)
 		{
-			p.SetState(50)
+			p.SetState(48)
 			p.Namespace()
 		}
 
@@ -651,7 +646,7 @@ type IConstContext interface {
 	NL(i int) antlr.TerminalNode
 	DocComment() IDocCommentContext
 	Type_() ITypeContext
-	Constant() IConstantContext
+	Value() IValueContext
 	Option() IOptionContext
 	TripleComment() ITripleCommentContext
 
@@ -747,10 +742,10 @@ func (s *ConstContext) Type_() ITypeContext {
 	return t.(ITypeContext)
 }
 
-func (s *ConstContext) Constant() IConstantContext {
+func (s *ConstContext) Value() IValueContext {
 	var t antlr.RuleContext
 	for _, ctx := range s.GetChildren() {
-		if _, ok := ctx.(IConstantContext); ok {
+		if _, ok := ctx.(IValueContext); ok {
 			t = ctx.(antlr.RuleContext)
 			break
 		}
@@ -760,7 +755,7 @@ func (s *ConstContext) Constant() IConstantContext {
 		return nil
 	}
 
-	return t.(IConstantContext)
+	return t.(IValueContext)
 }
 
 func (s *ConstContext) Option() IOptionContext {
@@ -833,7 +828,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(56)
+	p.SetState(54)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -845,7 +840,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(53)
+				p.SetState(51)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -854,7 +849,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 			}
 
 		}
-		p.SetState(58)
+		p.SetState(56)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -864,7 +859,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 			goto errorExit
 		}
 	}
-	p.SetState(60)
+	p.SetState(58)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -873,12 +868,12 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 
 	if _la == ConstMakerParserDOC_COMMENT {
 		{
-			p.SetState(59)
+			p.SetState(57)
 			p.DocComment()
 		}
 
 	}
-	p.SetState(65)
+	p.SetState(63)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -887,7 +882,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 
 	for _la == ConstMakerParserNL {
 		{
-			p.SetState(62)
+			p.SetState(60)
 			p.Match(ConstMakerParserNL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -895,7 +890,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 			}
 		}
 
-		p.SetState(67)
+		p.SetState(65)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -903,10 +898,10 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(68)
+		p.SetState(66)
 		p.Ident()
 	}
-	p.SetState(71)
+	p.SetState(69)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -915,7 +910,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 
 	if _la == ConstMakerParserT__0 {
 		{
-			p.SetState(69)
+			p.SetState(67)
 			p.Match(ConstMakerParserT__0)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -923,12 +918,12 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 			}
 		}
 		{
-			p.SetState(70)
+			p.SetState(68)
 			p.Type_()
 		}
 
 	}
-	p.SetState(75)
+	p.SetState(73)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -937,7 +932,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 
 	if _la == ConstMakerParserT__1 {
 		{
-			p.SetState(73)
+			p.SetState(71)
 			p.Match(ConstMakerParserT__1)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -945,12 +940,12 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 			}
 		}
 		{
-			p.SetState(74)
-			p.Constant()
+			p.SetState(72)
+			p.Value()
 		}
 
 	}
-	p.SetState(78)
+	p.SetState(76)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -959,12 +954,12 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 
 	if _la == ConstMakerParserT__4 {
 		{
-			p.SetState(77)
+			p.SetState(75)
 			p.Option()
 		}
 
 	}
-	p.SetState(81)
+	p.SetState(79)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -973,12 +968,12 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 
 	if _la == ConstMakerParserTRIPLE_COMMENT {
 		{
-			p.SetState(80)
+			p.SetState(78)
 			p.TripleComment()
 		}
 
 	}
-	p.SetState(86)
+	p.SetState(84)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -990,7 +985,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(83)
+				p.SetState(81)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -999,7 +994,7 @@ func (p *ConstMakerParser) Const_() (localctx IConstContext) {
 			}
 
 		}
-		p.SetState(88)
+		p.SetState(86)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1232,7 +1227,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(92)
+	p.SetState(90)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1244,7 +1239,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(89)
+				p.SetState(87)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -1253,7 +1248,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			}
 
 		}
-		p.SetState(94)
+		p.SetState(92)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1263,7 +1258,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			goto errorExit
 		}
 	}
-	p.SetState(96)
+	p.SetState(94)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1272,12 +1267,12 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 
 	if _la == ConstMakerParserDOC_COMMENT {
 		{
-			p.SetState(95)
+			p.SetState(93)
 			p.DocComment()
 		}
 
 	}
-	p.SetState(101)
+	p.SetState(99)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1286,7 +1281,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 
 	for _la == ConstMakerParserNL {
 		{
-			p.SetState(98)
+			p.SetState(96)
 			p.Match(ConstMakerParserNL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1294,7 +1289,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			}
 		}
 
-		p.SetState(103)
+		p.SetState(101)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1302,7 +1297,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(104)
+		p.SetState(102)
 		p.Match(ConstMakerParserENUM)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1310,10 +1305,10 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 		}
 	}
 	{
-		p.SetState(105)
+		p.SetState(103)
 		p.Ident()
 	}
-	p.SetState(108)
+	p.SetState(106)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1322,7 +1317,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 
 	if _la == ConstMakerParserT__0 {
 		{
-			p.SetState(106)
+			p.SetState(104)
 			p.Match(ConstMakerParserT__0)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1330,12 +1325,12 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			}
 		}
 		{
-			p.SetState(107)
+			p.SetState(105)
 			p.Type_()
 		}
 
 	}
-	p.SetState(111)
+	p.SetState(109)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1344,12 +1339,12 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 
 	if _la == ConstMakerParserT__4 {
 		{
-			p.SetState(110)
+			p.SetState(108)
 			p.Option()
 		}
 
 	}
-	p.SetState(116)
+	p.SetState(114)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1358,7 +1353,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 
 	for _la == ConstMakerParserNL {
 		{
-			p.SetState(113)
+			p.SetState(111)
 			p.Match(ConstMakerParserNL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1366,7 +1361,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			}
 		}
 
-		p.SetState(118)
+		p.SetState(116)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1374,14 +1369,14 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(119)
+		p.SetState(117)
 		p.Match(ConstMakerParserT__2)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(123)
+	p.SetState(121)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1393,7 +1388,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(120)
+				p.SetState(118)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -1402,7 +1397,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			}
 
 		}
-		p.SetState(125)
+		p.SetState(123)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1412,27 +1407,27 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			goto errorExit
 		}
 	}
-	p.SetState(129)
+	p.SetState(127)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
 	}
 	_la = p.GetTokenStream().LA(1)
 
-	for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&4864) != 0 {
+	for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&33536) != 0 {
 		{
-			p.SetState(126)
+			p.SetState(124)
 			p.EnumValue()
 		}
 
-		p.SetState(131)
+		p.SetState(129)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
 		}
 		_la = p.GetTokenStream().LA(1)
 	}
-	p.SetState(135)
+	p.SetState(133)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1441,7 +1436,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 
 	for _la == ConstMakerParserNL {
 		{
-			p.SetState(132)
+			p.SetState(130)
 			p.Match(ConstMakerParserNL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1449,7 +1444,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			}
 		}
 
-		p.SetState(137)
+		p.SetState(135)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1457,14 +1452,14 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(138)
+		p.SetState(136)
 		p.Match(ConstMakerParserT__3)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(142)
+	p.SetState(140)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1476,7 +1471,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(139)
+				p.SetState(137)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -1485,7 +1480,7 @@ func (p *ConstMakerParser) Enum() (localctx IEnumContext) {
 			}
 
 		}
-		p.SetState(144)
+		p.SetState(142)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1787,7 +1782,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(148)
+	p.SetState(146)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1799,7 +1794,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(145)
+				p.SetState(143)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -1808,7 +1803,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			}
 
 		}
-		p.SetState(150)
+		p.SetState(148)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1818,7 +1813,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			goto errorExit
 		}
 	}
-	p.SetState(152)
+	p.SetState(150)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1827,12 +1822,12 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 
 	if _la == ConstMakerParserDOC_COMMENT {
 		{
-			p.SetState(151)
+			p.SetState(149)
 			p.DocComment()
 		}
 
 	}
-	p.SetState(157)
+	p.SetState(155)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1841,7 +1836,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 
 	for _la == ConstMakerParserNL {
 		{
-			p.SetState(154)
+			p.SetState(152)
 			p.Match(ConstMakerParserNL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1849,7 +1844,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			}
 		}
 
-		p.SetState(159)
+		p.SetState(157)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1857,7 +1852,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(160)
+		p.SetState(158)
 		p.Match(ConstMakerParserNAMESPACE)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1865,10 +1860,10 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 		}
 	}
 	{
-		p.SetState(161)
+		p.SetState(159)
 		p.Ident()
 	}
-	p.SetState(163)
+	p.SetState(161)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1877,12 +1872,12 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 
 	if _la == ConstMakerParserT__4 {
 		{
-			p.SetState(162)
+			p.SetState(160)
 			p.Option()
 		}
 
 	}
-	p.SetState(168)
+	p.SetState(166)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1891,7 +1886,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 
 	for _la == ConstMakerParserNL {
 		{
-			p.SetState(165)
+			p.SetState(163)
 			p.Match(ConstMakerParserNL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1899,7 +1894,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			}
 		}
 
-		p.SetState(170)
+		p.SetState(168)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1907,14 +1902,14 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(171)
+		p.SetState(169)
 		p.Match(ConstMakerParserT__2)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(175)
+	p.SetState(173)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1926,7 +1921,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(172)
+				p.SetState(170)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -1935,7 +1930,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			}
 
 		}
-		p.SetState(177)
+		p.SetState(175)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1945,7 +1940,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			goto errorExit
 		}
 	}
-	p.SetState(183)
+	p.SetState(181)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1956,7 +1951,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 	}
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
-			p.SetState(181)
+			p.SetState(179)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
@@ -1965,19 +1960,19 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 27, p.GetParserRuleContext()) {
 			case 1:
 				{
-					p.SetState(178)
+					p.SetState(176)
 					p.Namespace()
 				}
 
 			case 2:
 				{
-					p.SetState(179)
+					p.SetState(177)
 					p.Const_()
 				}
 
 			case 3:
 				{
-					p.SetState(180)
+					p.SetState(178)
 					p.Enum()
 				}
 
@@ -1986,7 +1981,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			}
 
 		}
-		p.SetState(185)
+		p.SetState(183)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -1996,7 +1991,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			goto errorExit
 		}
 	}
-	p.SetState(189)
+	p.SetState(187)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2005,7 +2000,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 
 	for _la == ConstMakerParserNL {
 		{
-			p.SetState(186)
+			p.SetState(184)
 			p.Match(ConstMakerParserNL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2013,7 +2008,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			}
 		}
 
-		p.SetState(191)
+		p.SetState(189)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2021,14 +2016,14 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(192)
+		p.SetState(190)
 		p.Match(ConstMakerParserT__3)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(196)
+	p.SetState(194)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2040,7 +2035,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(193)
+				p.SetState(191)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2049,7 +2044,7 @@ func (p *ConstMakerParser) Namespace() (localctx INamespaceContext) {
 			}
 
 		}
-		p.SetState(198)
+		p.SetState(196)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2209,7 +2204,7 @@ func (p *ConstMakerParser) Type_() (localctx ITypeContext) {
 	p.EnterRule(localctx, 10, ConstMakerParserRULE_type)
 	var _la int
 
-	p.SetState(209)
+	p.SetState(207)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2219,7 +2214,7 @@ func (p *ConstMakerParser) Type_() (localctx ITypeContext) {
 	case ConstMakerParserT__4:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(199)
+			p.SetState(197)
 			p.Match(ConstMakerParserT__4)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2227,10 +2222,10 @@ func (p *ConstMakerParser) Type_() (localctx ITypeContext) {
 			}
 		}
 		{
-			p.SetState(200)
+			p.SetState(198)
 			p.Type_()
 		}
-		p.SetState(203)
+		p.SetState(201)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2239,7 +2234,7 @@ func (p *ConstMakerParser) Type_() (localctx ITypeContext) {
 
 		if _la == ConstMakerParserT__0 {
 			{
-				p.SetState(201)
+				p.SetState(199)
 				p.Match(ConstMakerParserT__0)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2247,13 +2242,13 @@ func (p *ConstMakerParser) Type_() (localctx ITypeContext) {
 				}
 			}
 			{
-				p.SetState(202)
+				p.SetState(200)
 				p.Integer()
 			}
 
 		}
 		{
-			p.SetState(205)
+			p.SetState(203)
 			p.Match(ConstMakerParserT__5)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2264,7 +2259,7 @@ func (p *ConstMakerParser) Type_() (localctx ITypeContext) {
 	case ConstMakerParserTYPE:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(207)
+			p.SetState(205)
 			p.Match(ConstMakerParserTYPE)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2275,7 +2270,7 @@ func (p *ConstMakerParser) Type_() (localctx ITypeContext) {
 	case ConstMakerParserENUM, ConstMakerParserNAMESPACE, ConstMakerParserIDENT:
 		p.EnterOuterAlt(localctx, 3)
 		{
-			p.SetState(208)
+			p.SetState(206)
 			p.Ident()
 		}
 
@@ -2459,10 +2454,10 @@ func (p *ConstMakerParser) EnumValue() (localctx IEnumValueContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(211)
+		p.SetState(209)
 		p.Ident()
 	}
-	p.SetState(214)
+	p.SetState(212)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2471,7 +2466,7 @@ func (p *ConstMakerParser) EnumValue() (localctx IEnumValueContext) {
 
 	if _la == ConstMakerParserT__1 {
 		{
-			p.SetState(212)
+			p.SetState(210)
 			p.Match(ConstMakerParserT__1)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2479,12 +2474,12 @@ func (p *ConstMakerParser) EnumValue() (localctx IEnumValueContext) {
 			}
 		}
 		{
-			p.SetState(213)
+			p.SetState(211)
 			p.Integer()
 		}
 
 	}
-	p.SetState(217)
+	p.SetState(215)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2493,12 +2488,12 @@ func (p *ConstMakerParser) EnumValue() (localctx IEnumValueContext) {
 
 	if _la == ConstMakerParserT__4 {
 		{
-			p.SetState(216)
+			p.SetState(214)
 			p.Option()
 		}
 
 	}
-	p.SetState(220)
+	p.SetState(218)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2507,12 +2502,12 @@ func (p *ConstMakerParser) EnumValue() (localctx IEnumValueContext) {
 
 	if _la == ConstMakerParserTRIPLE_COMMENT {
 		{
-			p.SetState(219)
+			p.SetState(217)
 			p.TripleComment()
 		}
 
 	}
-	p.SetState(225)
+	p.SetState(223)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2524,7 +2519,7 @@ func (p *ConstMakerParser) EnumValue() (localctx IEnumValueContext) {
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
 			{
-				p.SetState(222)
+				p.SetState(220)
 				p.Match(ConstMakerParserNL)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2533,7 +2528,7 @@ func (p *ConstMakerParser) EnumValue() (localctx IEnumValueContext) {
 			}
 
 		}
-		p.SetState(227)
+		p.SetState(225)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2673,10 +2668,10 @@ func (p *ConstMakerParser) IdentAssignValue() (localctx IIdentAssignValueContext
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(228)
+		p.SetState(226)
 		p.Ident()
 	}
-	p.SetState(231)
+	p.SetState(229)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2685,7 +2680,7 @@ func (p *ConstMakerParser) IdentAssignValue() (localctx IIdentAssignValueContext
 
 	if _la == ConstMakerParserT__0 {
 		{
-			p.SetState(229)
+			p.SetState(227)
 			p.Match(ConstMakerParserT__0)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2693,7 +2688,7 @@ func (p *ConstMakerParser) IdentAssignValue() (localctx IIdentAssignValueContext
 			}
 		}
 		{
-			p.SetState(230)
+			p.SetState(228)
 			p.Value()
 		}
 
@@ -2837,10 +2832,10 @@ func (p *ConstMakerParser) IdentAssignValueLoop() (localctx IIdentAssignValueLoo
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(233)
+		p.SetState(231)
 		p.IdentAssignValue()
 	}
-	p.SetState(238)
+	p.SetState(236)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2849,7 +2844,7 @@ func (p *ConstMakerParser) IdentAssignValueLoop() (localctx IIdentAssignValueLoo
 
 	for _la == ConstMakerParserT__6 {
 		{
-			p.SetState(234)
+			p.SetState(232)
 			p.Match(ConstMakerParserT__6)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2857,11 +2852,11 @@ func (p *ConstMakerParser) IdentAssignValueLoop() (localctx IIdentAssignValueLoo
 			}
 		}
 		{
-			p.SetState(235)
+			p.SetState(233)
 			p.IdentAssignValue()
 		}
 
-		p.SetState(240)
+		p.SetState(238)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2979,7 +2974,7 @@ func (p *ConstMakerParser) Option() (localctx IOptionContext) {
 	p.EnterRule(localctx, 18, ConstMakerParserRULE_option)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(241)
+		p.SetState(239)
 		p.Match(ConstMakerParserT__4)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2987,207 +2982,16 @@ func (p *ConstMakerParser) Option() (localctx IOptionContext) {
 		}
 	}
 	{
-		p.SetState(242)
+		p.SetState(240)
 		p.IdentAssignValueLoop()
 	}
 	{
-		p.SetState(243)
+		p.SetState(241)
 		p.Match(ConstMakerParserT__5)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
-	}
-
-errorExit:
-	if p.HasError() {
-		v := p.GetError()
-		localctx.SetException(v)
-		p.GetErrorHandler().ReportError(p, v)
-		p.GetErrorHandler().Recover(p, v)
-		p.SetError(nil)
-	}
-	p.ExitRule()
-	return localctx
-	goto errorExit // Trick to prevent compiler error if the label is not used
-}
-
-// IConstantContext is an interface to support dynamic dispatch.
-type IConstantContext interface {
-	antlr.ParserRuleContext
-
-	// GetParser returns the parser.
-	GetParser() antlr.Parser
-
-	// Getter signatures
-	DEC_INTEGER() antlr.TerminalNode
-	HEX_INTEGER() antlr.TerminalNode
-	FLOAT() antlr.TerminalNode
-	STRING() antlr.TerminalNode
-	Ident() IIdentContext
-
-	// IsConstantContext differentiates from other interfaces.
-	IsConstantContext()
-}
-
-type ConstantContext struct {
-	antlr.BaseParserRuleContext
-	parser antlr.Parser
-}
-
-func NewEmptyConstantContext() *ConstantContext {
-	var p = new(ConstantContext)
-	antlr.InitBaseParserRuleContext(&p.BaseParserRuleContext, nil, -1)
-	p.RuleIndex = ConstMakerParserRULE_constant
-	return p
-}
-
-func InitEmptyConstantContext(p *ConstantContext) {
-	antlr.InitBaseParserRuleContext(&p.BaseParserRuleContext, nil, -1)
-	p.RuleIndex = ConstMakerParserRULE_constant
-}
-
-func (*ConstantContext) IsConstantContext() {}
-
-func NewConstantContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *ConstantContext {
-	var p = new(ConstantContext)
-
-	antlr.InitBaseParserRuleContext(&p.BaseParserRuleContext, parent, invokingState)
-
-	p.parser = parser
-	p.RuleIndex = ConstMakerParserRULE_constant
-
-	return p
-}
-
-func (s *ConstantContext) GetParser() antlr.Parser { return s.parser }
-
-func (s *ConstantContext) DEC_INTEGER() antlr.TerminalNode {
-	return s.GetToken(ConstMakerParserDEC_INTEGER, 0)
-}
-
-func (s *ConstantContext) HEX_INTEGER() antlr.TerminalNode {
-	return s.GetToken(ConstMakerParserHEX_INTEGER, 0)
-}
-
-func (s *ConstantContext) FLOAT() antlr.TerminalNode {
-	return s.GetToken(ConstMakerParserFLOAT, 0)
-}
-
-func (s *ConstantContext) STRING() antlr.TerminalNode {
-	return s.GetToken(ConstMakerParserSTRING, 0)
-}
-
-func (s *ConstantContext) Ident() IIdentContext {
-	var t antlr.RuleContext
-	for _, ctx := range s.GetChildren() {
-		if _, ok := ctx.(IIdentContext); ok {
-			t = ctx.(antlr.RuleContext)
-			break
-		}
-	}
-
-	if t == nil {
-		return nil
-	}
-
-	return t.(IIdentContext)
-}
-
-func (s *ConstantContext) GetRuleContext() antlr.RuleContext {
-	return s
-}
-
-func (s *ConstantContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
-	return antlr.TreesStringTree(s, ruleNames, recog)
-}
-
-func (s *ConstantContext) EnterRule(listener antlr.ParseTreeListener) {
-	if listenerT, ok := listener.(ConstMakerListener); ok {
-		listenerT.EnterConstant(s)
-	}
-}
-
-func (s *ConstantContext) ExitRule(listener antlr.ParseTreeListener) {
-	if listenerT, ok := listener.(ConstMakerListener); ok {
-		listenerT.ExitConstant(s)
-	}
-}
-
-func (s *ConstantContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case ConstMakerVisitor:
-		return t.VisitConstant(s)
-
-	default:
-		return t.VisitChildren(s)
-	}
-}
-
-func (p *ConstMakerParser) Constant() (localctx IConstantContext) {
-	localctx = NewConstantContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 20, ConstMakerParserRULE_constant)
-	p.SetState(250)
-	p.GetErrorHandler().Sync(p)
-	if p.HasError() {
-		goto errorExit
-	}
-
-	switch p.GetTokenStream().LA(1) {
-	case ConstMakerParserDEC_INTEGER:
-		p.EnterOuterAlt(localctx, 1)
-		{
-			p.SetState(245)
-			p.Match(ConstMakerParserDEC_INTEGER)
-			if p.HasError() {
-				// Recognition error - abort rule
-				goto errorExit
-			}
-		}
-
-	case ConstMakerParserHEX_INTEGER:
-		p.EnterOuterAlt(localctx, 2)
-		{
-			p.SetState(246)
-			p.Match(ConstMakerParserHEX_INTEGER)
-			if p.HasError() {
-				// Recognition error - abort rule
-				goto errorExit
-			}
-		}
-
-	case ConstMakerParserFLOAT:
-		p.EnterOuterAlt(localctx, 3)
-		{
-			p.SetState(247)
-			p.Match(ConstMakerParserFLOAT)
-			if p.HasError() {
-				// Recognition error - abort rule
-				goto errorExit
-			}
-		}
-
-	case ConstMakerParserSTRING:
-		p.EnterOuterAlt(localctx, 4)
-		{
-			p.SetState(248)
-			p.Match(ConstMakerParserSTRING)
-			if p.HasError() {
-				// Recognition error - abort rule
-				goto errorExit
-			}
-		}
-
-	case ConstMakerParserENUM, ConstMakerParserNAMESPACE, ConstMakerParserIDENT:
-		p.EnterOuterAlt(localctx, 5)
-		{
-			p.SetState(249)
-			p.Ident()
-		}
-
-	default:
-		p.SetError(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
-		goto errorExit
 	}
 
 errorExit:
@@ -3211,8 +3015,10 @@ type IValueContext interface {
 	GetParser() antlr.Parser
 
 	// Getter signatures
-	Constant() IConstantContext
+	Integer() IIntegerContext
+	FLOAT() antlr.TerminalNode
 	STRING() antlr.TerminalNode
+	Ident() IIdentContext
 
 	// IsValueContext differentiates from other interfaces.
 	IsValueContext()
@@ -3250,10 +3056,10 @@ func NewValueContext(parser antlr.Parser, parent antlr.ParserRuleContext, invoki
 
 func (s *ValueContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *ValueContext) Constant() IConstantContext {
+func (s *ValueContext) Integer() IIntegerContext {
 	var t antlr.RuleContext
 	for _, ctx := range s.GetChildren() {
-		if _, ok := ctx.(IConstantContext); ok {
+		if _, ok := ctx.(IIntegerContext); ok {
 			t = ctx.(antlr.RuleContext)
 			break
 		}
@@ -3263,11 +3069,31 @@ func (s *ValueContext) Constant() IConstantContext {
 		return nil
 	}
 
-	return t.(IConstantContext)
+	return t.(IIntegerContext)
+}
+
+func (s *ValueContext) FLOAT() antlr.TerminalNode {
+	return s.GetToken(ConstMakerParserFLOAT, 0)
 }
 
 func (s *ValueContext) STRING() antlr.TerminalNode {
 	return s.GetToken(ConstMakerParserSTRING, 0)
+}
+
+func (s *ValueContext) Ident() IIdentContext {
+	var t antlr.RuleContext
+	for _, ctx := range s.GetChildren() {
+		if _, ok := ctx.(IIdentContext); ok {
+			t = ctx.(antlr.RuleContext)
+			break
+		}
+	}
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(IIdentContext)
 }
 
 func (s *ValueContext) GetRuleContext() antlr.RuleContext {
@@ -3302,25 +3128,36 @@ func (s *ValueContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *ConstMakerParser) Value() (localctx IValueContext) {
 	localctx = NewValueContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 22, ConstMakerParserRULE_value)
-	p.SetState(254)
+	p.EnterRule(localctx, 20, ConstMakerParserRULE_value)
+	p.SetState(247)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
 	}
 
-	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 40, p.GetParserRuleContext()) {
-	case 1:
+	switch p.GetTokenStream().LA(1) {
+	case ConstMakerParserDEC_INTEGER, ConstMakerParserHEX_INTEGER:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(252)
-			p.Constant()
+			p.SetState(243)
+			p.Integer()
 		}
 
-	case 2:
+	case ConstMakerParserFLOAT:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(253)
+			p.SetState(244)
+			p.Match(ConstMakerParserFLOAT)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
+		}
+
+	case ConstMakerParserSTRING:
+		p.EnterOuterAlt(localctx, 3)
+		{
+			p.SetState(245)
 			p.Match(ConstMakerParserSTRING)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3328,7 +3165,15 @@ func (p *ConstMakerParser) Value() (localctx IValueContext) {
 			}
 		}
 
-	case antlr.ATNInvalidAltNumber:
+	case ConstMakerParserENUM, ConstMakerParserNAMESPACE, ConstMakerParserIDENT:
+		p.EnterOuterAlt(localctx, 4)
+		{
+			p.SetState(246)
+			p.Ident()
+		}
+
+	default:
+		p.SetError(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
 		goto errorExit
 	}
 
@@ -3432,12 +3277,12 @@ func (s *IntegerContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *ConstMakerParser) Integer() (localctx IIntegerContext) {
 	localctx = NewIntegerContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 24, ConstMakerParserRULE_integer)
+	p.EnterRule(localctx, 22, ConstMakerParserRULE_integer)
 	var _la int
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(256)
+		p.SetState(249)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ConstMakerParserDEC_INTEGER || _la == ConstMakerParserHEX_INTEGER) {
@@ -3560,8 +3405,8 @@ func (s *IdentContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *ConstMakerParser) Ident() (localctx IIdentContext) {
 	localctx = NewIdentContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 26, ConstMakerParserRULE_ident)
-	p.SetState(260)
+	p.EnterRule(localctx, 24, ConstMakerParserRULE_ident)
+	p.SetState(253)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3571,7 +3416,7 @@ func (p *ConstMakerParser) Ident() (localctx IIdentContext) {
 	case ConstMakerParserIDENT:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(258)
+			p.SetState(251)
 			p.Match(ConstMakerParserIDENT)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3582,7 +3427,7 @@ func (p *ConstMakerParser) Ident() (localctx IIdentContext) {
 	case ConstMakerParserENUM, ConstMakerParserNAMESPACE:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(259)
+			p.SetState(252)
 			p.Keywords()
 		}
 
@@ -3691,12 +3536,12 @@ func (s *KeywordsContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *ConstMakerParser) Keywords() (localctx IKeywordsContext) {
 	localctx = NewKeywordsContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 28, ConstMakerParserRULE_keywords)
+	p.EnterRule(localctx, 26, ConstMakerParserRULE_keywords)
 	var _la int
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(262)
+		p.SetState(255)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ConstMakerParserENUM || _la == ConstMakerParserNAMESPACE) {
@@ -3802,10 +3647,10 @@ func (s *DocCommentContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
 
 func (p *ConstMakerParser) DocComment() (localctx IDocCommentContext) {
 	localctx = NewDocCommentContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 30, ConstMakerParserRULE_docComment)
+	p.EnterRule(localctx, 28, ConstMakerParserRULE_docComment)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(264)
+		p.SetState(257)
 		p.Match(ConstMakerParserDOC_COMMENT)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3908,10 +3753,10 @@ func (s *TripleCommentContext) Accept(visitor antlr.ParseTreeVisitor) interface{
 
 func (p *ConstMakerParser) TripleComment() (localctx ITripleCommentContext) {
 	localctx = NewTripleCommentContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 32, ConstMakerParserRULE_tripleComment)
+	p.EnterRule(localctx, 30, ConstMakerParserRULE_tripleComment)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(266)
+		p.SetState(259)
 		p.Match(ConstMakerParserTRIPLE_COMMENT)
 		if p.HasError() {
 			// Recognition error - abort rule

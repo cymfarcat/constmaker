@@ -7,7 +7,7 @@ from enum import Enum
 # 
 Table: str = "table" # hello word
 AllowTest: str = "at"
-Percent: int = 100
+Percent: int = -100
 # pi 
 Pi: float = 3.14159
 

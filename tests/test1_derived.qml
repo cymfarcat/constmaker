@@ -8,7 +8,7 @@ QtObject {
      */
     property string Table: "table" // hello word
     property string AllowTest: "at"
-    property int Percent: 100
+    property int Percent: -100
 
     /** pi */
     property real Pi: 3.14159

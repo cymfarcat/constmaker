@@ -5,7 +5,7 @@
  */
 const val Table: String = "table" // hello word
 const val AllowTest: String = "at"
-const val Percent: UByte = 100
+const val Percent: Byte = -100
 
 /** pi */
 const val Pi: Float = 3.14159f

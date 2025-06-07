@@ -358,23 +358,16 @@ func (obj *ConstParser) EnterIdentAssignValueLoop(ctx *parser.IdentAssignValueLo
 // ExitIdentAssignValueLoop is called when production identAssignValueLoop is exited.
 func (obj *ConstParser) ExitIdentAssignValueLoop(ctx *parser.IdentAssignValueLoopContext) {}
 
-// EnterProperties is called when production option is entered.
-func (obj *ConstParser) EnterProperties(ctx *parser.OptionContext) {}
+// ExitOption is called when production option is entered.
+func (obj *ConstParser) EnterOption(ctx *parser.OptionContext) {}
 
-// ExitProperties is called when production option is exited.
-func (obj *ConstParser) ExitProperties(ctx *parser.OptionContext) {}
-
-// EnterConstant is called when production constant is entered.
-func (obj *ConstParser) EnterConstant(ctx *parser.ConstantContext) {
-	obj.currentObject.Value = ctx.GetText()
-}
-
-// ExitConstant is called when production constant is exited.
-func (obj *ConstParser) ExitConstant(ctx *parser.ConstantContext) {
-}
+// ExitOption is called when production option is exited.
+func (obj *ConstParser) ExitOption(ctx *parser.OptionContext) {}
 
 // EnterValue is called when production value is entered.
-func (obj *ConstParser) EnterValue(ctx *parser.ValueContext) {}
+func (obj *ConstParser) EnterValue(ctx *parser.ValueContext) {
+	obj.currentObject.Value = ctx.GetText()
+}
 
 // ExitValue is called when production value is exited.
 func (obj *ConstParser) ExitValue(ctx *parser.ValueContext) {}
@@ -389,7 +382,12 @@ func (obj *ConstParser) ExitInteger(ctx *parser.IntegerContext) {}
 
 // EnterIdent is called when production ident is entered.
 func (obj *ConstParser) EnterIdent(ctx *parser.IdentContext) {
-	obj.currentObject.Ident = ctx.GetText()
+	if len(obj.currentObject.Ident) == 0 {
+		obj.currentObject.Ident = ctx.GetText()
+	} else {
+		// NEXT: check is references
+		obj.currentObject.Value = ctx.GetText()
+	}
 }
 
 // ExitIdent is called when production ident is exited.

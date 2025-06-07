@@ -5,7 +5,7 @@
 # 
 Table = "table" # hello word
 AllowTest = "at"
-Percent = 100
+Percent = -100
 # pi 
 Pi = 3.14159
 

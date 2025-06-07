@@ -37,9 +37,6 @@ type ConstMakerVisitor interface {
 	// Visit a parse tree produced by ConstMakerParser#option.
 	VisitOption(ctx *OptionContext) interface{}
 
-	// Visit a parse tree produced by ConstMakerParser#constant.
-	VisitConstant(ctx *ConstantContext) interface{}
-
 	// Visit a parse tree produced by ConstMakerParser#value.
 	VisitValue(ctx *ValueContext) interface{}
 

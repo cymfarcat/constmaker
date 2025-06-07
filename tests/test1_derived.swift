@@ -5,7 +5,7 @@
  */
 static let Table: String = "table" // hello word
 static let AllowTest: String = "at"
-static let Percent: UInt8 = 100
+static let Percent: Int8 = -100
 
 /** pi */
 static let Pi: Float = 3.14159

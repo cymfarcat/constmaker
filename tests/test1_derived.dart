@@ -5,7 +5,7 @@
  */
 const String Table = "table"; // hello word
 const String AllowTest = "at";
-const int Percent = 100;
+const int Percent = -100;
 
 /** pi */
 const double Pi = 3.14159;

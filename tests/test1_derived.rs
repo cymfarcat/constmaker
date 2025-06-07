@@ -5,7 +5,7 @@
  */
 pub const Table: &str = "table"; // hello word
 pub const AllowTest: &str = "at";
-pub const Percent: u8 = 100;
+pub const Percent: i8 = -100;
 
 /** pi */
 pub const Pi: f32 = 3.14159;
