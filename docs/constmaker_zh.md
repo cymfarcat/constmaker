@@ -267,6 +267,76 @@ ConstMaker 通过添加可选的 option，用来扩展常量定义功能，方�
    > \*/
    > const char\* TABLE = "table"; // hello word
 
+## SQLite常量
+
+    通过解析SQLite脚本文件，提取表名及字段名结构，生成以字母字符为前缀的随机字符串常量，实现代码逻辑混淆。
+
+1. 支持标准的SQLite脚本文件，请参考[![tests/sqlite]]目录；
+
+2. 当前支持生成dart/go/cpp/rust语言的源文件，方便集成到项目中使用，也可以生成新的sql文件；
+
+3. 对不同的开发语言，每一个SQLite Statement‌语句，都需要一个标识符：
+
+    - 由ConstMaker根据Statement‌自动生成，比如：
+
+      create_table_users_0048，select_users_0049，select_posts_users_0056
+
+      末尾数字是全局增量，用来防止标识符重复；
+
+      ***注意***：如果脚本文件的Statement‌有增加/删除，该数字会发生变化，因此需要修改引用该标识符的代码。
+
+    - 对Statement添加注释，来提供该语句的标识符，这样可以保证代码中都使用相同的标识符，当前支持两种注释：
+
+      - 短名称：--- #[stmt(short = "post_id")]
+        使用该名称来替换上述的末尾数字：
+        
+        ``` sql
+        --- #[stmt(short = "post_id")]
+        UPDATE posts SET views = views + 1 WHERE post_id = 1 LIMIT 1; -- Safe update
+        ```
+        生成的Dart定义为：
+        ``` dart
+        const String update_limited_posts_post_id = "UPDATE ps3jo SET wlejia = wlejia + 1 WHERE ievwi = 1 LIMIT 1;";
+        ```
+
+      - 全名称：--- #[stmt(full = "alter_user_bio")]
+        使用该名称来用作标识符：
+        
+        ``` sql
+        --- #[stmt(full = "alter_user_bio")]
+        ALTER TABLE users ADD COLUMN bio TEXT DEFAULT ''; -- Add new column
+        ```
+        生成的Dart定义为：
+        ``` dart
+        const String alter_user_bio = "ALTER TABLE u2mm2m0 ADD COLUMN kn31xf3b TEXT DEFAULT '';";
+        ```
+
+    - Statement仅使用相邻的注释来生成标识符。
+
+4. 命令行
+    - 名称最小值(--min-name)：默认值为4；
+    - 名称最大值(--max-name)：默认值为8；
+    - 字段白名单(--field-wl)：使用";"分割的字符串，不使用随机数的原始字段名称；
+
+5. 注释
+    - 注释仅用于SQL文件，不会出现在生成的文件里:
+    > |        |        |
+    > | ------ | ------ |
+    > | /\*\*/ | 块注释 |
+    > | --     | 行注释 |
+
+    - 注释需要出现在生成的文件里：
+    > |          |        |
+    > | -------- | ------ |
+    > | /\*\*\*/ | 块注释 |
+    > | ---      | 行注释 |
+
+    ***注意***：不要在Statement里添加块注释(/\*\*\*/)和行注释(---)，会造成解析异常；
+
+6. 一些建议：
+    - 同一个数据库中，不同的表字段名称应保持唯一性；
+    - 不同的表定义在不同的脚本文件里，避免字段名冲突；
+
 ## 命令行参考
 
 ConstMaker 的命令行提供了丰富的命令，用来生成常量文件，当前支持的命令行参数，如下所示：
@@ -324,3 +394,14 @@ ConstMaker 的命令行提供了丰富的命令，用来生成常量文件，当
 > |        | --text                | generate Text files.                                                            |
 > |        | --typescript          | generate TypeScript files.                                                      |
 > |        | --xml                 | generate XML files.                                                             |
+> |        | --sqlite              | use sqlite consts.                                                              |
+> |        | --sql                 | generate sql files.                                                             |
+> |        | --use-prefix          | force name use prefix.                                                          |
+> |        | --min-name            | min name length.                                                                |
+> |        | --max-name            | max name length.                                                                |
+> |        | --table               | prefix for every table name.                                                    |
+> |        | --index               | prefix for every index name.                                                    |
+> |        | --view                | prefix for every trigger name.                                                  |
+> |        | --trigger             | prefix for every trigger name.                                                  |
+> |        | --vtable              | prefix for every virtual table name.                                            |
+> |        | --field-wl            | semicolon-separated whitelist field.                                            |

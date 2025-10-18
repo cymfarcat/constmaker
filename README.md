@@ -167,6 +167,34 @@ interface test1 {
 }
 ```
 
+## SQLite Consts
+    Parse SQLite scripts to extract table/field metadata, then generate random letter-prefixed string constants for code obfuscation. For example:
+
+```sql
+    CREATE TABLE "users" (
+        "user_id" INTEGER PRIMARY KEY,      -- Auto-incrementing primary key
+        [username] TEXT UNIQUE NOT NULL,    -- Unique username constraint
+        [email] TEXT CHECK(email LIKE '%@%'), -- Email format validation
+        'created_at' DATETIME DEFAULT CURRENT_TIMESTAMP -- Automatic timestamp
+    );
+```
+
+    Run constmaker --sqlite --dart --lower-ident in the command line to generate Dart files：
+
+```dart
+const String users = "u0e8qk3";
+const String user_id = "s5oqf";
+const String username = "lyhi2";
+const String email = "po32p0f1";
+const String created_at = "g8o1044";
+
+const String create_table_users_0048 = """CREATE TABLE u0e8qk3(
+    s5oqf INTEGER PRIMARY KEY,
+    lyhi2 TEXT UNIQUE NOT NULL,
+    po32p0f1 TEXT CHECK(po32p0f1 LIKE '%@%'),
+    g8o1044 DATETIME DEFAULT CURRENT_TIMESTAMP);""";
+```
+
 ## Examples
 
 ‌Please refer to the [![examples]] directory.

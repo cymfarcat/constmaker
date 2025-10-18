@@ -251,7 +251,7 @@ flags.MarkHidden("secretFlag")
 
 **Example**:
 ```go
-flags.BoolP("verbose", "v", false, "verbose output")
+flags.BoolP("Verbose", "v", false, "Verbose output")
 flags.String("coolflag", "yeaah", "it's really cool flag")
 flags.Int("usefulflag", 777, "sometimes it's very useful")
 flags.SortFlags = false
@@ -259,7 +259,7 @@ flags.PrintDefaults()
 ```
 **Output**:
 ```
-  -v, --verbose           verbose output
+  -v, --Verbose           Verbose output
       --coolflag string   it's really cool flag (default "yeaah")
       --usefulflag int    sometimes it's very useful (default 777)
 ```
@@ -280,6 +280,33 @@ var ip *int = flag.Int("flagname", 1234, "help message for flagname")
 
 func main() {
 	flag.CommandLine.AddGoFlagSet(goflag.CommandLine)
+	flag.Parse()
+}
+```
+
+### Using pflag with go test
+`pflag` does not parse the shorthand versions of go test's built-in flags (i.e., those starting with `-test.`).
+For more context, see issues [#63](https://github.com/spf13/pflag/issues/63) and [#238](https://github.com/spf13/pflag/issues/238) for more details.
+
+For example, if you use pflag in your `TestMain` function and call `pflag.Parse()` after defining your custom flags, running a test like this:
+```bash
+go test /your/tests -run ^YourTest -v --your-test-pflags
+```
+will result in the `-v` flag being ignored. This happens because of the way pflag handles flag parsing, skipping over go test's built-in shorthand flags.
+To work around this, you can use the `ParseSkippedFlags` function, which ensures that go test's flags are parsed separately using the standard flag package.
+
+**Example**: You want to parse go test flags that are otherwise ignore by `pflag.Parse()`
+```go
+import (
+	goflag "flag"
+	flag "github.com/spf13/pflag"
+)
+
+var ip *int = flag.Int("flagname", 1234, "help message for flagname")
+
+func main() {
+	flag.CommandLine.AddGoFlagSet(goflag.CommandLine)
+    flag.ParseSkippedFlags(os.Args[1:], goflag.CommandLine)
 	flag.Parse()
 }
 ```

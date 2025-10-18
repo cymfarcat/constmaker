@@ -3,6 +3,7 @@
 package src
 
 const (
+    SeparatorChar string = ";"
     HyphenChar string = "-"
     UnderScore string = "_"
     ActionSep string = "|"
@@ -10,6 +11,14 @@ const (
     ConstSTR string = "STR"
     DerivedSign string = "derived"
     BitFlagMax int8 = 64
+    CPP string = "cpp"
+    Dart string = "dart"
+    Go string = "go"
+    Rust string = "rust"
+    SQLITE string = "sqlite"
+    STMT string = "stmt"
+    STMT_SHORT string = "short"
+    STMT_FULL string = "full"
 )
 
 /**ConstMaker support typo*/

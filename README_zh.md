@@ -167,6 +167,34 @@ interface test1 {
 }
 ```
 
+## SQLite常量
+    通过解析SQLite脚本文件，提取表名及字段名结构，生成以字母字符为前缀的随机字符串常量，实现代码逻辑混淆，比如：
+
+```sql
+    CREATE TABLE "users" (
+        "user_id" INTEGER PRIMARY KEY,      -- Auto-incrementing primary key
+        [username] TEXT UNIQUE NOT NULL,    -- Unique username constraint
+        [email] TEXT CHECK(email LIKE '%@%'), -- Email format validation
+        'created_at' DATETIME DEFAULT CURRENT_TIMESTAMP -- Automatic timestamp
+    );
+```
+
+    在命令行里运行 constmaker --sqlite --dart --lower-ident，产生 dart 文件：
+
+```dart
+const String users = "u0e8qk3";
+const String user_id = "s5oqf";
+const String username = "lyhi2";
+const String email = "po32p0f1";
+const String created_at = "g8o1044";
+
+const String create_table_users_0048 = """CREATE TABLE u0e8qk3(
+    s5oqf INTEGER PRIMARY KEY,
+    lyhi2 TEXT UNIQUE NOT NULL,
+    po32p0f1 TEXT CHECK(po32p0f1 LIKE '%@%'),
+    g8o1044 DATETIME DEFAULT CURRENT_TIMESTAMP);""";
+```
+
 ## 例子
 
 请参考[![examples]]目录。

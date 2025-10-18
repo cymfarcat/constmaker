@@ -7,6 +7,7 @@
 //************************************************************************************************
 
 // special str
+SeparatorChar = ";"
 HyphenChar 	= "-"
 UnderScore 	= "_"
 ActionSep 	= "|"
@@ -14,6 +15,16 @@ ConstID		= "ID"
 ConstSTR	= "STR"
 DerivedSign = "derived"
 BitFlagMax  = 64
+
+CPP			= "cpp"
+Dart		= "dart"
+Go			= "go"
+Rust		= "rust"
+
+SQLITE      = "sqlite"
+STMT  		= "stmt"
+STMT_SHORT  = "short"
+STMT_FULL   = "full"
 
 /**ConstMaker support typo*/
 namespace Typo {
