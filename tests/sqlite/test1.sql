@@ -31,7 +31,7 @@ CREATE TABLE "users" (
     'created_at' DATETIME DEFAULT CURRENT_TIMESTAMP -- Automatic timestamp
 );
 
-SELECT * FROM users LIMIT 1024;
+SELECT * FROM users ORDER BY created_at DESC LIMIT 1024;
 
 CREATE TABLE posts (
     post_id INTEGER PRIMARY KEY,

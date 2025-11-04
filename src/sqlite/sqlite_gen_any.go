@@ -218,6 +218,10 @@ func (obj *SQLWriterAny) GenText(name string, prc antlr.BaseParserRuleContext) s
 			item = obj.GenText(name, value.Interface().(*parser.Indexed_columnContext).BaseParserRuleContext)
 		case "*sqlite.Result_columnContext":
 			item = obj.GenText(name, value.Interface().(*parser.Result_columnContext).BaseParserRuleContext)
+		case "*sqlite.Ordering_termContext":
+			item = obj.GenText(name, value.Interface().(*parser.Ordering_termContext).BaseParserRuleContext)
+		case "*sqlite.Order_by_stmtContext":
+			item = obj.GenText(name, value.Interface().(*parser.Order_by_stmtContext).BaseParserRuleContext)
 		case "*sqlite.Insert_stmtContext":
 			item = obj.GenText(name, value.Interface().(*parser.Insert_stmtContext).BaseParserRuleContext)
 		case "*sqlite.Select_stmtContext":

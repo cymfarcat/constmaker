@@ -4,26 +4,26 @@
 #define CONSTMAKER_GENERATED_TEST1_H
 
 // Consts
-const char* bio = "ib434";
-const char* body = "hkvqwv2r";
-const char* content = "xvtg";
-const char* content_rowid = "d43h72o4";
-const char* created_at = "qhcnyn";
-const char* email = "eictdvhd";
-const char* idx_post_views = "zmjmowrr";
-const char* idx_username = "lvnxcb";
-const char* popular_posts = "vbpnpr";
-const char* post_count = "e6kqouw";
-const char* post_id = "t6pp";
-const char* posts = "srh2";
-const char* posts_search = "i37qd44";
-const char* title = "uqpe6sr";
-const char* tokenize = "d6fojv9";
-const char* update_post_count = "tpq3s6";
-const char* user_id = "syek3fu5";
-const char* username = "mewfo7";
-const char* users = "c0dxs1v";
-const char* views = "dys6zz";
+const char* bio = "zheft";
+const char* body = "hmwlp";
+const char* content = "oob3324g";
+const char* content_rowid = "fx07rot2";
+const char* created_at = "nwkn5sg";
+const char* email = "u800s";
+const char* idx_post_views = "er8s";
+const char* idx_username = "f2skf";
+const char* popular_posts = "ltk7";
+const char* post_count = "vnml";
+const char* post_id = "sll5";
+const char* posts = "axlfobu9";
+const char* posts_search = "hxfhj";
+const char* title = "ydzgp";
+const char* tokenize = "antk2";
+const char* update_post_count = "py6v1";
+const char* user_id = "mfxt";
+const char* username = "v9wgrr";
+const char* users = "q7nguy48";
+const char* views = "qmjlk5s";
 
 /**
   Sample Database
@@ -48,75 +48,75 @@ const char* begin__0009 = "BEGIN TRANSACTION;";
 
 const char* rollback__0010 = "ROLLBACK;";
 
-const char* create_table_users_0011 = "CREATE TABLE c0dxs1v(
+const char* create_table_users_0011 = "CREATE TABLE q7nguy48(
     [id] INTEGER PRIMARY KEY AUTOINCREMENT,
-    syek3fu5 INTEGER PRIMARY KEY,
-    mewfo7 TEXT UNIQUE NOT NULL,
-    eictdvhd TEXT CHECK(eictdvhd LIKE '%@%'),
-    qhcnyn DATETIME DEFAULT CURRENT_TIMESTAMP);";
+    mfxt INTEGER PRIMARY KEY,
+    v9wgrr TEXT UNIQUE NOT NULL,
+    u800s TEXT CHECK(u800s LIKE '%@%'),
+    nwkn5sg DATETIME DEFAULT CURRENT_TIMESTAMP);";
 
-const char* select_users_0012 = "SELECT * FROM c0dxs1v LIMIT 1024;";
+const char* select_users_0012 = "SELECT * FROM q7nguy48 ORDER BY nwkn5sg DESC LIMIT 1024;";
 
-const char* create_table_posts_0013 = "CREATE TABLE srh2(
-    t6pp INTEGER PRIMARY KEY,
-    syek3fu5 INTEGER REFERENCES c0dxs1v(syek3fu5),
-    uqpe6sr TEXT,
-    xvtg TEXT,
-    dys6zz INTEGER DEFAULT 0);";
+const char* create_table_posts_0013 = "CREATE TABLE axlfobu9(
+    sll5 INTEGER PRIMARY KEY,
+    mfxt INTEGER REFERENCES q7nguy48(mfxt),
+    ydzgp TEXT,
+    oob3324g TEXT,
+    qmjlk5s INTEGER DEFAULT 0);";
 
-const char* create_index_idx_username_0014 = "CREATE INDEX lvnxcb ON c0dxs1v(mewfo7);";
+const char* create_index_idx_username_0014 = "CREATE INDEX f2skf ON q7nguy48(v9wgrr);";
 
-const char* create_index_idx_post_views_0015 = "CREATE INDEX zmjmowrr ON srh2(dys6zz DESC);";
+const char* create_index_idx_post_views_0015 = "CREATE INDEX er8s ON axlfobu9(qmjlk5s DESC);";
 
 const char* analyze__0016 = "ANALYZE;";
 
-const char* reindex_idx_username_0017 = "REINDEX lvnxcb;";
+const char* reindex_idx_username_0017 = "REINDEX f2skf;";
 
-const char* create_view_popular_posts_0018 = "CREATE VIEW vbpnpr AS SELECT p.t6pp,u.mewfo7,p.uqpe6sr,p.dys6zz FROM srh2 p JOIN c0dxs1v u ON p.syek3fu5 = u.syek3fu5 WHERE p.dys6zz > 100 ORDERBYp.viewsDESC;";
+const char* create_view_popular_posts_0018 = "CREATE VIEW ltk7 AS SELECT p.sll5,u.v9wgrr,p.ydzgp,p.qmjlk5s FROM axlfobu9 p JOIN q7nguy48 u ON p.mfxt = u.mfxt WHERE p.qmjlk5s > 100 ORDER BY p.qmjlk5s DESC;";
 
-const char* select_posts_users_0019 = "SELECT p.t6pp,u.mewfo7,p.uqpe6sr,p.dys6zz FROM srh2 p JOIN c0dxs1v u ON p.syek3fu5 = u.syek3fu5 WHERE p.dys6zz > 100 ORDERBYp.viewsDESC;";
+const char* select_posts_users_0019 = "SELECT p.sll5,u.v9wgrr,p.ydzgp,p.qmjlk5s FROM axlfobu9 p JOIN q7nguy48 u ON p.mfxt = u.mfxt WHERE p.qmjlk5s > 100 ORDER BY p.qmjlk5s DESC;";
 
-const char* create_trigger_update_post_count_0020 = "CREATE TRIGGER tpq3s6 AFTER INSERT ON srh2 FOR EACH ROW BEGIN UPDATE c0dxs1v SET e6kqouw = COALESCE(e6kqouw,'0') + '1' WHERE syek3fu5 = NEW.syek3fu5;END;";
+const char* create_trigger_update_post_count_0020 = "CREATE TRIGGER py6v1 AFTER INSERT ON axlfobu9 FOR EACH ROW BEGIN UPDATE q7nguy48 SET vnml = COALESCE(vnml,'0') + '1' WHERE mfxt = NEW.mfxt;END;";
 
-const char* update_users_0021 = "UPDATE c0dxs1v SET e6kqouw = COALESCE(e6kqouw,0) + 1 WHERE syek3fu5 = NEW.syek3fu5;";
+const char* update_users_0021 = "UPDATE q7nguy48 SET vnml = COALESCE(vnml,0) + 1 WHERE mfxt = NEW.mfxt;";
 
-const char* create_virtual_table_posts_search_0022 = "CREATE VIRTUAL TABLE i37qd44 USING fts5(uqpe6sr,xvtg,xvtg = 'srh2',d43h72o4 = 't6pp',d6fojv9 = 'porter unicode61');";
+const char* create_virtual_table_posts_search_0022 = "CREATE VIRTUAL TABLE hxfhj USING fts5(ydzgp,oob3324g,oob3324g = 'axlfobu9',fx07rot2 = 'sll5',antk2 = 'porter unicode61');";
 
-const char* insert_users_0023 = "INSERT INTO c0dxs1v(mewfo7,eictdvhd)VALUES('alice','alice@example.com'),('bob','bob@example.com');";
+const char* insert_users_0023 = "INSERT INTO q7nguy48(v9wgrr,u800s)VALUES('alice','alice@example.com'),('bob','bob@example.com');";
 
-const char* insert_posts_0024 = "INSERT INTO srh2(syek3fu5,uqpe6sr,xvtg)VALUES(1,'First Post','Hello world!'),(2,'SQLite Guide','Complete SQLite tutorial');";
+const char* insert_posts_0024 = "INSERT INTO axlfobu9(mfxt,ydzgp,oob3324g)VALUES(1,'First Post','Hello world!'),(2,'SQLite Guide','Complete SQLite tutorial');";
 
-const char* select_users_posts_0025 = "SELECT u.mewfo7,COUNT(p.t6pp) as e6kqouw FROM c0dxs1v u LEFT JOIN srh2 p ON u.syek3fu5 = p.syek3fu5 GROUP BY u.syek3fu5 HAVING e6kqouw > 0;";
+const char* select_users_posts_0025 = "SELECT u.v9wgrr,COUNT(p.sll5) as vnml FROM q7nguy48 u LEFT JOIN axlfobu9 p ON u.mfxt = p.mfxt GROUP BY u.mfxt HAVING vnml > 0;";
 
-const char* select_users_0026 = "SELECT * FROM c0dxs1v WHERE mewfo7 LIKE 'a%';";
+const char* select_users_0026 = "SELECT * FROM q7nguy48 WHERE v9wgrr LIKE 'a%';";
 
-const char* update_users_0027 = "UPDATE c0dxs1v SET eictdvhd = 'alice.new@example.com' WHERE syek3fu5 = 1;";
+const char* update_users_0027 = "UPDATE q7nguy48 SET u800s = 'alice.new@example.com' WHERE mfxt = 1;";
 
-const char* delete_posts_0028 = "DELETE FROM srh2 WHERE t6pp = 2;";
+const char* delete_posts_0028 = "DELETE FROM axlfobu9 WHERE sll5 = 2;";
 
 // 11. Limited update/delete operations ---
-const char* update_limited_posts_post_id = "UPDATE srh2 SET dys6zz = dys6zz + 1 WHERE t6pp = 1 LIMIT 1;";
+const char* update_limited_posts_post_id = "UPDATE axlfobu9 SET qmjlk5s = qmjlk5s + 1 WHERE sll5 = 1 LIMIT 1;";
 
-const char* delete_limited_posts_0029 = "DELETE FROM srh2 WHERE dys6zz < 5 LIMIT 10;";
+const char* delete_limited_posts_0029 = "DELETE FROM axlfobu9 WHERE qmjlk5s < 5 LIMIT 10;";
 
-const char* alter_user_bio = "ALTER TABLE c0dxs1v ADD COLUMN 
-    ib434 TEXT DEFAULT '';";
+const char* alter_user_bio = "ALTER TABLE q7nguy48 ADD COLUMN 
+    zheft TEXT DEFAULT '';";
 
-const char* alter_posts_0030 = "ALTER TABLE srh2 RENAME COLUMN xvtg TO hkvqwv2r;";
+const char* alter_posts_0030 = "ALTER TABLE axlfobu9 RENAME COLUMN oob3324g TO hmwlp;";
 
 const char* vacuum__0031 = "VACUUM;";
 
 const char* pragma_optimize_0032 = "PRAGMA optimize;";
 
-const char* drop_update_post_count_0033 = "DROP TRIGGER tpq3s6;";
+const char* drop_update_post_count_0033 = "DROP TRIGGER py6v1;";
 
-const char* drop_popular_posts_0034 = "DROP VIEW vbpnpr;";
+const char* drop_popular_posts_0034 = "DROP VIEW ltk7;";
 
-const char* drop_idx_username_0035 = "DROP INDEX lvnxcb;";
+const char* drop_idx_username_0035 = "DROP INDEX f2skf;";
 
-const char* drop_posts_0036 = "DROP TABLE srh2;";
+const char* drop_posts_0036 = "DROP TABLE axlfobu9;";
 
-const char* drop_users_0037 = "DROP TABLE c0dxs1v;";
+const char* drop_users_0037 = "DROP TABLE q7nguy48;";
 
 
 #endif // CONSTMAKER_GENERATED_TEST1_H
