@@ -3,83 +3,83 @@
 /**
  *this is a test
  */
-pub const Table: &str = "table"; // hello word
-pub const AllowTest: &str = "at";
-pub const Percent: i8 = -100;
+pub const TABLE: &str = "table"; // hello word
+pub const ALLOW_TEST: &str = "at";
+pub const PERCENT: i8 = -100;
 
 /** pi */
-pub const Pi: f32 = 3.14159;
+pub const PI: f32 = 3.14159;
 
 /**
  * colors
  */
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
-pub enum Colors {
-    KNoneDef = 0,
-    KBlueDef = (1 << 0),
-    KGreenDef = (1 << 1),
-    KRedDef = (1 << 2),
-    KAllDef = 0x7,
+pub enum COLORS {
+    K_NONE_DEF = 0,
+    K_BLUE_DEF = 1 << 0,
+    K_GREEN_DEF = 1 << 1,
+    K_RED_DEF = 1 << 2,
+    K_ALL_DEF = 0x7,
 }
-pub const ColorsKNoneDefStr: &str = "KNoneDef";
-pub const ColorsKBlueDefStr: &str = "KBlueDef";
-pub const ColorsKGreenDefStr: &str = "KGreenDef";
-pub const ColorsKRedDefStr: &str = "KRedDef";
-pub const ColorsKAllDefStr: &str = "KAllDef";
+pub const COLORS_K_NONE_DEF_STR: &str = "NONE";
+pub const COLORS_K_BLUE_DEF_STR: &str = "blue";
+pub const COLORS_K_GREEN_DEF_STR: &str = "green";
+pub const COLORS_K_RED_DEF_STR: &str = "red";
+pub const COLORS_K_ALL_DEF_STR: &str = "ALL";
 
-// namespace Node
-pub const NodeHtmlBlockId: &str = "Block";
-pub const NodeHtmlTableId: &str = "Table";
+// namespace NODE
+pub const NODE_HTML_BLOCK_ID: &str = "Block";
+pub const NODE_HTML_TABLE_ID: &str = "Table";
 
-// namespace Item
-pub const ItemAllowTest: &str = "at";
-pub const ItemPi: f32 = 3.14159;
-pub const ItemTable: &str = "table";
-pub const ItemPercent: i8 = 100;
-pub const ItemNoneId : u8 = 0;
-pub const ItemAllowTestId : u8 = (1 << 0);
-pub const ItemPiId : u8 = (1 << 1);
-pub const ItemTableId : u8 = (1 << 2);
-pub const ItemPercentId : u8 = (1 << 3);
-pub const ItemAllId : u8 = 0xf;
+// namespace ITEM
+pub const ITEM_ALLOW_TEST: &str = "at";
+pub const ITEM_PI: f32 = 3.14159;
+pub const ITEM_TABLE: &str = "table";
+pub const ITEM__PERCENT: i8 = 100;
+pub const ITEM_NONE_ID : u8 = 0;
+pub const ITEM_ALLOW_TEST_ID : u8 = 1 << 0;
+pub const ITEM_PI_ID : u8 = 1 << 1;
+pub const ITEM_TABLE_ID : u8 = 1 << 2;
+pub const ITEM__PERCENT_ID : u8 = 1 << 3;
+pub const ITEM_ALL_ID : u8 = 0xf;
 
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
-pub enum ItemColors {
-    Blue,
-    Green, // green
-    Red,
+pub enum ITEM_COLORS {
+    BLUE,
+    GREEN, // green
+    RED,
 }
 
-// namespace ItemNode
-pub const ItemNodeBorder: &str = "border";
+// namespace ITEM_NODE
+pub const ITEM_NODE_BORDER: &str = "border";
 
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
-pub enum ItemNodeColors {
-    Red,
-    Green, // green
-    Blue,
+pub enum ITEM_NODE_COLORS {
+    RED,
+    GREEN, // green
+    BLUE,
 }
-pub const ItemNodeColorsRedStr: &str = "Red";
-pub const ItemNodeColorsGreenStr: &str = "Green";
-pub const ItemNodeColorsBlueStr: &str = "Blue";
+pub const ITEM_NODE_COLORS_RED_STR: &str = "RED";
+pub const ITEM_NODE_COLORS_GREEN_STR: &str = "GREEN";
+pub const ITEM_NODE_COLORS_BLUE_STR: &str = "BLUE";
 
-// namespace ItemNodeQuick
-pub const ItemNodeQuickItem: &str = "item";
+// namespace ITEM_NODE_QUICK
+pub const ITEM_NODE_QUICK_ITEM: &str = "item";
 
-// namespace ItemNodeQuickNode
+// namespace ITEM_NODE_QUICK_NODE
 
-// namespace Css3
-pub const Css3XWebkitAirplay: &str = "x-webkit-airplay";
-pub const Css3WebkitTextZoom: &str = "-webkit-text-zoom";
-pub const Css3WebkitBackdropFilter: &str = "-webkit-backdrop-filter";
-pub const Css3WebkitBorderHorizontalSpacing: &str = "-webkit-border-horizontal-spacing";
-pub const Css3WebkitBorderVerticalSpacing: &str = "-webkit-border-vertical-spacing";
-pub const Css3WebkitBoxAlign: &str = "-webkit-box-align";
-pub const Css3NoneId : u8 = 0;
-pub const Css3XWebkitAirplayId : u8 = (1 << 0);
-pub const Css3WebkitTextZoomId : u8 = (1 << 1);
-pub const Css3WebkitBackdropFilterId : u8 = (1 << 2);
-pub const Css3WebkitBorderHorizontalSpacingId : u8 = (1 << 3);
-pub const Css3WebkitBorderVerticalSpacingId : u8 = (1 << 4);
-pub const Css3WebkitBoxAlignId : u8 = (1 << 5);
-pub const Css3AllId : u8 = 0x3f;
+// namespace CSS3
+pub const CSS3_X_WEBKIT_AIRPLAY: &str = "x-webkit-airplay";
+pub const CSS3__WEBKIT_TEXT_ZOOM: &str = "-webkit-text-zoom";
+pub const CSS3__WEBKIT_BACKDROP_FILTER: &str = "-webkit-backdrop-filter";
+pub const CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING: &str = "-webkit-border-horizontal-spacing";
+pub const CSS3__WEBKIT_BORDER_VERTICAL_SPACING: &str = "-webkit-border-vertical-spacing";
+pub const CSS3__WEBKIT_BOX_ALIGN: &str = "-webkit-box-align";
+pub const CSS3_NONE_ID : u8 = 0;
+pub const CSS3_X_WEBKIT_AIRPLAY_ID : u8 = 1 << 0;
+pub const CSS3__WEBKIT_TEXT_ZOOM_ID : u8 = 1 << 1;
+pub const CSS3__WEBKIT_BACKDROP_FILTER_ID : u8 = 1 << 2;
+pub const CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING_ID : u8 = 1 << 3;
+pub const CSS3__WEBKIT_BORDER_VERTICAL_SPACING_ID : u8 = 1 << 4;
+pub const CSS3__WEBKIT_BOX_ALIGN_ID : u8 = 1 << 5;
+pub const CSS3_ALL_ID : u8 = 0x3f;

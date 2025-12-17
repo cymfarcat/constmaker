@@ -2,88 +2,88 @@
 
 >|ident|type|value|comment|
 >|---|---|---|---|
->|Table|string|"table"|this is a test; hello word|
->|AllowTest|string|"at"||
->|Percent|int8|-100||
->|Pi|float32|3.14159|pi|
-### enum Colors
+>|TABLE|string|"table"|this is a test; hello word|
+>|ALLOW_TEST|string|"at"||
+>|PERCENT|int8|-100||
+>|PI|float32|3.14159|pi|
+### enum COLORS
 colors
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ColorsKNoneDef|uint16|0||
->|ColorsKBlueDef|uint16|(1 << 0)||
->|ColorsKGreenDef|uint16|(1 << 1)||
->|ColorsKRedDef|uint16|(1 << 2)||
->|ColorsKAllDef|uint16|0x7||
->|ColorsKNoneDefStr| string | "KNoneDef"||
->|ColorsKBlueDefStr| string | "KBlueDef"||
->|ColorsKGreenDefStr| string | "KGreenDef"||
->|ColorsKRedDefStr| string | "KRedDef"||
->|ColorsKAllDefStr| string | "KAllDef"||
+>|COLORS_K_NONE_DEF|uint16|0||
+>|COLORS_K_BLUE_DEF|uint16|1 << 0||
+>|COLORS_K_GREEN_DEF|uint16|1 << 1||
+>|COLORS_K_RED_DEF|uint16|1 << 2||
+>|COLORS_K_ALL_DEF|uint16|0x7||
+>|COLORS_K_NONE_DEF_STR| string | "NONE"||
+>|COLORS_K_BLUE_DEF_STR| string | "blue"||
+>|COLORS_K_GREEN_DEF_STR| string | "green"||
+>|COLORS_K_RED_DEF_STR| string | "red"||
+>|COLORS_K_ALL_DEF_STR| string | "ALL"||
 
-## namespace Node
+## namespace NODE
 >|ident|type|value|comment|
 >|---|---|---|---|
->|NodeHtmlBlockId|string|"Block"||
->|NodeHtmlTableId|string|"Table"||
+>|NODE_HTML_BLOCK_ID|string|"Block"||
+>|NODE_HTML_TABLE_ID|string|"Table"||
 
-## namespace Item
+## namespace ITEM
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ItemAllowTest|string|"at"||
->|ItemPi|float32|3.14159||
->|ItemTable|string|"table"||
->|ItemPercent|int8|100||
->|ItemNoneId|uint8|0||
->|ItemAllowTestId|uint8|(1 << 0)||
->|ItemPiId|uint8|(1 << 1)||
->|ItemTableId|uint8|(1 << 2)||
->|ItemPercentId|uint8|(1 << 3)||
->|ItemAllId|uint8|0xf||
+>|ITEM_ALLOW_TEST|string|"at"||
+>|ITEM_PI|float32|3.14159||
+>|ITEM_TABLE|string|"table"||
+>|ITEM__PERCENT|int8|100||
+>|ITEM_NONE_ID|uint8|0||
+>|ITEM_ALLOW_TEST_ID|uint8|1 << 0||
+>|ITEM_PI_ID|uint8|1 << 1||
+>|ITEM_TABLE_ID|uint8|1 << 2||
+>|ITEM__PERCENT_ID|uint8|1 << 3||
+>|ITEM_ALL_ID|uint8|0xf||
 
-### enum ItemColors
+### enum ITEM_COLORS
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ItemColorsBlue|uint8|0||
->|ItemColorsGreen|uint8|1|; green|
->|ItemColorsRed|uint8|2||
+>|ITEM_COLORS_BLUE|uint8|0||
+>|ITEM_COLORS_GREEN|uint8|1|; green|
+>|ITEM_COLORS_RED|uint8|2||
 
-## namespace ItemNode
+## namespace ITEM_NODE
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ItemNodeBorder|string|"border"||
+>|ITEM_NODE_BORDER|string|"border"||
 
-### enum ItemNodeColors
+### enum ITEM_NODE_COLORS
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ItemNodeColorsRed|uint8|0||
->|ItemNodeColorsGreen|uint8|1|; green|
->|ItemNodeColorsBlue|uint8|2||
->|ItemNodeColorsRedStr| string | "Red"||
->|ItemNodeColorsGreenStr| string | "Green"||
->|ItemNodeColorsBlueStr| string | "Blue"||
+>|ITEM_NODE_COLORS_RED|uint8|0||
+>|ITEM_NODE_COLORS_GREEN|uint8|1|; green|
+>|ITEM_NODE_COLORS_BLUE|uint8|2||
+>|ITEM_NODE_COLORS_RED_STR| string | "RED"||
+>|ITEM_NODE_COLORS_GREEN_STR| string | "GREEN"||
+>|ITEM_NODE_COLORS_BLUE_STR| string | "BLUE"||
 
-## namespace ItemNodeQuick
+## namespace ITEM_NODE_QUICK
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ItemNodeQuickItem|string|"item"||
+>|ITEM_NODE_QUICK_ITEM|string|"item"||
 
-## namespace ItemNodeQuickNode
+## namespace ITEM_NODE_QUICK_NODE
 
-## namespace Css3
+## namespace CSS3
 >|ident|type|value|comment|
 >|---|---|---|---|
->|Css3XWebkitAirplay|string|"x-webkit-airplay"||
->|Css3WebkitTextZoom|string|"-webkit-text-zoom"||
->|Css3WebkitBackdropFilter|string|"-webkit-backdrop-filter"||
->|Css3WebkitBorderHorizontalSpacing|string|"-webkit-border-horizontal-spacing"||
->|Css3WebkitBorderVerticalSpacing|string|"-webkit-border-vertical-spacing"||
->|Css3WebkitBoxAlign|string|"-webkit-box-align"||
->|Css3NoneId|uint8|0||
->|Css3XWebkitAirplayId|uint8|(1 << 0)||
->|Css3WebkitTextZoomId|uint8|(1 << 1)||
->|Css3WebkitBackdropFilterId|uint8|(1 << 2)||
->|Css3WebkitBorderHorizontalSpacingId|uint8|(1 << 3)||
->|Css3WebkitBorderVerticalSpacingId|uint8|(1 << 4)||
->|Css3WebkitBoxAlignId|uint8|(1 << 5)||
->|Css3AllId|uint8|0x3f||
+>|CSS3_X_WEBKIT_AIRPLAY|string|"x-webkit-airplay"||
+>|CSS3__WEBKIT_TEXT_ZOOM|string|"-webkit-text-zoom"||
+>|CSS3__WEBKIT_BACKDROP_FILTER|string|"-webkit-backdrop-filter"||
+>|CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING|string|"-webkit-border-horizontal-spacing"||
+>|CSS3__WEBKIT_BORDER_VERTICAL_SPACING|string|"-webkit-border-vertical-spacing"||
+>|CSS3__WEBKIT_BOX_ALIGN|string|"-webkit-box-align"||
+>|CSS3_NONE_ID|uint8|0||
+>|CSS3_X_WEBKIT_AIRPLAY_ID|uint8|1 << 0||
+>|CSS3__WEBKIT_TEXT_ZOOM_ID|uint8|1 << 1||
+>|CSS3__WEBKIT_BACKDROP_FILTER_ID|uint8|1 << 2||
+>|CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING_ID|uint8|1 << 3||
+>|CSS3__WEBKIT_BORDER_VERTICAL_SPACING_ID|uint8|1 << 4||
+>|CSS3__WEBKIT_BOX_ALIGN_ID|uint8|1 << 5||
+>|CSS3_ALL_ID|uint8|0x3f||

@@ -3,101 +3,101 @@
 /**
  *this is a test
  */
-const String Table = "table"; // hello word
-const String AllowTest = "at";
-const int Percent = -100;
+const String TABLE = "table"; // hello word
+const String ALLOW_TEST = "at";
+const int PERCENT = -100;
 
 /** pi */
-const double Pi = 3.14159;
+const double PI = 3.14159;
 
 /**
  * colors
  */
-enum Colors {
-    KNoneDef(0),
-    KBlueDef((1 << 0)),
-    KGreenDef((1 << 1)),
-    KRedDef((1 << 2)),
-    KAllDef(0x7);
+enum COLORS {
+    K_NONE_DEF(0),
+    K_BLUE_DEF(1 << 0),
+    K_GREEN_DEF(1 << 1),
+    K_RED_DEF(1 << 2),
+    K_ALL_DEF(0x7);
 
-    static const String KNoneDefStr = "KNoneDef";
-    static const String KBlueDefStr = "KBlueDef";
-    static const String KGreenDefStr = "KGreenDef";
-    static const String KRedDefStr = "KRedDef";
-    static const String KAllDefStr = "KAllDef";
+    static const String K_NONE_DEF_STR = "NONE";
+    static const String K_BLUE_DEF_STR = "blue";
+    static const String K_GREEN_DEF_STR = "green";
+    static const String K_RED_DEF_STR = "red";
+    static const String K_ALL_DEF_STR = "ALL";
 
     final int value;
-    const Colors(this.value);
+    const COLORS(this.value);
 
-    factory Colors.fromValue(int value) {
+    factory COLORS.fromValue(int value) {
         switch (value) {
-            case 0: return Colors.KNoneDef;
-            case 0x1: return Colors.KBlueDef;
-            case 0x2: return Colors.KGreenDef;
-            case 0x4: return Colors.KRedDef;
-            case 0x7: return Colors.KAllDef;
-            default: throw StateError('Colors.fromValue: invalid value=$value');
+            case 0: return COLORS.K_NONE_DEF;
+            case 0x1: return COLORS.K_BLUE_DEF;
+            case 0x2: return COLORS.K_GREEN_DEF;
+            case 0x4: return COLORS.K_RED_DEF;
+            case 0x7: return COLORS.K_ALL_DEF;
+            default: throw StateError('COLORS.fromValue: invalid value=$value');
         }
     }
 }
 
-class Node {
-    static const String HtmlBlockId = "Block";
-    static const String HtmlTableId = "Table";
+class NODE {
+    static const String HTML_BLOCK_ID = "Block";
+    static const String HTML_TABLE_ID = "Table";
 }
 
-class Item {
-    static const String AllowTest = "at";
-    static const double Pi = 3.14159;
-    static const String Table = "table";
-    static const int Percent = 100;
-    static const int NoneId = 0;
-    static const int AllowTestId = (1 << 0);
-    static const int PiId = (1 << 1);
-    static const int TableId = (1 << 2);
-    static const int PercentId = (1 << 3);
-    static const int AllId = 0xf;
+class ITEM {
+    static const String ALLOW_TEST = "at";
+    static const double PI = 3.14159;
+    static const String TABLE = "table";
+    static const int _PERCENT = 100;
+    static const int NONE_ID = 0;
+    static const int ALLOW_TEST_ID = 1 << 0;
+    static const int PI_ID = 1 << 1;
+    static const int TABLE_ID = 1 << 2;
+    static const int _PERCENT_ID = 1 << 3;
+    static const int ALL_ID = 0xf;
 }
 
-enum ItemColors {
-    Blue,
-    Green, // green
-    Red,
+enum ITEM_COLORS {
+    BLUE,
+    GREEN, // green
+    RED,
 }
 
-class ItemNode {
-    static const String Border = "border";
+class ITEM_NODE {
+    static const String BORDER = "border";
 }
 
-enum ItemNodeColors {
-    Red,
-    Green, // green
-    Blue,
+enum ITEM_NODE_COLORS {
+    RED,
+    GREEN, // green
+    BLUE,
 }
-const String ItemNodeColorsRedStr = "Red";
-const String ItemNodeColorsGreenStr = "Green";
-const String ItemNodeColorsBlueStr = "Blue";
+const String ITEM_NODE_COLORS_RED_STR = "RED";
+const String ITEM_NODE_COLORS_GREEN_STR = "GREEN";
+const String ITEM_NODE_COLORS_BLUE_STR = "BLUE";
 
-class ItemNodeQuick {
-    static const String Item = "item";
-}
-
-class ItemNodeQuickNode {
+class ITEM_NODE_QUICK {
+    static const String ITEM = "item";
 }
 
-class Css3 {
-    static const String XWebkitAirplay = "x-webkit-airplay";
-    static const String WebkitTextZoom = "-webkit-text-zoom";
-    static const String WebkitBackdropFilter = "-webkit-backdrop-filter";
-    static const String WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
-    static const String WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
-    static const String WebkitBoxAlign = "-webkit-box-align";
-    static const int NoneId = 0;
-    static const int XWebkitAirplayId = (1 << 0);
-    static const int WebkitTextZoomId = (1 << 1);
-    static const int WebkitBackdropFilterId = (1 << 2);
-    static const int WebkitBorderHorizontalSpacingId = (1 << 3);
-    static const int WebkitBorderVerticalSpacingId = (1 << 4);
-    static const int WebkitBoxAlignId = (1 << 5);
-    static const int AllId = 0x3f;
+class ITEM_NODE_QUICK_NODE {
+}
+
+class CSS3 {
+    static const String X_WEBKIT_AIRPLAY = "x-webkit-airplay";
+    static const String _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
+    static const String _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
+    static const String _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
+    static const String _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
+    static const String _WEBKIT_BOX_ALIGN = "-webkit-box-align";
+    static const int NONE_ID = 0;
+    static const int X_WEBKIT_AIRPLAY_ID = 1 << 0;
+    static const int _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
+    static const int _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
+    static const int _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
+    static const int _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
+    static const int _WEBKIT_BOX_ALIGN_ID = 1 << 5;
+    static const int ALL_ID = 0x3f;
 }

@@ -8,88 +8,88 @@
 /**
  *this is a test
  */
-const char* Table = "table"; // hello word
-const char* AllowTest = "at";
-const int8_t Percent = -100;
+const char* TABLE = "table"; // hello word
+const char* ALLOW_TEST = "at";
+const int8_t PERCENT = -100;
 
 /** pi */
-const float Pi = 3.14159;
+const float PI = 3.14159;
 
 /**
  * colors
  */
-enum class Colors : uint16_t {
-    KNoneDef = 0,
-    KBlueDef = (1 << 0),
-    KGreenDef = (1 << 1),
-    KRedDef = (1 << 2),
-    KAllDef = 0x7,
+enum class COLORS : uint16_t {
+    K_NONE_DEF = 0,
+    K_BLUE_DEF = 1 << 0,
+    K_GREEN_DEF = 1 << 1,
+    K_RED_DEF = 1 << 2,
+    K_ALL_DEF = 0x7,
 };
-const char* ColorsKNoneDefStr = "KNoneDef";
-const char* ColorsKBlueDefStr = "KBlueDef";
-const char* ColorsKGreenDefStr = "KGreenDef";
-const char* ColorsKRedDefStr = "KRedDef";
-const char* ColorsKAllDefStr = "KAllDef";
+const char* COLORS_K_NONE_DEF_STR = "NONE";
+const char* COLORS_K_BLUE_DEF_STR = "blue";
+const char* COLORS_K_GREEN_DEF_STR = "green";
+const char* COLORS_K_RED_DEF_STR = "red";
+const char* COLORS_K_ALL_DEF_STR = "ALL";
 
-namespace Node {
-    const char* HtmlBlockId = "Block";
-    const char* HtmlTableId = "Table";
+namespace NODE {
+    const char* HTML_BLOCK_ID = "Block";
+    const char* HTML_TABLE_ID = "Table";
 };
 
-namespace Item {
-    const char* AllowTest = "at";
-    const float Pi = 3.14159;
-    const char* Table = "table";
-    const int8_t Percent = 100;
-    const uint8_t NoneId = 0;
-    const uint8_t AllowTestId = (1 << 0);
-    const uint8_t PiId = (1 << 1);
-    const uint8_t TableId = (1 << 2);
-    const uint8_t PercentId = (1 << 3);
-    const uint8_t AllId = 0xf;
+namespace ITEM {
+    const char* ALLOW_TEST = "at";
+    const float PI = 3.14159;
+    const char* TABLE = "table";
+    const int8_t _PERCENT = 100;
+    const uint8_t NONE_ID = 0;
+    const uint8_t ALLOW_TEST_ID = 1 << 0;
+    const uint8_t PI_ID = 1 << 1;
+    const uint8_t TABLE_ID = 1 << 2;
+    const uint8_t _PERCENT_ID = 1 << 3;
+    const uint8_t ALL_ID = 0xf;
 
-    enum class Colors : uint8_t {
-        Blue,
-        Green, // green
-        Red,
+    enum class COLORS : uint8_t {
+        BLUE,
+        GREEN, // green
+        RED,
     };
 };
 
-namespace ItemNode {
-    const char* Border = "border";
+namespace ITEM_NODE {
+    const char* BORDER = "border";
 
-    enum class Colors : uint8_t {
-        Red,
-        Green, // green
-        Blue,
+    enum class COLORS : uint8_t {
+        RED,
+        GREEN, // green
+        BLUE,
     };
-    const char* ColorsRedStr = "Red";
-    const char* ColorsGreenStr = "Green";
-    const char* ColorsBlueStr = "Blue";
+    const char* COLORS_RED_STR = "RED";
+    const char* COLORS_GREEN_STR = "GREEN";
+    const char* COLORS_BLUE_STR = "BLUE";
 };
 
-namespace ItemNodeQuick {
-    const char* Item = "item";
+namespace ITEM_NODE_QUICK {
+    const char* ITEM = "item";
 };
 
-namespace ItemNodeQuickNode {
+namespace ITEM_NODE_QUICK_NODE {
 };
 
-namespace Css3 {
-    const char* XWebkitAirplay = "x-webkit-airplay";
-    const char* WebkitTextZoom = "-webkit-text-zoom";
-    const char* WebkitBackdropFilter = "-webkit-backdrop-filter";
-    const char* WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
-    const char* WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
-    const char* WebkitBoxAlign = "-webkit-box-align";
-    const uint8_t NoneId = 0;
-    const uint8_t XWebkitAirplayId = (1 << 0);
-    const uint8_t WebkitTextZoomId = (1 << 1);
-    const uint8_t WebkitBackdropFilterId = (1 << 2);
-    const uint8_t WebkitBorderHorizontalSpacingId = (1 << 3);
-    const uint8_t WebkitBorderVerticalSpacingId = (1 << 4);
-    const uint8_t WebkitBoxAlignId = (1 << 5);
-    const uint8_t AllId = 0x3f;
+namespace CSS3 {
+    const char* X_WEBKIT_AIRPLAY = "x-webkit-airplay";
+    const char* _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
+    const char* _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
+    const char* _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
+    const char* _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
+    const char* _WEBKIT_BOX_ALIGN = "-webkit-box-align";
+    const uint8_t NONE_ID = 0;
+    const uint8_t X_WEBKIT_AIRPLAY_ID = 1 << 0;
+    const uint8_t _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
+    const uint8_t _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
+    const uint8_t _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
+    const uint8_t _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
+    const uint8_t _WEBKIT_BOX_ALIGN_ID = 1 << 5;
+    const uint8_t ALL_ID = 0x3f;
 };
 
 #endif // CONSTMAKER_GENERATED_TEST1_H

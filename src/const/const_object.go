@@ -424,7 +424,7 @@ func (obj *ConstObject) genValue(option *src.Options) {
 			allValue := 0
 			for idx, constObj := range obj.Children {
 				constObj.Typo = typo
-				constObj.Value = "(1 << " + strconv.FormatInt(int64(idx), 10) + ")"
+				constObj.Value = "1 << " + strconv.FormatInt(int64(idx), 10)
 				if bitFlagHex && bitFlagCount != 0 {
 					constObj.Value = fmt.Sprintf("0x%0*X", bitFlagCount, 1<<idx)
 				}
@@ -518,7 +518,9 @@ func (obj *ConstObject) genValue(option *src.Options) {
 					genObj.Suffix = ""
 				}
 				genObj.Typo = src.Typo_Str
-				genObj.Value = strconv.Quote(genIdentName(option, "", constObj))
+
+				// always use constObj.Ident
+				genObj.Value = strconv.Quote(constObj.Ident) // strconv.Quote(genIdentName(option, "", constObj))
 
 				obj.genObjs = append(obj.genObjs, genObj)
 			}
@@ -572,7 +574,7 @@ func (obj *ConstObject) genValue(option *src.Options) {
 						obj.genObjs = append(obj.genObjs, none)
 					}
 
-					genObj.Value = "(1 << " + strconv.FormatInt(int64(idx), 10) + ")"
+					genObj.Value = "1 << " + strconv.FormatInt(int64(idx), 10)
 					if bitFlagHex && bitFlagCount != 0 {
 						genObj.Value = fmt.Sprintf("0x%0*X", bitFlagCount, 1<<idx)
 					}

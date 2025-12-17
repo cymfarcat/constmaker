@@ -15,10 +15,10 @@ pi = 3.14159 // pi is circle
 /**
  * colors
  */
-enum Colors : u16 [prefix: "K", suffix: "Def", property: "", action: "bit-flag|gen-str|sort-asc"] { 
-	RED = -0x100 [prefix: "", suffix: "STR", action: ""]
-	GREEN
-	BLUE
+enum Colors : u16 [prefix: "K", suffix: "Def", property: "upper-ident", action: "bit-flag|gen-str|sort-asc"] { 
+	red = -0x100 [prefix: "", suffix: "STR", action: ""]
+	green
+	blue
 }
 
 namespace Node [prefix: "html", suffix: "ID"] {

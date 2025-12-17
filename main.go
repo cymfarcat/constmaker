@@ -24,7 +24,7 @@ func main() {
 		exeDir := filepath.Dir(exePath)
 
 		// for test sqlite, comment test constmaker
-		test := sqlite.SQLITE_ARG
+		test := "" //sqlite.SQLITE_ARG
 
 		switch test {
 		case sqlite.SQLITE_ARG:
@@ -50,7 +50,7 @@ func main() {
 				// "--namespace-to-prefix",
 				"--upper-ident",
 				// "--lower-ident",
-				"--upper-ident-camel",
+				// "--upper-ident-camel",
 				// "--lower-ident-camel",
 				"--cpp",
 				"--c#",

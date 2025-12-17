@@ -1,4 +1,6 @@
 {
+  "Prefix": "",
+  "Suffix": "",
   "id": "",
   "type": "",
   "value": "",
@@ -6,36 +8,76 @@
   "comment": "",
   "consts": [
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "table",
       "type": "str",
       "value": "\"table\"",
       "CommentDoc": "/**\r\n *this is a test\r\n */",
-      "comment": "/// hello word"
+      "comment": "/// hello word",
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": false,
+      "LowerIdent": false,
+      "UpperIdentCamel": false
     },
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "allow_test",
       "type": "str",
       "value": "\"at\"",
       "CommentDoc": "",
-      "comment": ""
+      "comment": "",
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": false,
+      "LowerIdent": false,
+      "UpperIdentCamel": false
     },
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "percent",
       "type": "i8",
       "value": "-100",
       "CommentDoc": "",
-      "comment": ""
+      "comment": "",
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": false,
+      "LowerIdent": false,
+      "UpperIdentCamel": false
     },
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "pi",
       "type": "f32",
       "value": "3.14159",
       "CommentDoc": "/** pi */",
-      "comment": ""
+      "comment": "",
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": false,
+      "LowerIdent": false,
+      "UpperIdentCamel": false
     }
   ],
+  "EnumToPrefix": false,
+  "NamespaceToPrefix": false,
+  "MacroDefine": false,
+  "UpperIdent": false,
+  "LowerIdent": false,
+  "UpperIdentCamel": false,
   "enums": [
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "Colors",
       "type": "u16",
       "value": "",
@@ -43,45 +85,93 @@
       "comment": "",
       "consts": [
         {
+          "Prefix": "K",
+          "Suffix": "Def",
           "id": "NONE",
           "type": "u16",
           "value": "0",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": true,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
-          "id": "BLUE",
+          "Prefix": "K",
+          "Suffix": "Def",
+          "id": "blue",
           "type": "u16",
-          "value": "(1 \u003c\u003c 0)",
+          "value": "1 \u003c\u003c 0",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": true,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
-          "id": "GREEN",
+          "Prefix": "K",
+          "Suffix": "Def",
+          "id": "green",
           "type": "u16",
-          "value": "(1 \u003c\u003c 1)",
+          "value": "1 \u003c\u003c 1",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": true,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
-          "id": "RED",
+          "Prefix": "K",
+          "Suffix": "Def",
+          "id": "red",
           "type": "u16",
-          "value": "(1 \u003c\u003c 2)",
+          "value": "1 \u003c\u003c 2",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": true,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "K",
+          "Suffix": "Def",
           "id": "ALL",
           "type": "u16",
           "value": "0x7",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": true,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         }
-      ]
+      ],
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": true,
+      "LowerIdent": false,
+      "UpperIdentCamel": false
     }
   ],
   "namespaces": [
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "Node",
       "type": "",
       "value": "",
@@ -89,22 +179,46 @@
       "comment": "",
       "consts": [
         {
+          "Prefix": "html",
+          "Suffix": "ID",
           "id": "Block",
           "type": "str",
           "value": "\"Block\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "html",
+          "Suffix": "ID",
           "id": "Table",
           "type": "str",
           "value": "\"Table\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         }
-      ]
+      ],
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": false,
+      "LowerIdent": false,
+      "UpperIdentCamel": false
     },
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "ITEM",
       "type": "",
       "value": "",
@@ -112,36 +226,76 @@
       "comment": "",
       "consts": [
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "allow_test",
           "type": "str",
           "value": "\"at\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "pi",
           "type": "f32",
           "value": "3.14159",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "table",
           "type": "str",
           "value": "\"table\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "_percent",
           "type": "i8",
           "value": "100",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         }
       ],
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": false,
+      "LowerIdent": false,
+      "UpperIdentCamel": false,
       "enums": [
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "Colors",
           "type": "u8",
           "value": "",
@@ -149,31 +303,63 @@
           "comment": "",
           "consts": [
             {
+              "Prefix": "",
+              "Suffix": "",
               "id": "BLUE",
               "type": "u8",
               "value": "0",
               "CommentDoc": "",
-              "comment": ""
+              "comment": "",
+              "EnumToPrefix": false,
+              "NamespaceToPrefix": false,
+              "MacroDefine": false,
+              "UpperIdent": false,
+              "LowerIdent": false,
+              "UpperIdentCamel": false
             },
             {
+              "Prefix": "",
+              "Suffix": "",
               "id": "GREEN",
               "type": "u8",
               "value": "1",
               "CommentDoc": "",
-              "comment": "/// green"
+              "comment": "/// green",
+              "EnumToPrefix": false,
+              "NamespaceToPrefix": false,
+              "MacroDefine": false,
+              "UpperIdent": false,
+              "LowerIdent": false,
+              "UpperIdentCamel": false
             },
             {
+              "Prefix": "",
+              "Suffix": "",
               "id": "RED",
               "type": "u8",
               "value": "2",
               "CommentDoc": "",
-              "comment": ""
+              "comment": "",
+              "EnumToPrefix": false,
+              "NamespaceToPrefix": false,
+              "MacroDefine": false,
+              "UpperIdent": false,
+              "LowerIdent": false,
+              "UpperIdentCamel": false
             }
-          ]
+          ],
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         }
       ],
       "namespaces": [
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "NODE",
           "type": "",
           "value": "",
@@ -181,15 +367,31 @@
           "comment": "",
           "consts": [
             {
+              "Prefix": "",
+              "Suffix": "",
               "id": "border",
               "type": "str",
               "value": "\"border\"",
               "CommentDoc": "",
-              "comment": ""
+              "comment": "",
+              "EnumToPrefix": false,
+              "NamespaceToPrefix": false,
+              "MacroDefine": false,
+              "UpperIdent": false,
+              "LowerIdent": false,
+              "UpperIdentCamel": false
             }
           ],
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false,
           "enums": [
             {
+              "Prefix": "",
+              "Suffix": "",
               "id": "Colors",
               "type": "u8",
               "value": "",
@@ -197,31 +399,63 @@
               "comment": "",
               "consts": [
                 {
+                  "Prefix": "",
+                  "Suffix": "",
                   "id": "RED",
                   "type": "u8",
                   "value": "0",
                   "CommentDoc": "",
-                  "comment": ""
+                  "comment": "",
+                  "EnumToPrefix": false,
+                  "NamespaceToPrefix": false,
+                  "MacroDefine": false,
+                  "UpperIdent": false,
+                  "LowerIdent": false,
+                  "UpperIdentCamel": false
                 },
                 {
+                  "Prefix": "",
+                  "Suffix": "",
                   "id": "GREEN",
                   "type": "u8",
                   "value": "1",
                   "CommentDoc": "",
-                  "comment": "/// green"
+                  "comment": "/// green",
+                  "EnumToPrefix": false,
+                  "NamespaceToPrefix": false,
+                  "MacroDefine": false,
+                  "UpperIdent": false,
+                  "LowerIdent": false,
+                  "UpperIdentCamel": false
                 },
                 {
+                  "Prefix": "",
+                  "Suffix": "",
                   "id": "BLUE",
                   "type": "u8",
                   "value": "2",
                   "CommentDoc": "",
-                  "comment": ""
+                  "comment": "",
+                  "EnumToPrefix": false,
+                  "NamespaceToPrefix": false,
+                  "MacroDefine": false,
+                  "UpperIdent": false,
+                  "LowerIdent": false,
+                  "UpperIdentCamel": false
                 }
-              ]
+              ],
+              "EnumToPrefix": false,
+              "NamespaceToPrefix": false,
+              "MacroDefine": false,
+              "UpperIdent": false,
+              "LowerIdent": false,
+              "UpperIdentCamel": false
             }
           ],
           "namespaces": [
             {
+              "Prefix": "",
+              "Suffix": "",
               "id": "Quick",
               "type": "",
               "value": "",
@@ -229,20 +463,42 @@
               "comment": "",
               "consts": [
                 {
+                  "Prefix": "",
+                  "Suffix": "",
                   "id": "item",
                   "type": "str",
                   "value": "\"item\"",
                   "CommentDoc": "",
-                  "comment": ""
+                  "comment": "",
+                  "EnumToPrefix": false,
+                  "NamespaceToPrefix": false,
+                  "MacroDefine": false,
+                  "UpperIdent": false,
+                  "LowerIdent": false,
+                  "UpperIdentCamel": false
                 }
               ],
+              "EnumToPrefix": false,
+              "NamespaceToPrefix": false,
+              "MacroDefine": false,
+              "UpperIdent": false,
+              "LowerIdent": false,
+              "UpperIdentCamel": false,
               "namespaces": [
                 {
+                  "Prefix": "",
+                  "Suffix": "",
                   "id": "NODE",
                   "type": "",
                   "value": "",
                   "CommentDoc": "",
-                  "comment": ""
+                  "comment": "",
+                  "EnumToPrefix": false,
+                  "NamespaceToPrefix": false,
+                  "MacroDefine": false,
+                  "UpperIdent": false,
+                  "LowerIdent": false,
+                  "UpperIdentCamel": false
                 }
               ]
             }
@@ -251,6 +507,8 @@
       ]
     },
     {
+      "Prefix": "",
+      "Suffix": "",
       "id": "css3",
       "type": "",
       "value": "",
@@ -258,48 +516,102 @@
       "comment": "",
       "consts": [
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "x_webkit_airplay",
           "type": "str",
           "value": "\"x-webkit-airplay\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "_webkit_text_zoom",
           "type": "str",
           "value": "\"-webkit-text-zoom\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "_webkit_backdrop_filter",
           "type": "str",
           "value": "\"-webkit-backdrop-filter\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "_webkit_border_horizontal_spacing",
           "type": "str",
           "value": "\"-webkit-border-horizontal-spacing\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "_webkit_border_vertical_spacing",
           "type": "str",
           "value": "\"-webkit-border-vertical-spacing\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         },
         {
+          "Prefix": "",
+          "Suffix": "",
           "id": "_webkit_box_align",
           "type": "str",
           "value": "\"-webkit-box-align\"",
           "CommentDoc": "",
-          "comment": ""
+          "comment": "",
+          "EnumToPrefix": false,
+          "NamespaceToPrefix": false,
+          "MacroDefine": false,
+          "UpperIdent": false,
+          "LowerIdent": false,
+          "UpperIdentCamel": false
         }
-      ]
+      ],
+      "EnumToPrefix": false,
+      "NamespaceToPrefix": false,
+      "MacroDefine": false,
+      "UpperIdent": false,
+      "LowerIdent": false,
+      "UpperIdentCamel": false
     }
   ]
 }

@@ -3,91 +3,91 @@
 (* 
  this is a test
  *)
-const Table: String = "table"; (* hello word *)
-const AllowTest: String = "at";
-const Percent: Shortint = -100;
+const TABLE: String = "table"; (* hello word *)
+const ALLOW_TEST: String = "at";
+const PERCENT: Shortint = -100;
 (* pi *)
-const Pi: Real = 3.14159;
+const PI: Real = 3.14159;
 
 (* 
  colors
  *)
-type Colors = (
-    KNoneDef,
-    KBlueDef,
-    KGreenDef,
-    KRedDef,
-    KAllDef
+type COLORS = (
+    K_NONE_DEF,
+    K_BLUE_DEF,
+    K_GREEN_DEF,
+    K_RED_DEF,
+    K_ALL_DEF
 );
-const ColorsKNoneDefStr: String = "KNoneDef";
-const ColorsKBlueDefStr: String = "KBlueDef";
-const ColorsKGreenDefStr: String = "KGreenDef";
-const ColorsKRedDefStr: String = "KRedDef";
-const ColorsKAllDefStr: String = "KAllDef";
+const COLORS_K_NONE_DEF_STR: String = "NONE";
+const COLORS_K_BLUE_DEF_STR: String = "blue";
+const COLORS_K_GREEN_DEF_STR: String = "green";
+const COLORS_K_RED_DEF_STR: String = "red";
+const COLORS_K_ALL_DEF_STR: String = "ALL";
 
 type
-    Node = class
-        const HtmlBlockId: String = "Block";
-        const HtmlTableId: String = "Table";
+    NODE = class
+        const HTML_BLOCK_ID: String = "Block";
+        const HTML_TABLE_ID: String = "Table";
     end;
 
 type
-    Item = class
-        const AllowTest: String = "at";
-        const Pi: Real = 3.14159;
-        const Table: String = "table";
-        const Percent: Shortint = 100;
-        const NoneId: Byte = 0;
-        const AllowTestId: Byte = (1 << 0);
-        const PiId: Byte = (1 << 1);
-        const TableId: Byte = (1 << 2);
-        const PercentId: Byte = (1 << 3);
-        const AllId: Byte = 0xf;
+    ITEM = class
+        const ALLOW_TEST: String = "at";
+        const PI: Real = 3.14159;
+        const TABLE: String = "table";
+        const _PERCENT: Shortint = 100;
+        const NONE_ID: Byte = 0;
+        const ALLOW_TEST_ID: Byte = 1 << 0;
+        const PI_ID: Byte = 1 << 1;
+        const TABLE_ID: Byte = 1 << 2;
+        const _PERCENT_ID: Byte = 1 << 3;
+        const ALL_ID: Byte = 0xf;
 
-        type Colors = (
-            Blue,
-            Green, (* green *)
-            Red
+        type COLORS = (
+            BLUE,
+            GREEN, (* green *)
+            RED
         );
 
         type
-            Node = class
-                const Border: String = "border";
+            NODE = class
+                const BORDER: String = "border";
 
-                type Colors = (
-                    Red,
-                    Green, (* green *)
-                    Blue
+                type COLORS = (
+                    RED,
+                    GREEN, (* green *)
+                    BLUE
                 );
-                const ColorsRedStr: String = "Red";
-                const ColorsGreenStr: String = "Green";
-                const ColorsBlueStr: String = "Blue";
+                const COLORS_RED_STR: String = "RED";
+                const COLORS_GREEN_STR: String = "GREEN";
+                const COLORS_BLUE_STR: String = "BLUE";
 
                 type
-                    Quick = class
-                        const Item: String = "item";
+                    QUICK = class
+                        const ITEM: String = "item";
 
                         type
-                            Node = class
+                            NODE = class
                             end;
                     end;
             end;
     end;
 
 type
-    Css3 = class
-        const XWebkitAirplay: String = "x-webkit-airplay";
-        const WebkitTextZoom: String = "-webkit-text-zoom";
-        const WebkitBackdropFilter: String = "-webkit-backdrop-filter";
-        const WebkitBorderHorizontalSpacing: String = "-webkit-border-horizontal-spacing";
-        const WebkitBorderVerticalSpacing: String = "-webkit-border-vertical-spacing";
-        const WebkitBoxAlign: String = "-webkit-box-align";
-        const NoneId: Byte = 0;
-        const XWebkitAirplayId: Byte = (1 << 0);
-        const WebkitTextZoomId: Byte = (1 << 1);
-        const WebkitBackdropFilterId: Byte = (1 << 2);
-        const WebkitBorderHorizontalSpacingId: Byte = (1 << 3);
-        const WebkitBorderVerticalSpacingId: Byte = (1 << 4);
-        const WebkitBoxAlignId: Byte = (1 << 5);
-        const AllId: Byte = 0x3f;
+    CSS3 = class
+        const X_WEBKIT_AIRPLAY: String = "x-webkit-airplay";
+        const _WEBKIT_TEXT_ZOOM: String = "-webkit-text-zoom";
+        const _WEBKIT_BACKDROP_FILTER: String = "-webkit-backdrop-filter";
+        const _WEBKIT_BORDER_HORIZONTAL_SPACING: String = "-webkit-border-horizontal-spacing";
+        const _WEBKIT_BORDER_VERTICAL_SPACING: String = "-webkit-border-vertical-spacing";
+        const _WEBKIT_BOX_ALIGN: String = "-webkit-box-align";
+        const NONE_ID: Byte = 0;
+        const X_WEBKIT_AIRPLAY_ID: Byte = 1 << 0;
+        const _WEBKIT_TEXT_ZOOM_ID: Byte = 1 << 1;
+        const _WEBKIT_BACKDROP_FILTER_ID: Byte = 1 << 2;
+        const _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: Byte = 1 << 3;
+        const _WEBKIT_BORDER_VERTICAL_SPACING_ID: Byte = 1 << 4;
+        const _WEBKIT_BOX_ALIGN_ID: Byte = 1 << 5;
+        const ALL_ID: Byte = 0x3f;
     end;

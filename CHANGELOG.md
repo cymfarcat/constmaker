@@ -1,3 +1,5 @@
+- 1.5.1 bug fixed.
+
 - 1.5 SQLite consts.
 
 - 1.0 Initial release.

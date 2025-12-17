@@ -3,7 +3,7 @@
 // constmaker -v -a -i./examples/svg/svg.cmt -o./examples/svg --go-package=svg
 //************************************************************************************************
 
-enum Element [prefix: "SVG", suffix:"ID", property:"upper-ident", action: "sort-asc-lex|gen-str|bit-flag"] {
+enum Element [prefix: "SVG", suffix:"ID", property:"upper-ident", action: "sort-asc-lex|gen-str|gen-id"] {
     a
     altGlyph
     altGlyphDef

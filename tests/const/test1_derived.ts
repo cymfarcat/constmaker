@@ -3,88 +3,88 @@
 /**
  *this is a test
  */
-const Table = "table"; // hello word
-const AllowTest = "at";
-const Percent = -100;
+const TABLE = "table"; // hello word
+const ALLOW_TEST = "at";
+const PERCENT = -100;
 
 /** pi */
-const Pi = 3.14159;
+const PI = 3.14159;
 
 /**
  * colors
  */
-export enum Colors {
-    KNoneDef = 0,
-    KBlueDef = (1 << 0),
-    KGreenDef = (1 << 1),
-    KRedDef = (1 << 2),
-    KAllDef = 0x7,
+export enum COLORS {
+    K_NONE_DEF = 0,
+    K_BLUE_DEF = 1 << 0,
+    K_GREEN_DEF = 1 << 1,
+    K_RED_DEF = 1 << 2,
+    K_ALL_DEF = 0x7,
 
-    KNoneDefStr = "KNoneDef",
-    KBlueDefStr = "KBlueDef",
-    KGreenDefStr = "KGreenDef",
-    KRedDefStr = "KRedDef",
-    KAllDefStr = "KAllDef",
+    K_NONE_DEF_STR = "NONE",
+    K_BLUE_DEF_STR = "blue",
+    K_GREEN_DEF_STR = "green",
+    K_RED_DEF_STR = "red",
+    K_ALL_DEF_STR = "ALL",
 }
 
-export namespace Node {
-    const HtmlBlockId = "Block";
-    const HtmlTableId = "Table";
+export namespace NODE {
+    const HTML_BLOCK_ID = "Block";
+    const HTML_TABLE_ID = "Table";
 }
 
-export namespace Item {
-    const AllowTest = "at";
-    const Pi = 3.14159;
-    const Table = "table";
-    const Percent = 100;
-    const NoneId = 0;
-    const AllowTestId = (1 << 0);
-    const PiId = (1 << 1);
-    const TableId = (1 << 2);
-    const PercentId = (1 << 3);
-    const AllId = 0xf;
+export namespace ITEM {
+    const ALLOW_TEST = "at";
+    const PI = 3.14159;
+    const TABLE = "table";
+    const _PERCENT = 100;
+    const NONE_ID = 0;
+    const ALLOW_TEST_ID = 1 << 0;
+    const PI_ID = 1 << 1;
+    const TABLE_ID = 1 << 2;
+    const _PERCENT_ID = 1 << 3;
+    const ALL_ID = 0xf;
 
-    export enum Colors {
-        Blue,
-        Green, // green
-        Red,
+    export enum COLORS {
+        BLUE,
+        GREEN, // green
+        RED,
     }
 }
 
-export namespace ItemNode {
-    const Border = "border";
+export namespace ITEM_NODE {
+    const BORDER = "border";
 
-    export enum Colors {
-        Red,
-        Green, // green
-        Blue,
+    export enum COLORS {
+        RED,
+        GREEN, // green
+        BLUE,
 
-        RedStr = "Red",
-        GreenStr = "Green",
-        BlueStr = "Blue",
+        RED_STR = "RED",
+        GREEN_STR = "GREEN",
+        BLUE_STR = "BLUE",
     }
 }
 
-export namespace ItemNodeQuick {
-    const Item = "item";
+export namespace ITEM_NODE_QUICK {
+    const ITEM = "item";
 }
 
-export namespace ItemNodeQuickNode {
+export namespace ITEM_NODE_QUICK_NODE {
 }
 
-export namespace Css3 {
-    const XWebkitAirplay = "x-webkit-airplay";
-    const WebkitTextZoom = "-webkit-text-zoom";
-    const WebkitBackdropFilter = "-webkit-backdrop-filter";
-    const WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
-    const WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
-    const WebkitBoxAlign = "-webkit-box-align";
-    const NoneId = 0;
-    const XWebkitAirplayId = (1 << 0);
-    const WebkitTextZoomId = (1 << 1);
-    const WebkitBackdropFilterId = (1 << 2);
-    const WebkitBorderHorizontalSpacingId = (1 << 3);
-    const WebkitBorderVerticalSpacingId = (1 << 4);
-    const WebkitBoxAlignId = (1 << 5);
-    const AllId = 0x3f;
+export namespace CSS3 {
+    const X_WEBKIT_AIRPLAY = "x-webkit-airplay";
+    const _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
+    const _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
+    const _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
+    const _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
+    const _WEBKIT_BOX_ALIGN = "-webkit-box-align";
+    const NONE_ID = 0;
+    const X_WEBKIT_AIRPLAY_ID = 1 << 0;
+    const _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
+    const _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
+    const _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
+    const _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
+    const _WEBKIT_BOX_ALIGN_ID = 1 << 5;
+    const ALL_ID = 0x3f;
 }

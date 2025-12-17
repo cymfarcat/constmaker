@@ -3,86 +3,86 @@
 /**
  *this is a test
  */
-const Table = "table"; // hello word
-const AllowTest = "at";
-const Percent = -100;
+const TABLE = "table"; // hello word
+const ALLOW_TEST = "at";
+const PERCENT = -100;
 
 /** pi */
-const Pi = 3.14159;
+const PI = 3.14159;
 
 /**
  * colors
  */
-enum Colors: int {
-    case KNoneDef = 0;
-    case KBlueDef = (1 << 0);
-    case KGreenDef = (1 << 1);
-    case KRedDef = (1 << 2);
-    case KAllDef = 0x7;
+enum COLORS: int {
+    case K_NONE_DEF = 0;
+    case K_BLUE_DEF = 1 << 0;
+    case K_GREEN_DEF = 1 << 1;
+    case K_RED_DEF = 1 << 2;
+    case K_ALL_DEF = 0x7;
 }
-const ColorsKNoneDefStr = "KNoneDef";
-const ColorsKBlueDefStr = "KBlueDef";
-const ColorsKGreenDefStr = "KGreenDef";
-const ColorsKRedDefStr = "KRedDef";
-const ColorsKAllDefStr = "KAllDef";
+const COLORS_K_NONE_DEF_STR = "NONE";
+const COLORS_K_BLUE_DEF_STR = "blue";
+const COLORS_K_GREEN_DEF_STR = "green";
+const COLORS_K_RED_DEF_STR = "red";
+const COLORS_K_ALL_DEF_STR = "ALL";
 
-namespace Node {
-    const HtmlBlockId = "Block";
-    const HtmlTableId = "Table";
+namespace NODE {
+    const HTML_BLOCK_ID = "Block";
+    const HTML_TABLE_ID = "Table";
 }
 
-namespace Item {
-    const AllowTest = "at";
-    const Pi = 3.14159;
-    const Table = "table";
-    const Percent = 100;
-    const NoneId = 0;
-    const AllowTestId = (1 << 0);
-    const PiId = (1 << 1);
-    const TableId = (1 << 2);
-    const PercentId = (1 << 3);
-    const AllId = 0xf;
+namespace ITEM {
+    const ALLOW_TEST = "at";
+    const PI = 3.14159;
+    const TABLE = "table";
+    const _PERCENT = 100;
+    const NONE_ID = 0;
+    const ALLOW_TEST_ID = 1 << 0;
+    const PI_ID = 1 << 1;
+    const TABLE_ID = 1 << 2;
+    const _PERCENT_ID = 1 << 3;
+    const ALL_ID = 0xf;
 
-    enum Colors: int {
-        case Blue;
-        case Green; // green
-        case Red;
+    enum COLORS: int {
+        case BLUE;
+        case GREEN; // green
+        case RED;
     }
 }
 
-namespace ItemNode {
-    const Border = "border";
+namespace ITEM_NODE {
+    const BORDER = "border";
 
-    enum Colors: int {
-        case Red;
-        case Green; // green
-        case Blue;
+    enum COLORS: int {
+        case RED;
+        case GREEN; // green
+        case BLUE;
     }
-    const ColorsRedStr = "Red";
-    const ColorsGreenStr = "Green";
-    const ColorsBlueStr = "Blue";
+    const COLORS_RED_STR = "RED";
+    const COLORS_GREEN_STR = "GREEN";
+    const COLORS_BLUE_STR = "BLUE";
 }
 
-namespace ItemNodeQuick {
-    const Item = "item";
+namespace ITEM_NODE_QUICK {
+    const ITEM = "item";
 }
 
-namespace ItemNodeQuickNode {
+namespace ITEM_NODE_QUICK_NODE {
 }
 
-namespace Css3 {
-    const XWebkitAirplay = "x-webkit-airplay";
-    const WebkitTextZoom = "-webkit-text-zoom";
-    const WebkitBackdropFilter = "-webkit-backdrop-filter";
-    const WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
-    const WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
-    const WebkitBoxAlign = "-webkit-box-align";
-    const NoneId = 0;
-    const XWebkitAirplayId = (1 << 0);
-    const WebkitTextZoomId = (1 << 1);
-    const WebkitBackdropFilterId = (1 << 2);
-    const WebkitBorderHorizontalSpacingId = (1 << 3);
-    const WebkitBorderVerticalSpacingId = (1 << 4);
-    const WebkitBoxAlignId = (1 << 5);
-    const AllId = 0x3f;
+namespace CSS3 {
+    const X_WEBKIT_AIRPLAY = "x-webkit-airplay";
+    const _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
+    const _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
+    const _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
+    const _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
+    const _WEBKIT_BOX_ALIGN = "-webkit-box-align";
+    const NONE_ID = 0;
+    const X_WEBKIT_AIRPLAY_ID = 1 << 0;
+    const _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
+    const _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
+    const _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
+    const _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
+    const _WEBKIT_BOX_ALIGN_ID = 1 << 5;
+    const ALL_ID = 0x3f;
 }

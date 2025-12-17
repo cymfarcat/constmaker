@@ -3,86 +3,86 @@
 /**
  *this is a test
  */
-const val Table: String = "table" // hello word
-const val AllowTest: String = "at"
-const val Percent: Byte = -100
+const val TABLE: String = "table" // hello word
+const val ALLOW_TEST: String = "at"
+const val PERCENT: Byte = -100
 
 /** pi */
-const val Pi: Float = 3.14159f
+const val PI: Float = 3.14159f
 
 /**
  * colors
  */
-enum class Colors(val value: UShort) {
-    KNoneDef(0),
-    KBlueDef((1 << 0)),
-    KGreenDef((1 << 1)),
-    KRedDef((1 << 2)),
-    KAllDef(0x7);
+enum class COLORS(val value: UShort) {
+    K_NONE_DEF(0),
+    K_BLUE_DEF(1 << 0),
+    K_GREEN_DEF(1 << 1),
+    K_RED_DEF(1 << 2),
+    K_ALL_DEF(0x7);
 }
-const val ColorsKNoneDefStr: String = "KNoneDef"
-const val ColorsKBlueDefStr: String = "KBlueDef"
-const val ColorsKGreenDefStr: String = "KGreenDef"
-const val ColorsKRedDefStr: String = "KRedDef"
-const val ColorsKAllDefStr: String = "KAllDef"
+const val COLORS_K_NONE_DEF_STR: String = "NONE"
+const val COLORS_K_BLUE_DEF_STR: String = "blue"
+const val COLORS_K_GREEN_DEF_STR: String = "green"
+const val COLORS_K_RED_DEF_STR: String = "red"
+const val COLORS_K_ALL_DEF_STR: String = "ALL"
 
-object Node {
-    const val HtmlBlockId: String = "Block"
-    const val HtmlTableId: String = "Table"
+object NODE {
+    const val HTML_BLOCK_ID: String = "Block"
+    const val HTML_TABLE_ID: String = "Table"
 }
 
-object Item {
-    const val AllowTest: String = "at"
-    const val Pi: Float = 3.14159f
-    const val Table: String = "table"
-    const val Percent: Byte = 100
-    const val NoneId: UByte = 0
-    const val AllowTestId: UByte = (1 << 0)
-    const val PiId: UByte = (1 << 1)
-    const val TableId: UByte = (1 << 2)
-    const val PercentId: UByte = (1 << 3)
-    const val AllId: UByte = 0xf
+object ITEM {
+    const val ALLOW_TEST: String = "at"
+    const val PI: Float = 3.14159f
+    const val TABLE: String = "table"
+    const val _PERCENT: Byte = 100
+    const val NONE_ID: UByte = 0
+    const val ALLOW_TEST_ID: UByte = 1 << 0
+    const val PI_ID: UByte = 1 << 1
+    const val TABLE_ID: UByte = 1 << 2
+    const val _PERCENT_ID: UByte = 1 << 3
+    const val ALL_ID: UByte = 0xf
 
-    enum class Colors(val value: UByte) {
-        Blue,
-        Green, // green
-        Red
+    enum class COLORS(val value: UByte) {
+        BLUE,
+        GREEN, // green
+        RED
     }
 }
 
-object ItemNode {
-    const val Border: String = "border"
+object ITEM_NODE {
+    const val BORDER: String = "border"
 
-    enum class Colors(val value: UByte) {
-        Red,
-        Green, // green
-        Blue
+    enum class COLORS(val value: UByte) {
+        RED,
+        GREEN, // green
+        BLUE
     }
-    const val ColorsRedStr: String = "Red"
-    const val ColorsGreenStr: String = "Green"
-    const val ColorsBlueStr: String = "Blue"
+    const val COLORS_RED_STR: String = "RED"
+    const val COLORS_GREEN_STR: String = "GREEN"
+    const val COLORS_BLUE_STR: String = "BLUE"
 }
 
-object ItemNodeQuick {
-    const val Item: String = "item"
+object ITEM_NODE_QUICK {
+    const val ITEM: String = "item"
 }
 
-object ItemNodeQuickNode {
+object ITEM_NODE_QUICK_NODE {
 }
 
-object Css3 {
-    const val XWebkitAirplay: String = "x-webkit-airplay"
-    const val WebkitTextZoom: String = "-webkit-text-zoom"
-    const val WebkitBackdropFilter: String = "-webkit-backdrop-filter"
-    const val WebkitBorderHorizontalSpacing: String = "-webkit-border-horizontal-spacing"
-    const val WebkitBorderVerticalSpacing: String = "-webkit-border-vertical-spacing"
-    const val WebkitBoxAlign: String = "-webkit-box-align"
-    const val NoneId: UByte = 0
-    const val XWebkitAirplayId: UByte = (1 << 0)
-    const val WebkitTextZoomId: UByte = (1 << 1)
-    const val WebkitBackdropFilterId: UByte = (1 << 2)
-    const val WebkitBorderHorizontalSpacingId: UByte = (1 << 3)
-    const val WebkitBorderVerticalSpacingId: UByte = (1 << 4)
-    const val WebkitBoxAlignId: UByte = (1 << 5)
-    const val AllId: UByte = 0x3f
+object CSS3 {
+    const val X_WEBKIT_AIRPLAY: String = "x-webkit-airplay"
+    const val _WEBKIT_TEXT_ZOOM: String = "-webkit-text-zoom"
+    const val _WEBKIT_BACKDROP_FILTER: String = "-webkit-backdrop-filter"
+    const val _WEBKIT_BORDER_HORIZONTAL_SPACING: String = "-webkit-border-horizontal-spacing"
+    const val _WEBKIT_BORDER_VERTICAL_SPACING: String = "-webkit-border-vertical-spacing"
+    const val _WEBKIT_BOX_ALIGN: String = "-webkit-box-align"
+    const val NONE_ID: UByte = 0
+    const val X_WEBKIT_AIRPLAY_ID: UByte = 1 << 0
+    const val _WEBKIT_TEXT_ZOOM_ID: UByte = 1 << 1
+    const val _WEBKIT_BACKDROP_FILTER_ID: UByte = 1 << 2
+    const val _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: UByte = 1 << 3
+    const val _WEBKIT_BORDER_VERTICAL_SPACING_ID: UByte = 1 << 4
+    const val _WEBKIT_BOX_ALIGN_ID: UByte = 1 << 5
+    const val ALL_ID: UByte = 0x3f
 }

@@ -5,82 +5,82 @@ from enum import Enum
 # 
 # this is a test
 # 
-Table: str = "table" # hello word
-AllowTest: str = "at"
-Percent: int = -100
+TABLE: str = "table" # hello word
+ALLOW_TEST: str = "at"
+PERCENT: int = -100
 # pi 
-Pi: float = 3.14159
+PI: float = 3.14159
 
 # 
 # colors
 # 
-class Colors(Enum):
-    KNoneDef = 0
-    KBlueDef = (1 << 0)
-    KGreenDef = (1 << 1)
-    KRedDef = (1 << 2)
-    KAllDef = 0x7
+class COLORS(Enum):
+    K_NONE_DEF = 0
+    K_BLUE_DEF = 1 << 0
+    K_GREEN_DEF = 1 << 1
+    K_RED_DEF = 1 << 2
+    K_ALL_DEF = 0x7
 
-    KNoneDefStr: str = "KNoneDef"
-    KBlueDefStr: str = "KBlueDef"
-    KGreenDefStr: str = "KGreenDef"
-    KRedDefStr: str = "KRedDef"
-    KAllDefStr: str = "KAllDef"
+    K_NONE_DEF_STR: str = "NONE"
+    K_BLUE_DEF_STR: str = "blue"
+    K_GREEN_DEF_STR: str = "green"
+    K_RED_DEF_STR: str = "red"
+    K_ALL_DEF_STR: str = "ALL"
 
-class Node:
-    HtmlBlockId: str = "Block"
-    HtmlTableId: str = "Table"
-
-
-class Item:
-    AllowTest: str = "at"
-    Pi: float = 3.14159
-    Table: str = "table"
-    Percent: int = 100
-    NoneId: int = 0
-    AllowTestId: int = (1 << 0)
-    PiId: int = (1 << 1)
-    TableId: int = (1 << 2)
-    PercentId: int = (1 << 3)
-    AllId: int = 0xf
-
-    class Colors(Enum):
-        Blue
-        Green # green
-        Red
+class NODE:
+    HTML_BLOCK_ID: str = "Block"
+    HTML_TABLE_ID: str = "Table"
 
 
-class ItemNode:
-    Border: str = "border"
+class ITEM:
+    ALLOW_TEST: str = "at"
+    PI: float = 3.14159
+    TABLE: str = "table"
+    _PERCENT: int = 100
+    NONE_ID: int = 0
+    ALLOW_TEST_ID: int = 1 << 0
+    PI_ID: int = 1 << 1
+    TABLE_ID: int = 1 << 2
+    _PERCENT_ID: int = 1 << 3
+    ALL_ID: int = 0xf
 
-    class Colors(Enum):
-        Red
-        Green # green
-        Blue
-
-        RedStr: str = "Red"
-        GreenStr: str = "Green"
-        BlueStr: str = "Blue"
+    class COLORS(Enum):
+        BLUE
+        GREEN # green
+        RED
 
 
-class ItemNodeQuick:
-    Item: str = "item"
+class ITEM_NODE:
+    BORDER: str = "border"
+
+    class COLORS(Enum):
+        RED
+        GREEN # green
+        BLUE
+
+        RED_STR: str = "RED"
+        GREEN_STR: str = "GREEN"
+        BLUE_STR: str = "BLUE"
+
+
+class ITEM_NODE_QUICK:
+    ITEM: str = "item"
 
 
 # namespace ITEM_NODE_Quick_NODE
 
-class ItemCss3:
-    XWebkitAirplay: str = "x-webkit-airplay"
-    WebkitTextZoom: str = "-webkit-text-zoom"
-    WebkitBackdropFilter: str = "-webkit-backdrop-filter"
-    WebkitBorderHorizontalSpacing: str = "-webkit-border-horizontal-spacing"
-    WebkitBorderVerticalSpacing: str = "-webkit-border-vertical-spacing"
-    WebkitBoxAlign: str = "-webkit-box-align"
-    NoneId: int = 0
-    XWebkitAirplayId: int = (1 << 0)
-    WebkitTextZoomId: int = (1 << 1)
-    WebkitBackdropFilterId: int = (1 << 2)
-    WebkitBorderHorizontalSpacingId: int = (1 << 3)
-    WebkitBorderVerticalSpacingId: int = (1 << 4)
-    WebkitBoxAlignId: int = (1 << 5)
-    AllId: int = 0x3f
+class ITEM_CSS3:
+    X_WEBKIT_AIRPLAY: str = "x-webkit-airplay"
+    _WEBKIT_TEXT_ZOOM: str = "-webkit-text-zoom"
+    _WEBKIT_BACKDROP_FILTER: str = "-webkit-backdrop-filter"
+    _WEBKIT_BORDER_HORIZONTAL_SPACING: str = "-webkit-border-horizontal-spacing"
+    _WEBKIT_BORDER_VERTICAL_SPACING: str = "-webkit-border-vertical-spacing"
+    _WEBKIT_BOX_ALIGN: str = "-webkit-box-align"
+    NONE_ID: int = 0
+    X_WEBKIT_AIRPLAY_ID: int = 1 << 0
+    _WEBKIT_TEXT_ZOOM_ID: int = 1 << 1
+    _WEBKIT_BACKDROP_FILTER_ID: int = 1 << 2
+    _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: int = 1 << 3
+    _WEBKIT_BORDER_VERTICAL_SPACING_ID: int = 1 << 4
+    _WEBKIT_BOX_ALIGN_ID: int = 1 << 5
+    ALL_ID: int = 0x3f

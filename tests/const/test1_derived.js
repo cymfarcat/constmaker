@@ -3,98 +3,98 @@
 /**
  *this is a test
  */
-const Table = "table"; // hello word
-const AllowTest = "at";
-const Percent = -100;
+const TABLE = "table"; // hello word
+const ALLOW_TEST = "at";
+const PERCENT = -100;
 
 /** pi */
-const Pi = 3.14159;
+const PI = 3.14159;
 
 /**
  * colors
  */
-const Colors = {
-    KNoneDef: 0,
-    KBlueDef: (1 << 0),
-    KGreenDef: (1 << 1),
-    KRedDef: (1 << 2),
-    KAllDef: 0x7,
+const COLORS = {
+    K_NONE_DEF: 0,
+    K_BLUE_DEF: 1 << 0,
+    K_GREEN_DEF: 1 << 1,
+    K_RED_DEF: 1 << 2,
+    K_ALL_DEF: 0x7,
 };
-const ColorsKNoneDefStr = "KNoneDef";
-const ColorsKBlueDefStr = "KBlueDef";
-const ColorsKGreenDefStr = "KGreenDef";
-const ColorsKRedDefStr = "KRedDef";
-const ColorsKAllDefStr = "KAllDef";
+const COLORS_K_NONE_DEF_STR = "NONE";
+const COLORS_K_BLUE_DEF_STR = "blue";
+const COLORS_K_GREEN_DEF_STR = "green";
+const COLORS_K_RED_DEF_STR = "red";
+const COLORS_K_ALL_DEF_STR = "ALL";
 
-const Node = {
+const NODE = {
     Constants: Object.freeze({
-        HtmlBlockId: "Block",
-        HtmlTableId: "Table",
+        HTML_BLOCK_ID: "Block",
+        HTML_TABLE_ID: "Table",
     })
 };
 
-const Item = {
+const ITEM = {
     Constants: Object.freeze({
-        AllowTest: "at",
-        Pi: 3.14159,
-        Table: "table",
-        Percent: 100,
-        NoneId: 0,
-        AllowTestId: (1 << 0),
-        PiId: (1 << 1),
-        TableId: (1 << 2),
-        PercentId: (1 << 3),
-        AllId: 0xf,
+        ALLOW_TEST: "at",
+        PI: 3.14159,
+        TABLE: "table",
+        _PERCENT: 100,
+        NONE_ID: 0,
+        ALLOW_TEST_ID: 1 << 0,
+        PI_ID: 1 << 1,
+        TABLE_ID: 1 << 2,
+        _PERCENT_ID: 1 << 3,
+        ALL_ID: 0xf,
 
-        Colors: Object.freeze({
-            Blue: 0,
-            Green: 1, // green
-            Red: 2,
+        COLORS: Object.freeze({
+            BLUE: 0,
+            GREEN: 1, // green
+            RED: 2,
         }),
     })
 };
 
-const ItemNode = {
+const ITEM_NODE = {
     Constants: Object.freeze({
-        Border: "border",
+        BORDER: "border",
 
-        Colors: Object.freeze({
-            Red: 0,
-            Green: 1, // green
-            Blue: 2,
+        COLORS: Object.freeze({
+            RED: 0,
+            GREEN: 1, // green
+            BLUE: 2,
         }),
-        ColorsRedStr: "Red",
-        ColorsGreenStr: "Green",
-        ColorsBlueStr: "Blue",
+        COLORS_RED_STR: "RED",
+        COLORS_GREEN_STR: "GREEN",
+        COLORS_BLUE_STR: "BLUE",
     })
 };
 
-const ItemNodeQuick = {
+const ITEM_NODE_QUICK = {
     Constants: Object.freeze({
-        Item: "item",
+        ITEM: "item",
     })
 };
 
-const ItemNodeQuickNode = {
+const ITEM_NODE_QUICK_NODE = {
     Constants: Object.freeze({
     })
 };
 
-const Css3 = {
+const CSS3 = {
     Constants: Object.freeze({
-        XWebkitAirplay: "x-webkit-airplay",
-        WebkitTextZoom: "-webkit-text-zoom",
-        WebkitBackdropFilter: "-webkit-backdrop-filter",
-        WebkitBorderHorizontalSpacing: "-webkit-border-horizontal-spacing",
-        WebkitBorderVerticalSpacing: "-webkit-border-vertical-spacing",
-        WebkitBoxAlign: "-webkit-box-align",
-        NoneId: 0,
-        XWebkitAirplayId: (1 << 0),
-        WebkitTextZoomId: (1 << 1),
-        WebkitBackdropFilterId: (1 << 2),
-        WebkitBorderHorizontalSpacingId: (1 << 3),
-        WebkitBorderVerticalSpacingId: (1 << 4),
-        WebkitBoxAlignId: (1 << 5),
-        AllId: 0x3f,
+        X_WEBKIT_AIRPLAY: "x-webkit-airplay",
+        _WEBKIT_TEXT_ZOOM: "-webkit-text-zoom",
+        _WEBKIT_BACKDROP_FILTER: "-webkit-backdrop-filter",
+        _WEBKIT_BORDER_HORIZONTAL_SPACING: "-webkit-border-horizontal-spacing",
+        _WEBKIT_BORDER_VERTICAL_SPACING: "-webkit-border-vertical-spacing",
+        _WEBKIT_BOX_ALIGN: "-webkit-box-align",
+        NONE_ID: 0,
+        X_WEBKIT_AIRPLAY_ID: 1 << 0,
+        _WEBKIT_TEXT_ZOOM_ID: 1 << 1,
+        _WEBKIT_BACKDROP_FILTER_ID: 1 << 2,
+        _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: 1 << 3,
+        _WEBKIT_BORDER_VERTICAL_SPACING_ID: 1 << 4,
+        _WEBKIT_BOX_ALIGN_ID: 1 << 5,
+        ALL_ID: 0x3f,
     })
 };

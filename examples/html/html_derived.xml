@@ -1,816 +1,2992 @@
 <Html id="" type="" value="" comment="">
+  <Prefix></Prefix>
+  <Suffix></Suffix>
   <CommentDoc></CommentDoc>
+  <EnumToPrefix>false</EnumToPrefix>
+  <NamespaceToPrefix>false</NamespaceToPrefix>
+  <MacroDefine>false</MacroDefine>
+  <UpperIdent>false</UpperIdent>
+  <LowerIdent>false</LowerIdent>
+  <UpperIdentCamel>false</UpperIdentCamel>
   <enum id="Element" type="u8" value="" comment="">
+    <Prefix></Prefix>
+    <Suffix></Suffix>
     <CommentDoc></CommentDoc>
     <const id="a" type="u8" value="0" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="abbr" type="u8" value="1" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="acronym" type="u8" value="2" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="address" type="u8" value="3" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="applet" type="u8" value="4" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="area" type="u8" value="5" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="audio" type="u8" value="6" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="b" type="u8" value="7" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="base" type="u8" value="8" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="basefont" type="u8" value="9" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="bdo" type="u8" value="10" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="big" type="u8" value="11" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="blockquote" type="u8" value="12" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="body" type="u8" value="13" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="br" type="u8" value="14" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="button" type="u8" value="15" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="canvas" type="u8" value="16" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="caption" type="u8" value="17" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="center" type="u8" value="18" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="cite" type="u8" value="19" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="code" type="u8" value="20" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="col" type="u8" value="21" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="colgroup" type="u8" value="22" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="comment" type="u8" value="23" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="dd" type="u8" value="24" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="del" type="u8" value="25" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="dfn" type="u8" value="26" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="dir" type="u8" value="27" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="div" type="u8" value="28" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="dl" type="u8" value="29" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="dt" type="u8" value="30" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="em" type="u8" value="31" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="embed" type="u8" value="32" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="fieldset" type="u8" value="33" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="font" type="u8" value="34" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="form" type="u8" value="35" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="frame" type="u8" value="36" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="frameset" type="u8" value="37" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="h1" type="u8" value="38" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="h2" type="u8" value="39" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="h3" type="u8" value="40" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="h4" type="u8" value="41" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="h5" type="u8" value="42" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="h6" type="u8" value="43" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="head" type="u8" value="44" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="hr" type="u8" value="45" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="html" type="u8" value="46" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="i" type="u8" value="47" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="iframe" type="u8" value="48" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="ilayer" type="u8" value="49" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="image" type="u8" value="50" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="img" type="u8" value="51" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="input" type="u8" value="52" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="ins" type="u8" value="53" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="isindex" type="u8" value="54" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="kbd" type="u8" value="55" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="keygen" type="u8" value="56" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="label" type="u8" value="57" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="layer" type="u8" value="58" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="legend" type="u8" value="59" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="li" type="u8" value="60" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="link" type="u8" value="61" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="listing" type="u8" value="62" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="map" type="u8" value="63" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="marquee" type="u8" value="64" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="menu" type="u8" value="65" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="meta" type="u8" value="66" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="nobr" type="u8" value="67" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="noembed" type="u8" value="68" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="noframes" type="u8" value="69" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="nolayer" type="u8" value="70" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="noscript" type="u8" value="71" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="object" type="u8" value="72" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="ol" type="u8" value="73" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="optgroup" type="u8" value="74" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="option" type="u8" value="75" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="p" type="u8" value="76" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="param" type="u8" value="77" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="plaintext" type="u8" value="78" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="pre" type="u8" value="79" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="q" type="u8" value="80" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="s" type="u8" value="81" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="samp" type="u8" value="82" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="script" type="u8" value="83" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="select" type="u8" value="84" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="small" type="u8" value="85" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="source" type="u8" value="86" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="span" type="u8" value="87" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="strike" type="u8" value="88" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="strong" type="u8" value="89" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="style" type="u8" value="90" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="sub" type="u8" value="91" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="sup" type="u8" value="92" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="table" type="u8" value="93" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="tbody" type="u8" value="94" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="td" type="u8" value="95" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="text" type="u8" value="96" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="textarea" type="u8" value="97" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="tfoot" type="u8" value="98" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="th" type="u8" value="99" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="thead" type="u8" value="100" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="title" type="u8" value="101" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="tr" type="u8" value="102" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="tt" type="u8" value="103" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="u" type="u8" value="104" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="ul" type="u8" value="105" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="var" type="u8" value="106" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="video" type="u8" value="107" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="wbr" type="u8" value="108" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="xmp" type="u8" value="109" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix>ID</Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
+    <EnumToPrefix>false</EnumToPrefix>
+    <NamespaceToPrefix>false</NamespaceToPrefix>
+    <MacroDefine>false</MacroDefine>
+    <UpperIdent>true</UpperIdent>
+    <LowerIdent>false</LowerIdent>
+    <UpperIdentCamel>false</UpperIdentCamel>
   </enum>
   <enum id="Attrib" type="u8" value="" comment="">
+    <Prefix></Prefix>
+    <Suffix></Suffix>
     <CommentDoc></CommentDoc>
     <const id="abbr" type="u8" value="0" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="accept" type="u8" value="1" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="accept_charset" type="u8" value="2" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="accesskey" type="u8" value="3" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="action" type="u8" value="4" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="align" type="u8" value="5" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="alink" type="u8" value="6" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="alt" type="u8" value="7" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="archive" type="u8" value="8" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="autocomplete" type="u8" value="9" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="autoplay" type="u8" value="10" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="axis" type="u8" value="11" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="background" type="u8" value="12" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="behavior" type="u8" value="13" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="bgcolor" type="u8" value="14" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="bgproperties" type="u8" value="15" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="border" type="u8" value="16" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="bordercolor" type="u8" value="17" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="cellpadding" type="u8" value="18" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="cellspacing" type="u8" value="19" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="challenge" type="u8" value="20" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="char" type="u8" value="21" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="charoff" type="u8" value="22" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="charset" type="u8" value="23" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="checked" type="u8" value="24" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="cite" type="u8" value="25" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="class" type="u8" value="26" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="classid" type="u8" value="27" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="clear" type="u8" value="28" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="code" type="u8" value="29" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="codebase" type="u8" value="30" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="codetype" type="u8" value="31" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="color" type="u8" value="32" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="cols" type="u8" value="33" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="colspan" type="u8" value="34" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="compact" type="u8" value="35" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="content" type="u8" value="36" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="contenteditable" type="u8" value="37" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="controls" type="u8" value="38" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="coords" type="u8" value="39" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="data" type="u8" value="40" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="datetime" type="u8" value="41" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="declare" type="u8" value="42" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="defer" type="u8" value="43" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="dir" type="u8" value="44" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="direction" type="u8" value="45" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="disabled" type="u8" value="46" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="enctype" type="u8" value="47" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="face" type="u8" value="48" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="for" type="u8" value="49" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="frame" type="u8" value="50" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="frameborder" type="u8" value="51" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="headers" type="u8" value="52" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="height" type="u8" value="53" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="hidden" type="u8" value="54" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="href" type="u8" value="55" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="hreflang" type="u8" value="56" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="hspace" type="u8" value="57" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="html" type="u8" value="58" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="http_equiv" type="u8" value="59" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="id" type="u8" value="60" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="ismap" type="u8" value="61" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="label" type="u8" value="62" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="lang" type="u8" value="63" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="language" type="u8" value="64" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="left" type="u8" value="65" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="leftmargin" type="u8" value="66" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="link" type="u8" value="67" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="longdesc" type="u8" value="68" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="loop" type="u8" value="69" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="marginheight" type="u8" value="70" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="marginwidth" type="u8" value="71" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="maxlength" type="u8" value="72" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="media" type="u8" value="73" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="method" type="u8" value="74" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="multiple" type="u8" value="75" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="name" type="u8" value="76" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="nohref" type="u8" value="77" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="noresize" type="u8" value="78" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="nosave" type="u8" value="79" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="noshade" type="u8" value="80" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="nowrap" type="u8" value="81" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="object" type="u8" value="82" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onabort" type="u8" value="83" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onblur" type="u8" value="84" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onchange" type="u8" value="85" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onclick" type="u8" value="86" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="ondblclick" type="u8" value="87" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onerror" type="u8" value="88" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onfocus" type="u8" value="89" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onhashchange" type="u8" value="90" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onkeydown" type="u8" value="91" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onkeypress" type="u8" value="92" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onkeyup" type="u8" value="93" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onload" type="u8" value="94" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onmessage" type="u8" value="95" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onmousedown" type="u8" value="96" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onmousemove" type="u8" value="97" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onmouseout" type="u8" value="98" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onmouseover" type="u8" value="99" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onmouseup" type="u8" value="100" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onreset" type="u8" value="101" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onresize" type="u8" value="102" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onscroll" type="u8" value="103" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onselect" type="u8" value="104" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onsubmit" type="u8" value="105" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="onunload" type="u8" value="106" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="oversrc" type="u8" value="107" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="pagex" type="u8" value="108" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="pagey" type="u8" value="109" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="placeholder" type="u8" value="110" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="plain" type="u8" value="111" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="pluginpage" type="u8" value="112" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="pluginspage" type="u8" value="113" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="pluginurl" type="u8" value="114" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="poster" type="u8" value="115" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="profile" type="u8" value="116" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="prompt" type="u8" value="117" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="readonly" type="u8" value="118" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="rel" type="u8" value="119" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="rev" type="u8" value="120" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="rows" type="u8" value="121" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="rowspan" type="u8" value="122" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="rules" type="u8" value="123" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="scheme" type="u8" value="124" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="scope" type="u8" value="125" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="scrollamount" type="u8" value="126" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="scrolldelay" type="u8" value="127" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="scrolling" type="u8" value="128" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="selected" type="u8" value="129" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="shape" type="u8" value="130" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="size" type="u8" value="131" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="span" type="u8" value="132" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="src" type="u8" value="133" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="standby" type="u8" value="134" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="start" type="u8" value="135" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="style" type="u8" value="136" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="summary" type="u8" value="137" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="tabindex" type="u8" value="138" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="target" type="u8" value="139" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="text" type="u8" value="140" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="title" type="u8" value="141" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="top" type="u8" value="142" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="topmargin" type="u8" value="143" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="truespeed" type="u8" value="144" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="type" type="u8" value="145" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="unknown" type="u8" value="146" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="usemap" type="u8" value="147" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="valign" type="u8" value="148" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="value" type="u8" value="149" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="valuetype" type="u8" value="150" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="version" type="u8" value="151" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="visibility" type="u8" value="152" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="vlink" type="u8" value="153" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="vspace" type="u8" value="154" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="width" type="u8" value="155" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="wrap" type="u8" value="156" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="xmlns" type="u8" value="157" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
     <const id="z_index" type="u8" value="158" comment="">
+      <Prefix>HTML</Prefix>
+      <Suffix></Suffix>
       <CommentDoc></CommentDoc>
+      <EnumToPrefix>false</EnumToPrefix>
+      <NamespaceToPrefix>false</NamespaceToPrefix>
+      <MacroDefine>false</MacroDefine>
+      <UpperIdent>true</UpperIdent>
+      <LowerIdent>false</LowerIdent>
+      <UpperIdentCamel>false</UpperIdentCamel>
     </const>
+    <EnumToPrefix>false</EnumToPrefix>
+    <NamespaceToPrefix>false</NamespaceToPrefix>
+    <MacroDefine>false</MacroDefine>
+    <UpperIdent>true</UpperIdent>
+    <LowerIdent>false</LowerIdent>
+    <UpperIdentCamel>false</UpperIdentCamel>
   </enum>
 </Html>
