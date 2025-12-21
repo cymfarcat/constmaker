@@ -55,6 +55,8 @@ namespace Option {
 	NSToPrefix 		= "ns-to-prefix"
 	Freeze          = "freeze"
 	MacroDefine     = "macro-define"
+	IdentMapStr     = "ident-map-str"	  /// IdentMapStr
+	StrMapIdent     = "str-map-ident"	  /// StrMapIdent
 	UpperIdent      = "upper-ident"
 	LowerIdent      = "lower-ident"
 	UpperIdentCamel = "upper-ident-camel" /// UpperCamelCase
@@ -63,6 +65,9 @@ namespace Option {
 	// action
 	BitFlag   		= "bit-flag"
 	BitFlagHex   	= "bit-flag-hex"
+	ToUpper			= "to-upper"
+	ToLower			= "to-lower"
+	GenEntity		= "gen-entity"
 	GenStr    		= "gen-str"
 	GenId     		= "gen-id"
 	SortAsc   		= "sort-asc"		/// ASCII Order

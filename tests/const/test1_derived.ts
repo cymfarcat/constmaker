@@ -3,88 +3,84 @@
 /**
  *this is a test
  */
-const TABLE = "table"; // hello word
-const ALLOW_TEST = "at";
-const PERCENT = -100;
+const table = "table"; // hello word
+const allowTest = "at";
+const percent = -100;
 
 /** pi */
-const PI = 3.14159;
+const pi = 3.14159;
 
 /**
  * colors
  */
-export enum COLORS {
-    K_NONE_DEF = 0,
-    K_BLUE_DEF = 1 << 0,
-    K_GREEN_DEF = 1 << 1,
-    K_RED_DEF = 1 << 2,
-    K_ALL_DEF = 0x7,
+export enum mColors {
+    kBlueDef,
+    kGreenDef,
+    kRedDef,
 
-    K_NONE_DEF_STR = "NONE",
-    K_BLUE_DEF_STR = "blue",
-    K_GREEN_DEF_STR = "green",
-    K_RED_DEF_STR = "red",
-    K_ALL_DEF_STR = "ALL",
+    kBlueStr = "blue",
+    kGreenStr = "green",
+    kRedStr = "red",
 }
 
-export namespace NODE {
-    const HTML_BLOCK_ID = "Block";
-    const HTML_TABLE_ID = "Table";
+export namespace node {
+    const htmlBlockId = "Block";
+    const htmlTableId = "Table";
 }
 
-export namespace ITEM {
-    const ALLOW_TEST = "at";
-    const PI = 3.14159;
-    const TABLE = "table";
-    const _PERCENT = 100;
-    const NONE_ID = 0;
-    const ALLOW_TEST_ID = 1 << 0;
-    const PI_ID = 1 << 1;
-    const TABLE_ID = 1 << 2;
-    const _PERCENT_ID = 1 << 3;
-    const ALL_ID = 0xf;
+export namespace item {
+    const allowTest = "at";
+    const pi = 3.14159;
+    const table = "table";
+    const Percent = 100;
+    const noneId = 0;
+    const allowTestId = 1 << 0;
+    const piId = 1 << 1;
+    const tableId = 1 << 2;
+    const PercentId = 1 << 3;
+    const allId = 0xf;
 
-    export enum COLORS {
-        BLUE,
-        GREEN, // green
-        RED,
+    export enum colors {
+        blue,
+        green, // green
+        red,
     }
 }
 
-export namespace ITEM_NODE {
-    const BORDER = "border";
+export namespace itemNode {
+    const border = "border";
 
-    export enum COLORS {
-        RED,
-        GREEN, // green
-        BLUE,
+    export enum colors {
+        red,
+        green, // green
+        blue,
 
-        RED_STR = "RED",
-        GREEN_STR = "GREEN",
-        BLUE_STR = "BLUE",
+        redStr = "RED",
+        greenStr = "GREEN",
+        blueStr = "BLUE",
     }
 }
 
-export namespace ITEM_NODE_QUICK {
-    const ITEM = "item";
+export namespace itemNodeQuick {
+    const item = "item";
 }
 
-export namespace ITEM_NODE_QUICK_NODE {
+export namespace itemNodeQuickNode {
 }
 
-export namespace CSS3 {
-    const X_WEBKIT_AIRPLAY = "x-webkit-airplay";
-    const _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
-    const _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
-    const _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
-    const _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
-    const _WEBKIT_BOX_ALIGN = "-webkit-box-align";
-    const NONE_ID = 0;
-    const X_WEBKIT_AIRPLAY_ID = 1 << 0;
-    const _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
-    const _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
-    const _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
-    const _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
-    const _WEBKIT_BOX_ALIGN_ID = 1 << 5;
-    const ALL_ID = 0x3f;
+export namespace css3 {
+    const xWebkitAirplay = "x-webkit-airplay";
+    const WebkitTextZoom = "-webkit-text-zoom";
+    const WebkitBackdropFilter = "-webkit-backdrop-filter";
+    const WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
+    const WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
+    const WebkitBoxAlign = "-webkit-box-align";
+    const noneId = 0;
+    const xWebkitAirplayId = 1 << 0;
+    const WebkitTextZoomId = 1 << 1;
+    const WebkitBackdropFilterId = 1 << 2;
+    const WebkitBorderHorizontalSpacingId = 1 << 3;
+    const WebkitBorderVerticalSpacingId = 1 << 4;
+    const WebkitBoxAlignId = 1 << 5;
+    const allId = 0x3f;
 }

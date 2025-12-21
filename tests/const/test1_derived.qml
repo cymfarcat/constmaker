@@ -6,74 +6,70 @@ QtObject {
     /**
      *this is a test
      */
-    property string TABLE: "table" // hello word
-    property string ALLOW_TEST: "at"
-    property int PERCENT: -100
+    property string table: "table" // hello word
+    property string allowTest: "at"
+    property int percent: -100
 
     /** pi */
-    property real PI: 3.14159
+    property real pi: 3.14159
 
     /**
      * colors
      */
-    enum COLORS {
-        K_NONE_DEF = 0,
-        K_BLUE_DEF = 1 << 0,
-        K_GREEN_DEF = 1 << 1,
-        K_RED_DEF = 1 << 2,
-        K_ALL_DEF = 0x7
+    enum mColors {
+        kBlueDef,
+        kGreenDef,
+        kRedDef
     }
-    property string COLORS_K_NONE_DEF_STR: "NONE"
-    property string COLORS_K_BLUE_DEF_STR: "blue"
-    property string COLORS_K_GREEN_DEF_STR: "green"
-    property string COLORS_K_RED_DEF_STR: "red"
-    property string COLORS_K_ALL_DEF_STR: "ALL"
+    property string mColorsKBlueStr: "blue"
+    property string mColorsKGreenStr: "green"
+    property string mColorsKRedStr: "red"
 
     QtObject {
         id: node
 
-        property string HTML_BLOCK_ID: "Block"
-        property string HTML_TABLE_ID: "Table"
+        property string htmlBlockId: "Block"
+        property string htmlTableId: "Table"
     }
 
     QtObject {
         id: item
 
-        property string ALLOW_TEST: "at"
-        property real PI: 3.14159
-        property string TABLE: "table"
-        property int _PERCENT: 100
-        property int NONE_ID: 0
-        property int ALLOW_TEST_ID: 1 << 0
-        property int PI_ID: 1 << 1
-        property int TABLE_ID: 1 << 2
-        property int _PERCENT_ID: 1 << 3
-        property int ALL_ID: 0xf
+        property string allowTest: "at"
+        property real pi: 3.14159
+        property string table: "table"
+        property int Percent: 100
+        property int noneId: 0
+        property int allowTestId: 1 << 0
+        property int piId: 1 << 1
+        property int tableId: 1 << 2
+        property int PercentId: 1 << 3
+        property int allId: 0xf
 
-        enum COLORS {
-            BLUE,
-            GREEN, // green
-            RED
+        enum colors {
+            blue,
+            green, // green
+            red
         }
 
         QtObject {
             id: node
 
-            property string BORDER: "border"
+            property string border: "border"
 
-            enum COLORS {
-                RED,
-                GREEN, // green
-                BLUE
+            enum colors {
+                red,
+                green, // green
+                blue
             }
-            property string COLORS_RED_STR: "RED"
-            property string COLORS_GREEN_STR: "GREEN"
-            property string COLORS_BLUE_STR: "BLUE"
+            property string colorsRedStr: "RED"
+            property string colorsGreenStr: "GREEN"
+            property string colorsBlueStr: "BLUE"
 
             QtObject {
                 id: quick
 
-                property string ITEM: "item"
+                property string item: "item"
 
                 QtObject {
                     id: node
@@ -86,19 +82,19 @@ QtObject {
     QtObject {
         id: css3
 
-        property string X_WEBKIT_AIRPLAY: "x-webkit-airplay"
-        property string _WEBKIT_TEXT_ZOOM: "-webkit-text-zoom"
-        property string _WEBKIT_BACKDROP_FILTER: "-webkit-backdrop-filter"
-        property string _WEBKIT_BORDER_HORIZONTAL_SPACING: "-webkit-border-horizontal-spacing"
-        property string _WEBKIT_BORDER_VERTICAL_SPACING: "-webkit-border-vertical-spacing"
-        property string _WEBKIT_BOX_ALIGN: "-webkit-box-align"
-        property int NONE_ID: 0
-        property int X_WEBKIT_AIRPLAY_ID: 1 << 0
-        property int _WEBKIT_TEXT_ZOOM_ID: 1 << 1
-        property int _WEBKIT_BACKDROP_FILTER_ID: 1 << 2
-        property int _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: 1 << 3
-        property int _WEBKIT_BORDER_VERTICAL_SPACING_ID: 1 << 4
-        property int _WEBKIT_BOX_ALIGN_ID: 1 << 5
-        property int ALL_ID: 0x3f
+        property string xWebkitAirplay: "x-webkit-airplay"
+        property string WebkitTextZoom: "-webkit-text-zoom"
+        property string WebkitBackdropFilter: "-webkit-backdrop-filter"
+        property string WebkitBorderHorizontalSpacing: "-webkit-border-horizontal-spacing"
+        property string WebkitBorderVerticalSpacing: "-webkit-border-vertical-spacing"
+        property string WebkitBoxAlign: "-webkit-box-align"
+        property int noneId: 0
+        property int xWebkitAirplayId: 1 << 0
+        property int WebkitTextZoomId: 1 << 1
+        property int WebkitBackdropFilterId: 1 << 2
+        property int WebkitBorderHorizontalSpacingId: 1 << 3
+        property int WebkitBorderVerticalSpacingId: 1 << 4
+        property int WebkitBoxAlignId: 1 << 5
+        property int allId: 0x3f
     }
 }

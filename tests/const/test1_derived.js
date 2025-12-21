@@ -3,98 +3,94 @@
 /**
  *this is a test
  */
-const TABLE = "table"; // hello word
-const ALLOW_TEST = "at";
-const PERCENT = -100;
+const table = "table"; // hello word
+const allowTest = "at";
+const percent = -100;
 
 /** pi */
-const PI = 3.14159;
+const pi = 3.14159;
 
 /**
  * colors
  */
-const COLORS = {
-    K_NONE_DEF: 0,
-    K_BLUE_DEF: 1 << 0,
-    K_GREEN_DEF: 1 << 1,
-    K_RED_DEF: 1 << 2,
-    K_ALL_DEF: 0x7,
+const mColors = {
+    kBlueDef: 0,
+    kGreenDef: 1,
+    kRedDef: 2,
 };
-const COLORS_K_NONE_DEF_STR = "NONE";
-const COLORS_K_BLUE_DEF_STR = "blue";
-const COLORS_K_GREEN_DEF_STR = "green";
-const COLORS_K_RED_DEF_STR = "red";
-const COLORS_K_ALL_DEF_STR = "ALL";
+const mColorsKBlueStr = "blue";
+const mColorsKGreenStr = "green";
+const mColorsKRedStr = "red";
 
-const NODE = {
+const node = {
     Constants: Object.freeze({
-        HTML_BLOCK_ID: "Block",
-        HTML_TABLE_ID: "Table",
+        htmlBlockId: "Block",
+        htmlTableId: "Table",
     })
 };
 
-const ITEM = {
+const item = {
     Constants: Object.freeze({
-        ALLOW_TEST: "at",
-        PI: 3.14159,
-        TABLE: "table",
-        _PERCENT: 100,
-        NONE_ID: 0,
-        ALLOW_TEST_ID: 1 << 0,
-        PI_ID: 1 << 1,
-        TABLE_ID: 1 << 2,
-        _PERCENT_ID: 1 << 3,
-        ALL_ID: 0xf,
+        allowTest: "at",
+        pi: 3.14159,
+        table: "table",
+        Percent: 100,
+        noneId: 0,
+        allowTestId: 1 << 0,
+        piId: 1 << 1,
+        tableId: 1 << 2,
+        PercentId: 1 << 3,
+        allId: 0xf,
 
-        COLORS: Object.freeze({
-            BLUE: 0,
-            GREEN: 1, // green
-            RED: 2,
+        colors: Object.freeze({
+            blue: 0,
+            green: 1, // green
+            red: 2,
         }),
     })
 };
 
-const ITEM_NODE = {
+const itemNode = {
     Constants: Object.freeze({
-        BORDER: "border",
+        border: "border",
 
-        COLORS: Object.freeze({
-            RED: 0,
-            GREEN: 1, // green
-            BLUE: 2,
+        colors: Object.freeze({
+            red: 0,
+            green: 1, // green
+            blue: 2,
         }),
-        COLORS_RED_STR: "RED",
-        COLORS_GREEN_STR: "GREEN",
-        COLORS_BLUE_STR: "BLUE",
+        colorsRedStr: "RED",
+        colorsGreenStr: "GREEN",
+        colorsBlueStr: "BLUE",
     })
 };
 
-const ITEM_NODE_QUICK = {
+const itemNodeQuick = {
     Constants: Object.freeze({
-        ITEM: "item",
+        item: "item",
     })
 };
 
-const ITEM_NODE_QUICK_NODE = {
+const itemNodeQuickNode = {
     Constants: Object.freeze({
     })
 };
 
-const CSS3 = {
+const css3 = {
     Constants: Object.freeze({
-        X_WEBKIT_AIRPLAY: "x-webkit-airplay",
-        _WEBKIT_TEXT_ZOOM: "-webkit-text-zoom",
-        _WEBKIT_BACKDROP_FILTER: "-webkit-backdrop-filter",
-        _WEBKIT_BORDER_HORIZONTAL_SPACING: "-webkit-border-horizontal-spacing",
-        _WEBKIT_BORDER_VERTICAL_SPACING: "-webkit-border-vertical-spacing",
-        _WEBKIT_BOX_ALIGN: "-webkit-box-align",
-        NONE_ID: 0,
-        X_WEBKIT_AIRPLAY_ID: 1 << 0,
-        _WEBKIT_TEXT_ZOOM_ID: 1 << 1,
-        _WEBKIT_BACKDROP_FILTER_ID: 1 << 2,
-        _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: 1 << 3,
-        _WEBKIT_BORDER_VERTICAL_SPACING_ID: 1 << 4,
-        _WEBKIT_BOX_ALIGN_ID: 1 << 5,
-        ALL_ID: 0x3f,
+        xWebkitAirplay: "x-webkit-airplay",
+        WebkitTextZoom: "-webkit-text-zoom",
+        WebkitBackdropFilter: "-webkit-backdrop-filter",
+        WebkitBorderHorizontalSpacing: "-webkit-border-horizontal-spacing",
+        WebkitBorderVerticalSpacing: "-webkit-border-vertical-spacing",
+        WebkitBoxAlign: "-webkit-box-align",
+        noneId: 0,
+        xWebkitAirplayId: 1 << 0,
+        WebkitTextZoomId: 1 << 1,
+        WebkitBackdropFilterId: 1 << 2,
+        WebkitBorderHorizontalSpacingId: 1 << 3,
+        WebkitBorderVerticalSpacingId: 1 << 4,
+        WebkitBoxAlignId: 1 << 5,
+        allId: 0x3f,
     })
 };

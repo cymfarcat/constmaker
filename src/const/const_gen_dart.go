@@ -66,7 +66,13 @@ func dartTypo(typo string) string {
 }
 
 func (obj *ConstObject) GenDart(prefix string, option *src.Options, builder *strings.Builder) {
+
 	for idx, constObj := range obj.Children {
+		value := constObj.Value
+		// PATCH HERE
+		if constObj.Value == "\"$\"" {
+			value = "r" + constObj.Value
+		}
 
 		// doc comment
 		if len(constObj.CommentDoc) > 0 {
@@ -76,7 +82,7 @@ func (obj *ConstObject) GenDart(prefix string, option *src.Options, builder *str
 		str := ""
 		if constObj.objType == TypeEnumValue && !(obj.EnumToPrefix || option.EnumToPrefix) {
 			if obj.enumSetValue {
-				str = "\n" + option.GetTabWidth() + genIdentName(option, prefix, constObj) + "(" + constObj.Value + ")"
+				str = "\n" + option.GetTabWidth() + genIdentName(option, prefix, constObj) + "(" + value + ")"
 				if idx < len(obj.Children)-1 {
 					str += ","
 				} else {
@@ -86,17 +92,17 @@ func (obj *ConstObject) GenDart(prefix string, option *src.Options, builder *str
 				str = "\n" + option.GetTabWidth() + genIdentName(option, prefix, constObj) + ","
 			}
 		} else if obj.parent == nil && !option.RootNamespace {
-			str = "\n" + option.GetTabWidth() + "const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + constObj.Value + ";"
+			str = "\n" + option.GetTabWidth() + "const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + value + ";"
 		} else if obj.objType == TypeEnum {
 			if obj.EnumToPrefix || option.EnumToPrefix {
-				str = "\n" + option.GetTabWidth() + "const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + constObj.Value + ";"
+				str = "\n" + option.GetTabWidth() + "const " + src.UpperCamelCase(prefix+"ID", false) /*dartTypo(constObj.Typo)*/ + " " + genIdentName(option, prefix, constObj) + " = " + value + ";"
 			} else {
-				str = "\n" + option.GetTabWidth() + "static const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + constObj.Value + ";"
+				str = "\n" + option.GetTabWidth() + "static const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + value + ";"
 			}
 		} else if !(obj.NamespaceToPrefix || option.NamespaceToPrefix) {
-			str = "\n" + option.GetTabWidth() + "static const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + constObj.Value + ";"
+			str = "\n" + option.GetTabWidth() + "static const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + value + ";"
 		} else {
-			str = "\n" + option.GetTabWidth() + "const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + constObj.Value + ";"
+			str = "\n" + option.GetTabWidth() + "const " + dartTypo(constObj.Typo) + " " + genIdentName(option, prefix, constObj) + " = " + value + ";"
 		}
 
 		// triple comment
@@ -109,6 +115,7 @@ func (obj *ConstObject) GenDart(prefix string, option *src.Options, builder *str
 }
 
 func (obj *ConstObject) genDartStr(prefix string, static string, option *src.Options, builder *strings.Builder) {
+	builder.WriteString("\n")
 	for _, constObj := range obj.genObjs {
 
 		str := "\n" + option.GetTabWidth() + static + "const String " + genIdentName(option, prefix, constObj) + " = " + constObj.Value + ";"
@@ -129,6 +136,93 @@ func (obj *ConstObject) genDartId(prefix string, option *src.Options, builder *s
 
 		builder.WriteString(str)
 	}
+}
+
+func (obj *ConstObject) genDartIdentMapStr(identName string, option *src.Options, builder *strings.Builder) {
+	identName2 := getIdentName(option, identName, obj)
+	mapValue := identName2
+	if obj.EnumToPrefix {
+		mapValue = src.UpperCamelCase(identName+"ID", false)
+	}
+	mapName := src.LowerCamelCase("g_str_Map_"+identName, false)
+
+	//
+	builder.WriteString("\n" + option.GetTabWidth() + "//*********************************************")
+	builder.WriteString("\n" + option.GetTabWidth() + "final Map<String, " + mapValue + "> " + mapName + " = {")
+	option.Level++
+
+	index := 0
+	for _, constObj := range obj.Children {
+
+		str := ""
+		if obj.NamespaceToPrefix || obj.EnumToPrefix {
+			str = "\n" + option.GetTabWidth() + genIdentName(option, identName, obj.genObjs[index]) + ": " + genIdentName(option, identName, constObj) + ","
+		} else if obj.enumSetValue {
+			str = "\n" + option.GetTabWidth() + identName2 + "." + genIdentName(option, "", obj.genObjs[index]) + ": " + identName2 + "." + genIdentName(option, "", constObj) + ","
+		} else {
+			str = "\n" + option.GetTabWidth() + genIdentName(option, identName, obj.genObjs[index]) + ": " + identName2 + "." + genIdentName(option, "", constObj) + ","
+		}
+
+		builder.WriteString(str)
+		index++
+	}
+
+	option.Level--
+	builder.WriteString("\n" + option.GetTabWidth() + "};\n")
+
+	//
+	str := mapValue + "? " + identName2 + "FromString(String str) {"
+	builder.WriteString("\n" + option.GetTabWidth() + str)
+
+	option.Level++
+	builder.WriteString("\n" + option.GetTabWidth() + "return " + mapName + "[str];")
+
+	option.Level--
+	builder.WriteString("\n" + option.GetTabWidth() + "}")
+}
+
+func (obj *ConstObject) genDartStrMapIdent(identName string, option *src.Options, builder *strings.Builder) {
+	identName2 := getIdentName(option, identName, obj)
+	mapValue := identName2
+	if obj.EnumToPrefix {
+		mapValue = src.UpperCamelCase(identName+"ID", false)
+	}
+	mapName := src.LowerCamelCase("g_"+identName+"_Map_Str", false)
+
+	//
+	builder.WriteString("\n" + option.GetTabWidth() + "//*********************************************")
+	builder.WriteString("\n" + option.GetTabWidth() + "final Map<" + mapValue + ", String> " + mapName + " = {")
+	option.Level++
+
+	index := 0
+	for _, constObj := range obj.Children {
+
+		str := ""
+
+		if obj.NamespaceToPrefix || obj.EnumToPrefix {
+			str = "\n" + option.GetTabWidth() + genIdentName(option, identName, constObj) + ": " + genIdentName(option, identName, obj.genObjs[index]) + ","
+		} else if obj.enumSetValue {
+			str = "\n" + option.GetTabWidth() + identName2 + "." + genIdentName(option, "", constObj) + ": " + identName2 + "." + genIdentName(option, "", obj.genObjs[index]) + ","
+		} else {
+			str = "\n" + option.GetTabWidth() + identName2 + "." + genIdentName(option, "", constObj) + ": " + genIdentName(option, identName, obj.genObjs[index]) + ","
+		}
+
+		builder.WriteString(str)
+		index++
+	}
+
+	option.Level--
+	builder.WriteString("\n" + option.GetTabWidth() + "};\n")
+
+	//
+	str := "String? " + src.LowerCamelCase("stringFrom_"+identName, false) + "(" + mapValue + " name) {"
+	builder.WriteString("\n" + option.GetTabWidth() + str)
+
+	option.Level++
+	builder.WriteString("\n" + option.GetTabWidth() + "return " + mapName + "[name];")
+
+	option.Level--
+	builder.WriteString("\n" + option.GetTabWidth() + "}")
 }
 
 /*
@@ -160,7 +254,7 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 
 		if obj.NamespaceToPrefix || option.NamespaceToPrefix {
 			option.Level = 0
-			builder.WriteString(option.GetEnterCount(len(obj.CommentDoc)) + "// namespace " + getIdentName(option, option.GetPrefixes(""), &obj.ConstObject))
+			builder.WriteString(option.GetEnterCount(len(obj.CommentDoc)) + "typedef " + getIdentName(option, option.GetPrefixes(""), &obj.ConstObject) + " = String;")
 		} else {
 			option.Level = 0
 			builder.WriteString(option.GetEnterCount(len(obj.CommentDoc)) + option.GetTabWidth() + "class " + getIdentName(option, option.GetPrefixes(""), &obj.ConstObject) + " {")
@@ -179,6 +273,17 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 	// namespace need gen id
 	if len(obj.genObjs) > 0 {
 		obj.genDartId(prefix, option, builder)
+	}
+
+	// gen IdentMapStr/StrMapIdent
+	if obj.IdentMapStr {
+		builder.WriteString("\n")
+		obj.genDartIdentMapStr(prefix, option, builder)
+	}
+
+	if obj.StrMapIdent {
+		builder.WriteString("\n")
+		obj.genDartStrMapIdent(prefix, option, builder)
 	}
 
 	if obj.parent == nil {
@@ -216,7 +321,7 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 				enumName = option.GetPrefixes("")
 			}
 
-			builder.WriteString(option.GetEnterCount(len(enumObj.CommentDoc)) + option.GetTabWidth() + "// enum " + getIdentName(option, enumName, enumObj))
+			builder.WriteString(option.GetEnterCount(len(enumObj.CommentDoc)) + option.GetTabWidth() + "typedef " + src.UpperCamelCase(enumName+"ID", false) + " = " + dartTypo(enumObj.Typo) + ";")
 
 			enumObj.GenDart(option.GetPrefixes(""), option, builder)
 		} else {
@@ -268,6 +373,19 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 			option.PushPrefixes(enumName)
 			enumObj.genDartStr(option.GetPrefixes(""), "", option, builder)
 			option.PopPrefixes()
+		}
+
+		// gen IdentMapStr/StrMapIdent
+		if enumObj.IdentMapStr {
+			enumName = option.GetPrefixes(enumName)
+			builder.WriteString("\n")
+			enumObj.genDartIdentMapStr(enumName, option, builder)
+		}
+
+		if enumObj.StrMapIdent {
+			enumName = option.GetPrefixes(enumName)
+			builder.WriteString("\n")
+			enumObj.genDartStrMapIdent(enumName, option, builder)
 		}
 	}
 

@@ -333,9 +333,9 @@ func (obj *Options) GetIdentName(ident string) string {
 	}
 
 	if obj.UpperIdentCamel {
-		return UpperCamelCase(ident)
+		return UpperCamelCase(ident, true)
 	} else if obj.LowerIdentCamel {
-		return LowerCamelCase(ident)
+		return LowerCamelCase(ident, true)
 	}
 
 	return ident

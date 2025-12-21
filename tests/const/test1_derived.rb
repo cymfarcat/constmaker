@@ -3,85 +3,81 @@
 # 
 # this is a test
 # 
-TABLE = "table" # hello word
-ALLOW_TEST = "at"
-PERCENT = -100
+table = "table" # hello word
+allowTest = "at"
+percent = -100
 # pi 
-PI = 3.14159
+pi = 3.14159
 
 # 
 # colors
 # 
-module COLORS
-    K_NONE_DEF = 0
-    K_BLUE_DEF = 1 << 0
-    K_GREEN_DEF = 1 << 1
-    K_RED_DEF = 1 << 2
-    K_ALL_DEF = 0x7
-    COLORS_K_NONE_DEF_STR = "NONE"
-    COLORS_K_BLUE_DEF_STR = "blue"
-    COLORS_K_GREEN_DEF_STR = "green"
-    COLORS_K_RED_DEF_STR = "red"
-    COLORS_K_ALL_DEF_STR = "ALL"
+module mColors
+    kBlueDef = 0
+    kGreenDef = 1
+    kRedDef = 2
+    mColorsKBlueStr = "blue"
+    mColorsKGreenStr = "green"
+    mColorsKRedStr = "red"
 end
 
-module NODE
-    HTML_BLOCK_ID = "Block"
-    HTML_TABLE_ID = "Table"
+module node
+    htmlBlockId = "Block"
+    htmlTableId = "Table"
 end
 
-module ITEM
-    ALLOW_TEST = "at"
-    PI = 3.14159
-    TABLE = "table"
-    _PERCENT = 100
-    NONE_ID = 0
-    ALLOW_TEST_ID = 1 << 0
-    PI_ID = 1 << 1
-    TABLE_ID = 1 << 2
-    _PERCENT_ID = 1 << 3
-    ALL_ID = 0xf
+module item
+    allowTest = "at"
+    pi = 3.14159
+    table = "table"
+    Percent = 100
+    noneId = 0
+    allowTestId = 1 << 0
+    piId = 1 << 1
+    tableId = 1 << 2
+    PercentId = 1 << 3
+    allId = 0xf
 
-    module COLORS
-        BLUE = 0
-        GREEN = 1 # green
-        RED = 2
+    module colors
+        blue = 0
+        green = 1 # green
+        red = 2
     end
 end
 
-module ITEM_NODE
-    BORDER = "border"
+module itemNode
+    border = "border"
 
-    module COLORS
-        RED = 0
-        GREEN = 1 # green
-        BLUE = 2
-        COLORS_RED_STR = "RED"
-        COLORS_GREEN_STR = "GREEN"
-        COLORS_BLUE_STR = "BLUE"
+    module colors
+        red = 0
+        green = 1 # green
+        blue = 2
+        colorsRedStr = "RED"
+        colorsGreenStr = "GREEN"
+        colorsBlueStr = "BLUE"
     end
 end
 
-module ITEM_NODE_QUICK
-    ITEM = "item"
+module itemNodeQuick
+    item = "item"
 end
 
-module ITEM_NODE_QUICK_NODE
+module itemNodeQuickNode
 end
 
-module CSS3
-    X_WEBKIT_AIRPLAY = "x-webkit-airplay"
-    _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom"
-    _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter"
-    _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing"
-    _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing"
-    _WEBKIT_BOX_ALIGN = "-webkit-box-align"
-    NONE_ID = 0
-    X_WEBKIT_AIRPLAY_ID = 1 << 0
-    _WEBKIT_TEXT_ZOOM_ID = 1 << 1
-    _WEBKIT_BACKDROP_FILTER_ID = 1 << 2
-    _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3
-    _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4
-    _WEBKIT_BOX_ALIGN_ID = 1 << 5
-    ALL_ID = 0x3f
+module css3
+    xWebkitAirplay = "x-webkit-airplay"
+    WebkitTextZoom = "-webkit-text-zoom"
+    WebkitBackdropFilter = "-webkit-backdrop-filter"
+    WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing"
+    WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing"
+    WebkitBoxAlign = "-webkit-box-align"
+    noneId = 0
+    xWebkitAirplayId = 1 << 0
+    WebkitTextZoomId = 1 << 1
+    WebkitBackdropFilterId = 1 << 2
+    WebkitBorderHorizontalSpacingId = 1 << 3
+    WebkitBorderVerticalSpacingId = 1 << 4
+    WebkitBoxAlignId = 1 << 5
+    allId = 0x3f
 end

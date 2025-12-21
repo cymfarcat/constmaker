@@ -5,82 +5,78 @@ from enum import Enum
 # 
 # this is a test
 # 
-TABLE: str = "table" # hello word
-ALLOW_TEST: str = "at"
-PERCENT: int = -100
+table: str = "table" # hello word
+allowTest: str = "at"
+percent: int = -100
 # pi 
-PI: float = 3.14159
+pi: float = 3.14159
 
 # 
 # colors
 # 
-class COLORS(Enum):
-    K_NONE_DEF = 0
-    K_BLUE_DEF = 1 << 0
-    K_GREEN_DEF = 1 << 1
-    K_RED_DEF = 1 << 2
-    K_ALL_DEF = 0x7
+class mColors(Enum):
+    kBlueDef
+    kGreenDef
+    kRedDef
 
-    K_NONE_DEF_STR: str = "NONE"
-    K_BLUE_DEF_STR: str = "blue"
-    K_GREEN_DEF_STR: str = "green"
-    K_RED_DEF_STR: str = "red"
-    K_ALL_DEF_STR: str = "ALL"
+    kBlueStr: str = "blue"
+    kGreenStr: str = "green"
+    kRedStr: str = "red"
 
-class NODE:
-    HTML_BLOCK_ID: str = "Block"
-    HTML_TABLE_ID: str = "Table"
+class node:
+    htmlBlockId: str = "Block"
+    htmlTableId: str = "Table"
 
 
-class ITEM:
-    ALLOW_TEST: str = "at"
-    PI: float = 3.14159
-    TABLE: str = "table"
-    _PERCENT: int = 100
-    NONE_ID: int = 0
-    ALLOW_TEST_ID: int = 1 << 0
-    PI_ID: int = 1 << 1
-    TABLE_ID: int = 1 << 2
-    _PERCENT_ID: int = 1 << 3
-    ALL_ID: int = 0xf
+class item:
+    allowTest: str = "at"
+    pi: float = 3.14159
+    table: str = "table"
+    Percent: int = 100
+    noneId: int = 0
+    allowTestId: int = 1 << 0
+    piId: int = 1 << 1
+    tableId: int = 1 << 2
+    PercentId: int = 1 << 3
+    allId: int = 0xf
 
-    class COLORS(Enum):
-        BLUE
-        GREEN # green
-        RED
-
-
-class ITEM_NODE:
-    BORDER: str = "border"
-
-    class COLORS(Enum):
-        RED
-        GREEN # green
-        BLUE
-
-        RED_STR: str = "RED"
-        GREEN_STR: str = "GREEN"
-        BLUE_STR: str = "BLUE"
+    class colors(Enum):
+        blue
+        green # green
+        red
 
 
-class ITEM_NODE_QUICK:
-    ITEM: str = "item"
+class itemNode:
+    border: str = "border"
+
+    class colors(Enum):
+        red
+        green # green
+        blue
+
+        redStr: str = "RED"
+        greenStr: str = "GREEN"
+        blueStr: str = "BLUE"
+
+
+class itemNodeQuick:
+    item: str = "item"
 
 
 # namespace ITEM_NODE_Quick_NODE
 
-class ITEM_CSS3:
-    X_WEBKIT_AIRPLAY: str = "x-webkit-airplay"
-    _WEBKIT_TEXT_ZOOM: str = "-webkit-text-zoom"
-    _WEBKIT_BACKDROP_FILTER: str = "-webkit-backdrop-filter"
-    _WEBKIT_BORDER_HORIZONTAL_SPACING: str = "-webkit-border-horizontal-spacing"
-    _WEBKIT_BORDER_VERTICAL_SPACING: str = "-webkit-border-vertical-spacing"
-    _WEBKIT_BOX_ALIGN: str = "-webkit-box-align"
-    NONE_ID: int = 0
-    X_WEBKIT_AIRPLAY_ID: int = 1 << 0
-    _WEBKIT_TEXT_ZOOM_ID: int = 1 << 1
-    _WEBKIT_BACKDROP_FILTER_ID: int = 1 << 2
-    _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: int = 1 << 3
-    _WEBKIT_BORDER_VERTICAL_SPACING_ID: int = 1 << 4
-    _WEBKIT_BOX_ALIGN_ID: int = 1 << 5
-    ALL_ID: int = 0x3f
+class itemCss3:
+    xWebkitAirplay: str = "x-webkit-airplay"
+    WebkitTextZoom: str = "-webkit-text-zoom"
+    WebkitBackdropFilter: str = "-webkit-backdrop-filter"
+    WebkitBorderHorizontalSpacing: str = "-webkit-border-horizontal-spacing"
+    WebkitBorderVerticalSpacing: str = "-webkit-border-vertical-spacing"
+    WebkitBoxAlign: str = "-webkit-box-align"
+    noneId: int = 0
+    xWebkitAirplayId: int = 1 << 0
+    WebkitTextZoomId: int = 1 << 1
+    WebkitBackdropFilterId: int = 1 << 2
+    WebkitBorderHorizontalSpacingId: int = 1 << 3
+    WebkitBorderVerticalSpacingId: int = 1 << 4
+    WebkitBoxAlignId: int = 1 << 5
+    allId: int = 0x3f

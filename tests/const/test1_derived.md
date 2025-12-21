@@ -2,88 +2,84 @@
 
 >|ident|type|value|comment|
 >|---|---|---|---|
->|TABLE|string|"table"|this is a test; hello word|
->|ALLOW_TEST|string|"at"||
->|PERCENT|int8|-100||
->|PI|float32|3.14159|pi|
-### enum COLORS
+>|table|string|"table"|this is a test; hello word|
+>|allowTest|string|"at"||
+>|percent|int8|-100||
+>|pi|float32|3.14159|pi|
+### enum mColors
 colors
 >|ident|type|value|comment|
 >|---|---|---|---|
->|COLORS_K_NONE_DEF|uint16|0||
->|COLORS_K_BLUE_DEF|uint16|1 << 0||
->|COLORS_K_GREEN_DEF|uint16|1 << 1||
->|COLORS_K_RED_DEF|uint16|1 << 2||
->|COLORS_K_ALL_DEF|uint16|0x7||
->|COLORS_K_NONE_DEF_STR| string | "NONE"||
->|COLORS_K_BLUE_DEF_STR| string | "blue"||
->|COLORS_K_GREEN_DEF_STR| string | "green"||
->|COLORS_K_RED_DEF_STR| string | "red"||
->|COLORS_K_ALL_DEF_STR| string | "ALL"||
+>|mColorsKBlueDef|uint8|0||
+>|mColorsKGreenDef|uint8|1||
+>|mColorsKRedDef|uint8|2||
+>|mColorsKBlueStr| string | "blue"||
+>|mColorsKGreenStr| string | "green"||
+>|mColorsKRedStr| string | "red"||
 
-## namespace NODE
+## namespace node
 >|ident|type|value|comment|
 >|---|---|---|---|
->|NODE_HTML_BLOCK_ID|string|"Block"||
->|NODE_HTML_TABLE_ID|string|"Table"||
+>|nodeHtmlBlockId|string|"Block"||
+>|nodeHtmlTableId|string|"Table"||
 
-## namespace ITEM
+## namespace item
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ITEM_ALLOW_TEST|string|"at"||
->|ITEM_PI|float32|3.14159||
->|ITEM_TABLE|string|"table"||
->|ITEM__PERCENT|int8|100||
->|ITEM_NONE_ID|uint8|0||
->|ITEM_ALLOW_TEST_ID|uint8|1 << 0||
->|ITEM_PI_ID|uint8|1 << 1||
->|ITEM_TABLE_ID|uint8|1 << 2||
->|ITEM__PERCENT_ID|uint8|1 << 3||
->|ITEM_ALL_ID|uint8|0xf||
+>|itemAllowTest|string|"at"||
+>|itemPi|float32|3.14159||
+>|itemTable|string|"table"||
+>|itemPercent|int8|100||
+>|itemNoneId|uint8|0||
+>|itemAllowTestId|uint8|1 << 0||
+>|itemPiId|uint8|1 << 1||
+>|itemTableId|uint8|1 << 2||
+>|itemPercentId|uint8|1 << 3||
+>|itemAllId|uint8|0xf||
 
-### enum ITEM_COLORS
+### enum itemColors
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ITEM_COLORS_BLUE|uint8|0||
->|ITEM_COLORS_GREEN|uint8|1|; green|
->|ITEM_COLORS_RED|uint8|2||
+>|itemColorsBlue|uint8|0||
+>|itemColorsGreen|uint8|1|; green|
+>|itemColorsRed|uint8|2||
 
-## namespace ITEM_NODE
+## namespace itemNode
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ITEM_NODE_BORDER|string|"border"||
+>|itemNodeBorder|string|"border"||
 
-### enum ITEM_NODE_COLORS
+### enum itemNodeColors
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ITEM_NODE_COLORS_RED|uint8|0||
->|ITEM_NODE_COLORS_GREEN|uint8|1|; green|
->|ITEM_NODE_COLORS_BLUE|uint8|2||
->|ITEM_NODE_COLORS_RED_STR| string | "RED"||
->|ITEM_NODE_COLORS_GREEN_STR| string | "GREEN"||
->|ITEM_NODE_COLORS_BLUE_STR| string | "BLUE"||
+>|itemNodeColorsRed|uint8|0||
+>|itemNodeColorsGreen|uint8|1|; green|
+>|itemNodeColorsBlue|uint8|2||
+>|itemNodeColorsRedStr| string | "RED"||
+>|itemNodeColorsGreenStr| string | "GREEN"||
+>|itemNodeColorsBlueStr| string | "BLUE"||
 
-## namespace ITEM_NODE_QUICK
+## namespace itemNodeQuick
 >|ident|type|value|comment|
 >|---|---|---|---|
->|ITEM_NODE_QUICK_ITEM|string|"item"||
+>|itemNodeQuickItem|string|"item"||
 
-## namespace ITEM_NODE_QUICK_NODE
+## namespace itemNodeQuickNode
 
-## namespace CSS3
+## namespace css3
 >|ident|type|value|comment|
 >|---|---|---|---|
->|CSS3_X_WEBKIT_AIRPLAY|string|"x-webkit-airplay"||
->|CSS3__WEBKIT_TEXT_ZOOM|string|"-webkit-text-zoom"||
->|CSS3__WEBKIT_BACKDROP_FILTER|string|"-webkit-backdrop-filter"||
->|CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING|string|"-webkit-border-horizontal-spacing"||
->|CSS3__WEBKIT_BORDER_VERTICAL_SPACING|string|"-webkit-border-vertical-spacing"||
->|CSS3__WEBKIT_BOX_ALIGN|string|"-webkit-box-align"||
->|CSS3_NONE_ID|uint8|0||
->|CSS3_X_WEBKIT_AIRPLAY_ID|uint8|1 << 0||
->|CSS3__WEBKIT_TEXT_ZOOM_ID|uint8|1 << 1||
->|CSS3__WEBKIT_BACKDROP_FILTER_ID|uint8|1 << 2||
->|CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING_ID|uint8|1 << 3||
->|CSS3__WEBKIT_BORDER_VERTICAL_SPACING_ID|uint8|1 << 4||
->|CSS3__WEBKIT_BOX_ALIGN_ID|uint8|1 << 5||
->|CSS3_ALL_ID|uint8|0x3f||
+>|css3XWebkitAirplay|string|"x-webkit-airplay"||
+>|css3WebkitTextZoom|string|"-webkit-text-zoom"||
+>|css3WebkitBackdropFilter|string|"-webkit-backdrop-filter"||
+>|css3WebkitBorderHorizontalSpacing|string|"-webkit-border-horizontal-spacing"||
+>|css3WebkitBorderVerticalSpacing|string|"-webkit-border-vertical-spacing"||
+>|css3WebkitBoxAlign|string|"-webkit-box-align"||
+>|css3NoneId|uint8|0||
+>|css3XWebkitAirplayId|uint8|1 << 0||
+>|css3WebkitTextZoomId|uint8|1 << 1||
+>|css3WebkitBackdropFilterId|uint8|1 << 2||
+>|css3WebkitBorderHorizontalSpacingId|uint8|1 << 3||
+>|css3WebkitBorderVerticalSpacingId|uint8|1 << 4||
+>|css3WebkitBoxAlignId|uint8|1 << 5||
+>|css3AllId|uint8|0x3f||

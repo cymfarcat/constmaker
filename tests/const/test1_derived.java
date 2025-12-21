@@ -6,90 +6,82 @@ interface test1 {
     /**
      *this is a test
      */
-    public static final String TABLE = "table"; // hello word
-    public static final String ALLOW_TEST = "at";
-    public static final byte PERCENT = -100;
+    public static final String table = "table"; // hello word
+    public static final String allowTest = "at";
+    public static final byte percent = -100;
 
     /** pi */
-    public static final float PI = 3.14159f;
+    public static final float pi = 3.14159f;
 
     /**
      * colors
      */
-    enum COLORS {
-        K_NONE_DEF(0),
-        K_BLUE_DEF(1 << 0),
-        K_GREEN_DEF(1 << 1),
-        K_RED_DEF(1 << 2),
-        K_ALL_DEF(0x7);
+    enum mColors {
+        kBlueDef,
+        kGreenDef,
+        kRedDef
+    }
+    public static final String mColorsKBlueStr = "blue";
+    public static final String mColorsKGreenStr = "green";
+    public static final String mColorsKRedStr = "red";
 
-        public static final String K_NONE_DEF_STR = "NONE";
-        public static final String K_BLUE_DEF_STR = "blue";
-        public static final String K_GREEN_DEF_STR = "green";
-        public static final String K_RED_DEF_STR = "red";
-        public static final String K_ALL_DEF_STR = "ALL";
-
-        final int value;
-        COLORS(int value) { this.value = value; }
+    interface node {
+        public static final String htmlBlockId = "Block";
+        public static final String htmlTableId = "Table";
     }
 
-    interface NODE {
-        public static final String HTML_BLOCK_ID = "Block";
-        public static final String HTML_TABLE_ID = "Table";
-    }
+    interface item {
+        public static final String allowTest = "at";
+        public static final float pi = 3.14159f;
+        public static final String table = "table";
+        public static final byte Percent = 100;
+        public static final byte noneId = 0;
+        public static final byte allowTestId = 1 << 0;
+        public static final byte piId = 1 << 1;
+        public static final byte tableId = 1 << 2;
+        public static final byte PercentId = 1 << 3;
+        public static final byte allId = 0xf;
 
-    interface ITEM {
-        public static final String ALLOW_TEST = "at";
-        public static final float PI = 3.14159f;
-        public static final String TABLE = "table";
-        public static final byte _PERCENT = 100;
-        public static final byte NONE_ID = 0;
-        public static final byte ALLOW_TEST_ID = 1 << 0;
-        public static final byte PI_ID = 1 << 1;
-        public static final byte TABLE_ID = 1 << 2;
-        public static final byte _PERCENT_ID = 1 << 3;
-        public static final byte ALL_ID = 0xf;
-
-        enum COLORS {
-            BLUE,
-            GREEN, // green
-            RED
+        enum colors {
+            blue,
+            green, // green
+            red
         }
 
-        interface NODE {
-            public static final String BORDER = "border";
+        interface node {
+            public static final String border = "border";
 
-            enum COLORS {
-                RED,
-                GREEN, // green
-                BLUE
+            enum colors {
+                red,
+                green, // green
+                blue
             }
-            public static final String COLORS_RED_STR = "RED";
-            public static final String COLORS_GREEN_STR = "GREEN";
-            public static final String COLORS_BLUE_STR = "BLUE";
+            public static final String colorsRedStr = "RED";
+            public static final String colorsGreenStr = "GREEN";
+            public static final String colorsBlueStr = "BLUE";
 
-            interface QUICK {
-                public static final String ITEM = "item";
+            interface quick {
+                public static final String item = "item";
 
-                // namespace NODE
+                // namespace node
             }
         }
     }
 
-    interface CSS3 {
-        public static final String X_WEBKIT_AIRPLAY = "x-webkit-airplay";
-        public static final String _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
-        public static final String _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
-        public static final String _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
-        public static final String _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
-        public static final String _WEBKIT_BOX_ALIGN = "-webkit-box-align";
-        public static final byte NONE_ID = 0;
-        public static final byte X_WEBKIT_AIRPLAY_ID = 1 << 0;
-        public static final byte _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
-        public static final byte _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
-        public static final byte _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
-        public static final byte _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
-        public static final byte _WEBKIT_BOX_ALIGN_ID = 1 << 5;
-        public static final byte ALL_ID = 0x3f;
+    interface css3 {
+        public static final String xWebkitAirplay = "x-webkit-airplay";
+        public static final String WebkitTextZoom = "-webkit-text-zoom";
+        public static final String WebkitBackdropFilter = "-webkit-backdrop-filter";
+        public static final String WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
+        public static final String WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
+        public static final String WebkitBoxAlign = "-webkit-box-align";
+        public static final byte noneId = 0;
+        public static final byte xWebkitAirplayId = 1 << 0;
+        public static final byte WebkitTextZoomId = 1 << 1;
+        public static final byte WebkitBackdropFilterId = 1 << 2;
+        public static final byte WebkitBorderHorizontalSpacingId = 1 << 3;
+        public static final byte WebkitBorderVerticalSpacingId = 1 << 4;
+        public static final byte WebkitBoxAlignId = 1 << 5;
+        public static final byte allId = 0x3f;
     }
 }

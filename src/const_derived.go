@@ -50,12 +50,17 @@ const (
     Option_NSToPrefix string = "ns-to-prefix"
     Option_Freeze string = "freeze"
     Option_MacroDefine string = "macro-define"
+    Option_IdentMapStr string = "ident-map-str" // IdentMapStr
+    Option_StrMapIdent string = "str-map-ident" // StrMapIdent
     Option_UpperIdent string = "upper-ident"
     Option_LowerIdent string = "lower-ident"
     Option_UpperIdentCamel string = "upper-ident-camel" // UpperCamelCase
     Option_LowerIdentCamel string = "lower-ident-camel" // LowerCamelCase
     Option_BitFlag string = "bit-flag"
     Option_BitFlagHex string = "bit-flag-hex"
+    Option_ToUpper string = "to-upper"
+    Option_ToLower string = "to-lower"
+    Option_GenEntity string = "gen-entity"
     Option_GenStr string = "gen-str"
     Option_GenId string = "gen-id"
     Option_SortAsc string = "sort-asc" // ASCII Order

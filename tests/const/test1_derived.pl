@@ -3,79 +3,75 @@
 # 
 # this is a test
 # 
-use constant TABLE => "table"; # hello word
-use constant ALLOW_TEST => "at";
-use constant PERCENT => -100;
+use constant table => "table"; # hello word
+use constant allowTest => "at";
+use constant percent => -100;
 # pi 
-use constant PI => 3.14159;
+use constant pi => 3.14159;
 
 # 
 # colors
 # 
 use constant {
-    COLORS_K_NONE_DEF => 0,
-    COLORS_K_BLUE_DEF => 1 << 0,
-    COLORS_K_GREEN_DEF => 1 << 1,
-    COLORS_K_RED_DEF => 1 << 2,
-    COLORS_K_ALL_DEF => 0x7,
-    COLORS_K_NONE_DEF_STR => "NONE";
-    COLORS_K_BLUE_DEF_STR => "blue";
-    COLORS_K_GREEN_DEF_STR => "green";
-    COLORS_K_RED_DEF_STR => "red";
-    COLORS_K_ALL_DEF_STR => "ALL";
+    mColorsKBlueDef => 0,
+    mColorsKGreenDef => 1,
+    mColorsKRedDef => 2,
+    mColorsKBlueStr => "blue";
+    mColorsKGreenStr => "green";
+    mColorsKRedStr => "red";
 };
 
-# namespace NODE
-use constant NODE_HTML_BLOCK_ID => "Block";
-use constant NODE_HTML_TABLE_ID => "Table";
+# namespace node
+use constant nodeHtmlBlockId => "Block";
+use constant nodeHtmlTableId => "Table";
 
-# namespace ITEM
-use constant ITEM_ALLOW_TEST => "at";
-use constant ITEM_PI => 3.14159;
-use constant ITEM_TABLE => "table";
-use constant ITEM__PERCENT => 100;
-use constant ITEM_NONE_ID => 0;
-use constant ITEM_ALLOW_TEST_ID => 1 << 0;
-use constant ITEM_PI_ID => 1 << 1;
-use constant ITEM_TABLE_ID => 1 << 2;
-use constant ITEM__PERCENT_ID => 1 << 3;
-use constant ITEM_ALL_ID => 0xf;
+# namespace item
+use constant itemAllowTest => "at";
+use constant itemPi => 3.14159;
+use constant itemTable => "table";
+use constant itemPercent => 100;
+use constant itemNoneId => 0;
+use constant itemAllowTestId => 1 << 0;
+use constant itemPiId => 1 << 1;
+use constant itemTableId => 1 << 2;
+use constant itemPercentId => 1 << 3;
+use constant itemAllId => 0xf;
 
 use constant {
-    ITEM_COLORS_BLUE => 0,
-    ITEM_COLORS_GREEN => 1, # green
-    ITEM_COLORS_RED => 2,
+    itemColorsBlue => 0,
+    itemColorsGreen => 1, # green
+    itemColorsRed => 2,
 };
 
-# namespace ITEM_NODE
-use constant ITEM_NODE_BORDER => "border";
+# namespace itemNode
+use constant itemNodeBorder => "border";
 
 use constant {
-    ITEM_NODE_COLORS_RED => 0,
-    ITEM_NODE_COLORS_GREEN => 1, # green
-    ITEM_NODE_COLORS_BLUE => 2,
-    ITEM_NODE_COLORS_RED_STR => "RED";
-    ITEM_NODE_COLORS_GREEN_STR => "GREEN";
-    ITEM_NODE_COLORS_BLUE_STR => "BLUE";
+    itemNodeColorsRed => 0,
+    itemNodeColorsGreen => 1, # green
+    itemNodeColorsBlue => 2,
+    itemNodeColorsRedStr => "RED";
+    itemNodeColorsGreenStr => "GREEN";
+    itemNodeColorsBlueStr => "BLUE";
 };
 
-# namespace ITEM_NODE_QUICK
-use constant ITEM_NODE_QUICK_ITEM => "item";
+# namespace itemNodeQuick
+use constant itemNodeQuickItem => "item";
 
-# namespace ITEM_NODE_QUICK_NODE
+# namespace itemNodeQuickNode
 
-# namespace CSS3
-use constant CSS3_X_WEBKIT_AIRPLAY => "x-webkit-airplay";
-use constant CSS3__WEBKIT_TEXT_ZOOM => "-webkit-text-zoom";
-use constant CSS3__WEBKIT_BACKDROP_FILTER => "-webkit-backdrop-filter";
-use constant CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING => "-webkit-border-horizontal-spacing";
-use constant CSS3__WEBKIT_BORDER_VERTICAL_SPACING => "-webkit-border-vertical-spacing";
-use constant CSS3__WEBKIT_BOX_ALIGN => "-webkit-box-align";
-use constant CSS3_NONE_ID => 0;
-use constant CSS3_X_WEBKIT_AIRPLAY_ID => 1 << 0;
-use constant CSS3__WEBKIT_TEXT_ZOOM_ID => 1 << 1;
-use constant CSS3__WEBKIT_BACKDROP_FILTER_ID => 1 << 2;
-use constant CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING_ID => 1 << 3;
-use constant CSS3__WEBKIT_BORDER_VERTICAL_SPACING_ID => 1 << 4;
-use constant CSS3__WEBKIT_BOX_ALIGN_ID => 1 << 5;
-use constant CSS3_ALL_ID => 0x3f;
+# namespace css3
+use constant css3XWebkitAirplay => "x-webkit-airplay";
+use constant css3WebkitTextZoom => "-webkit-text-zoom";
+use constant css3WebkitBackdropFilter => "-webkit-backdrop-filter";
+use constant css3WebkitBorderHorizontalSpacing => "-webkit-border-horizontal-spacing";
+use constant css3WebkitBorderVerticalSpacing => "-webkit-border-vertical-spacing";
+use constant css3WebkitBoxAlign => "-webkit-box-align";
+use constant css3NoneId => 0;
+use constant css3XWebkitAirplayId => 1 << 0;
+use constant css3WebkitTextZoomId => 1 << 1;
+use constant css3WebkitBackdropFilterId => 1 << 2;
+use constant css3WebkitBorderHorizontalSpacingId => 1 << 3;
+use constant css3WebkitBorderVerticalSpacingId => 1 << 4;
+use constant css3WebkitBoxAlignId => 1 << 5;
+use constant css3AllId => 0x3f;

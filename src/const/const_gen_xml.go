@@ -13,7 +13,7 @@ import (
 
 func (obj *ConstParser) GenXml(option *src.Options) {
 	// change root name
-	obj.XMLName = xml.Name{Local: src.UpperCamelCase(option.FileName)}
+	obj.XMLName = xml.Name{Local: src.UpperCamelCase(option.FileName, true)}
 
 	jsonData, err := xml.MarshalIndent(obj, "", "  ")
 	if err != nil {

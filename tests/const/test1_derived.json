@@ -18,9 +18,12 @@
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": false,
+      "StrMapIdent": false,
       "UpperIdent": false,
       "LowerIdent": false,
-      "UpperIdentCamel": false
+      "UpperIdentCamel": false,
+      "LowerIdentCamel": false
     },
     {
       "Prefix": "",
@@ -33,9 +36,12 @@
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": false,
+      "StrMapIdent": false,
       "UpperIdent": false,
       "LowerIdent": false,
-      "UpperIdentCamel": false
+      "UpperIdentCamel": false,
+      "LowerIdentCamel": false
     },
     {
       "Prefix": "",
@@ -48,9 +54,12 @@
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": false,
+      "StrMapIdent": false,
       "UpperIdent": false,
       "LowerIdent": false,
-      "UpperIdentCamel": false
+      "UpperIdentCamel": false,
+      "LowerIdentCamel": false
     },
     {
       "Prefix": "",
@@ -63,23 +72,29 @@
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": false,
+      "StrMapIdent": false,
       "UpperIdent": false,
       "LowerIdent": false,
-      "UpperIdentCamel": false
+      "UpperIdentCamel": false,
+      "LowerIdentCamel": false
     }
   ],
   "EnumToPrefix": false,
   "NamespaceToPrefix": false,
   "MacroDefine": false,
+  "IdentMapStr": false,
+  "StrMapIdent": false,
   "UpperIdent": false,
   "LowerIdent": false,
   "UpperIdentCamel": false,
+  "LowerIdentCamel": false,
   "enums": [
     {
       "Prefix": "",
       "Suffix": "",
-      "id": "Colors",
-      "type": "u16",
+      "id": "M_Colors",
+      "type": "u8",
       "value": "",
       "CommentDoc": "/**\r\n * colors\r\n */",
       "comment": "",
@@ -87,85 +102,67 @@
         {
           "Prefix": "K",
           "Suffix": "Def",
-          "id": "NONE",
-          "type": "u16",
+          "id": "blue",
+          "type": "u8",
           "value": "0",
           "CommentDoc": "",
           "comment": "",
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": true,
+          "StrMapIdent": true,
           "UpperIdent": true,
-          "LowerIdent": false,
-          "UpperIdentCamel": false
-        },
-        {
-          "Prefix": "K",
-          "Suffix": "Def",
-          "id": "blue",
-          "type": "u16",
-          "value": "1 \u003c\u003c 0",
-          "CommentDoc": "",
-          "comment": "",
-          "EnumToPrefix": false,
-          "NamespaceToPrefix": false,
-          "MacroDefine": false,
-          "UpperIdent": true,
-          "LowerIdent": false,
-          "UpperIdentCamel": false
+          "LowerIdent": true,
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": true
         },
         {
           "Prefix": "K",
           "Suffix": "Def",
           "id": "green",
-          "type": "u16",
-          "value": "1 \u003c\u003c 1",
+          "type": "u8",
+          "value": "1",
           "CommentDoc": "",
           "comment": "",
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": true,
+          "StrMapIdent": true,
           "UpperIdent": true,
-          "LowerIdent": false,
-          "UpperIdentCamel": false
+          "LowerIdent": true,
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": true
         },
         {
           "Prefix": "K",
           "Suffix": "Def",
           "id": "red",
-          "type": "u16",
-          "value": "1 \u003c\u003c 2",
+          "type": "u8",
+          "value": "2",
           "CommentDoc": "",
           "comment": "",
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": true,
+          "StrMapIdent": true,
           "UpperIdent": true,
-          "LowerIdent": false,
-          "UpperIdentCamel": false
-        },
-        {
-          "Prefix": "K",
-          "Suffix": "Def",
-          "id": "ALL",
-          "type": "u16",
-          "value": "0x7",
-          "CommentDoc": "",
-          "comment": "",
-          "EnumToPrefix": false,
-          "NamespaceToPrefix": false,
-          "MacroDefine": false,
-          "UpperIdent": true,
-          "LowerIdent": false,
-          "UpperIdentCamel": false
+          "LowerIdent": true,
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": true
         }
       ],
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": true,
+      "StrMapIdent": true,
       "UpperIdent": true,
-      "LowerIdent": false,
-      "UpperIdentCamel": false
+      "LowerIdent": true,
+      "UpperIdentCamel": false,
+      "LowerIdentCamel": true
     }
   ],
   "namespaces": [
@@ -189,9 +186,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "html",
@@ -204,17 +204,23 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         }
       ],
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": false,
+      "StrMapIdent": false,
       "UpperIdent": false,
       "LowerIdent": false,
-      "UpperIdentCamel": false
+      "UpperIdentCamel": false,
+      "LowerIdentCamel": false
     },
     {
       "Prefix": "",
@@ -236,9 +242,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -251,9 +260,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -266,9 +278,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -281,17 +296,23 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         }
       ],
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": false,
+      "StrMapIdent": false,
       "UpperIdent": false,
       "LowerIdent": false,
       "UpperIdentCamel": false,
+      "LowerIdentCamel": false,
       "enums": [
         {
           "Prefix": "",
@@ -313,9 +334,12 @@
               "EnumToPrefix": false,
               "NamespaceToPrefix": false,
               "MacroDefine": false,
+              "IdentMapStr": false,
+              "StrMapIdent": false,
               "UpperIdent": false,
               "LowerIdent": false,
-              "UpperIdentCamel": false
+              "UpperIdentCamel": false,
+              "LowerIdentCamel": false
             },
             {
               "Prefix": "",
@@ -328,9 +352,12 @@
               "EnumToPrefix": false,
               "NamespaceToPrefix": false,
               "MacroDefine": false,
+              "IdentMapStr": false,
+              "StrMapIdent": false,
               "UpperIdent": false,
               "LowerIdent": false,
-              "UpperIdentCamel": false
+              "UpperIdentCamel": false,
+              "LowerIdentCamel": false
             },
             {
               "Prefix": "",
@@ -343,17 +370,23 @@
               "EnumToPrefix": false,
               "NamespaceToPrefix": false,
               "MacroDefine": false,
+              "IdentMapStr": false,
+              "StrMapIdent": false,
               "UpperIdent": false,
               "LowerIdent": false,
-              "UpperIdentCamel": false
+              "UpperIdentCamel": false,
+              "LowerIdentCamel": false
             }
           ],
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         }
       ],
       "namespaces": [
@@ -377,17 +410,23 @@
               "EnumToPrefix": false,
               "NamespaceToPrefix": false,
               "MacroDefine": false,
+              "IdentMapStr": false,
+              "StrMapIdent": false,
               "UpperIdent": false,
               "LowerIdent": false,
-              "UpperIdentCamel": false
+              "UpperIdentCamel": false,
+              "LowerIdentCamel": false
             }
           ],
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
           "UpperIdentCamel": false,
+          "LowerIdentCamel": false,
           "enums": [
             {
               "Prefix": "",
@@ -409,9 +448,12 @@
                   "EnumToPrefix": false,
                   "NamespaceToPrefix": false,
                   "MacroDefine": false,
+                  "IdentMapStr": false,
+                  "StrMapIdent": false,
                   "UpperIdent": false,
                   "LowerIdent": false,
-                  "UpperIdentCamel": false
+                  "UpperIdentCamel": false,
+                  "LowerIdentCamel": false
                 },
                 {
                   "Prefix": "",
@@ -424,9 +466,12 @@
                   "EnumToPrefix": false,
                   "NamespaceToPrefix": false,
                   "MacroDefine": false,
+                  "IdentMapStr": false,
+                  "StrMapIdent": false,
                   "UpperIdent": false,
                   "LowerIdent": false,
-                  "UpperIdentCamel": false
+                  "UpperIdentCamel": false,
+                  "LowerIdentCamel": false
                 },
                 {
                   "Prefix": "",
@@ -439,17 +484,23 @@
                   "EnumToPrefix": false,
                   "NamespaceToPrefix": false,
                   "MacroDefine": false,
+                  "IdentMapStr": false,
+                  "StrMapIdent": false,
                   "UpperIdent": false,
                   "LowerIdent": false,
-                  "UpperIdentCamel": false
+                  "UpperIdentCamel": false,
+                  "LowerIdentCamel": false
                 }
               ],
               "EnumToPrefix": false,
               "NamespaceToPrefix": false,
               "MacroDefine": false,
+              "IdentMapStr": false,
+              "StrMapIdent": false,
               "UpperIdent": false,
               "LowerIdent": false,
-              "UpperIdentCamel": false
+              "UpperIdentCamel": false,
+              "LowerIdentCamel": false
             }
           ],
           "namespaces": [
@@ -473,17 +524,23 @@
                   "EnumToPrefix": false,
                   "NamespaceToPrefix": false,
                   "MacroDefine": false,
+                  "IdentMapStr": false,
+                  "StrMapIdent": false,
                   "UpperIdent": false,
                   "LowerIdent": false,
-                  "UpperIdentCamel": false
+                  "UpperIdentCamel": false,
+                  "LowerIdentCamel": false
                 }
               ],
               "EnumToPrefix": false,
               "NamespaceToPrefix": false,
               "MacroDefine": false,
+              "IdentMapStr": false,
+              "StrMapIdent": false,
               "UpperIdent": false,
               "LowerIdent": false,
               "UpperIdentCamel": false,
+              "LowerIdentCamel": false,
               "namespaces": [
                 {
                   "Prefix": "",
@@ -496,9 +553,12 @@
                   "EnumToPrefix": false,
                   "NamespaceToPrefix": false,
                   "MacroDefine": false,
+                  "IdentMapStr": false,
+                  "StrMapIdent": false,
                   "UpperIdent": false,
                   "LowerIdent": false,
-                  "UpperIdentCamel": false
+                  "UpperIdentCamel": false,
+                  "LowerIdentCamel": false
                 }
               ]
             }
@@ -526,9 +586,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -541,9 +604,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -556,9 +622,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -571,9 +640,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -586,9 +658,12 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         },
         {
           "Prefix": "",
@@ -601,17 +676,23 @@
           "EnumToPrefix": false,
           "NamespaceToPrefix": false,
           "MacroDefine": false,
+          "IdentMapStr": false,
+          "StrMapIdent": false,
           "UpperIdent": false,
           "LowerIdent": false,
-          "UpperIdentCamel": false
+          "UpperIdentCamel": false,
+          "LowerIdentCamel": false
         }
       ],
       "EnumToPrefix": false,
       "NamespaceToPrefix": false,
       "MacroDefine": false,
+      "IdentMapStr": false,
+      "StrMapIdent": false,
       "UpperIdent": false,
       "LowerIdent": false,
-      "UpperIdentCamel": false
+      "UpperIdentCamel": false,
+      "LowerIdentCamel": false
     }
   ]
 }

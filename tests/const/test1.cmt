@@ -15,8 +15,8 @@ pi = 3.14159 // pi is circle
 /**
  * colors
  */
-enum Colors : u16 [prefix: "K", suffix: "Def", property: "upper-ident", action: "bit-flag|gen-str|sort-asc"] { 
-	red = -0x100 [prefix: "", suffix: "STR", action: ""]
+enum M_Colors : u16 [prefix: "K", suffix: "Def", property: "upper-ident|lower-ident-camel|ident-map-str|str-map-ident", action: "gen-str|sort-asc"] { 
+	red
 	green
 	blue
 }

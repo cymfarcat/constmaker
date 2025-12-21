@@ -8,88 +8,84 @@
 /**
  *this is a test
  */
-const char* TABLE = "table"; // hello word
-const char* ALLOW_TEST = "at";
-const int8_t PERCENT = -100;
+const char* table = "table"; // hello word
+const char* allowTest = "at";
+const int8_t percent = -100;
 
 /** pi */
-const float PI = 3.14159;
+const float pi = 3.14159;
 
 /**
  * colors
  */
-enum class COLORS : uint16_t {
-    K_NONE_DEF = 0,
-    K_BLUE_DEF = 1 << 0,
-    K_GREEN_DEF = 1 << 1,
-    K_RED_DEF = 1 << 2,
-    K_ALL_DEF = 0x7,
+enum class mColors : uint8_t {
+    kBlueDef,
+    kGreenDef,
+    kRedDef,
 };
-const char* COLORS_K_NONE_DEF_STR = "NONE";
-const char* COLORS_K_BLUE_DEF_STR = "blue";
-const char* COLORS_K_GREEN_DEF_STR = "green";
-const char* COLORS_K_RED_DEF_STR = "red";
-const char* COLORS_K_ALL_DEF_STR = "ALL";
+const char* mColorsKBlueStr = "blue";
+const char* mColorsKGreenStr = "green";
+const char* mColorsKRedStr = "red";
 
-namespace NODE {
-    const char* HTML_BLOCK_ID = "Block";
-    const char* HTML_TABLE_ID = "Table";
+namespace node {
+    const char* htmlBlockId = "Block";
+    const char* htmlTableId = "Table";
 };
 
-namespace ITEM {
-    const char* ALLOW_TEST = "at";
-    const float PI = 3.14159;
-    const char* TABLE = "table";
-    const int8_t _PERCENT = 100;
-    const uint8_t NONE_ID = 0;
-    const uint8_t ALLOW_TEST_ID = 1 << 0;
-    const uint8_t PI_ID = 1 << 1;
-    const uint8_t TABLE_ID = 1 << 2;
-    const uint8_t _PERCENT_ID = 1 << 3;
-    const uint8_t ALL_ID = 0xf;
+namespace item {
+    const char* allowTest = "at";
+    const float pi = 3.14159;
+    const char* table = "table";
+    const int8_t Percent = 100;
+    const uint8_t noneId = 0;
+    const uint8_t allowTestId = 1 << 0;
+    const uint8_t piId = 1 << 1;
+    const uint8_t tableId = 1 << 2;
+    const uint8_t PercentId = 1 << 3;
+    const uint8_t allId = 0xf;
 
-    enum class COLORS : uint8_t {
-        BLUE,
-        GREEN, // green
-        RED,
+    enum class colors : uint8_t {
+        blue,
+        green, // green
+        red,
     };
 };
 
-namespace ITEM_NODE {
-    const char* BORDER = "border";
+namespace itemNode {
+    const char* border = "border";
 
-    enum class COLORS : uint8_t {
-        RED,
-        GREEN, // green
-        BLUE,
+    enum class colors : uint8_t {
+        red,
+        green, // green
+        blue,
     };
-    const char* COLORS_RED_STR = "RED";
-    const char* COLORS_GREEN_STR = "GREEN";
-    const char* COLORS_BLUE_STR = "BLUE";
+    const char* colorsRedStr = "RED";
+    const char* colorsGreenStr = "GREEN";
+    const char* colorsBlueStr = "BLUE";
 };
 
-namespace ITEM_NODE_QUICK {
-    const char* ITEM = "item";
+namespace itemNodeQuick {
+    const char* item = "item";
 };
 
-namespace ITEM_NODE_QUICK_NODE {
+namespace itemNodeQuickNode {
 };
 
-namespace CSS3 {
-    const char* X_WEBKIT_AIRPLAY = "x-webkit-airplay";
-    const char* _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
-    const char* _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
-    const char* _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
-    const char* _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
-    const char* _WEBKIT_BOX_ALIGN = "-webkit-box-align";
-    const uint8_t NONE_ID = 0;
-    const uint8_t X_WEBKIT_AIRPLAY_ID = 1 << 0;
-    const uint8_t _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
-    const uint8_t _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
-    const uint8_t _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
-    const uint8_t _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
-    const uint8_t _WEBKIT_BOX_ALIGN_ID = 1 << 5;
-    const uint8_t ALL_ID = 0x3f;
+namespace css3 {
+    const char* xWebkitAirplay = "x-webkit-airplay";
+    const char* WebkitTextZoom = "-webkit-text-zoom";
+    const char* WebkitBackdropFilter = "-webkit-backdrop-filter";
+    const char* WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
+    const char* WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
+    const char* WebkitBoxAlign = "-webkit-box-align";
+    const uint8_t noneId = 0;
+    const uint8_t xWebkitAirplayId = 1 << 0;
+    const uint8_t WebkitTextZoomId = 1 << 1;
+    const uint8_t WebkitBackdropFilterId = 1 << 2;
+    const uint8_t WebkitBorderHorizontalSpacingId = 1 << 3;
+    const uint8_t WebkitBorderVerticalSpacingId = 1 << 4;
+    const uint8_t WebkitBoxAlignId = 1 << 5;
+    const uint8_t allId = 0x3f;
 };
 
 #endif // CONSTMAKER_GENERATED_TEST1_H

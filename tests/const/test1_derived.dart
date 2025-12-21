@@ -3,101 +3,106 @@
 /**
  *this is a test
  */
-const String TABLE = "table"; // hello word
-const String ALLOW_TEST = "at";
-const int PERCENT = -100;
+const String table = "table"; // hello word
+const String allowTest = "at";
+const int percent = -100;
 
 /** pi */
-const double PI = 3.14159;
+const double pi = 3.14159;
 
 /**
  * colors
  */
-enum COLORS {
-    K_NONE_DEF(0),
-    K_BLUE_DEF(1 << 0),
-    K_GREEN_DEF(1 << 1),
-    K_RED_DEF(1 << 2),
-    K_ALL_DEF(0x7);
-
-    static const String K_NONE_DEF_STR = "NONE";
-    static const String K_BLUE_DEF_STR = "blue";
-    static const String K_GREEN_DEF_STR = "green";
-    static const String K_RED_DEF_STR = "red";
-    static const String K_ALL_DEF_STR = "ALL";
-
-    final int value;
-    const COLORS(this.value);
-
-    factory COLORS.fromValue(int value) {
-        switch (value) {
-            case 0: return COLORS.K_NONE_DEF;
-            case 0x1: return COLORS.K_BLUE_DEF;
-            case 0x2: return COLORS.K_GREEN_DEF;
-            case 0x4: return COLORS.K_RED_DEF;
-            case 0x7: return COLORS.K_ALL_DEF;
-            default: throw StateError('COLORS.fromValue: invalid value=$value');
-        }
-    }
+enum mColors {
+    kBlueDef,
+    kGreenDef,
+    kRedDef,
 }
 
-class NODE {
-    static const String HTML_BLOCK_ID = "Block";
-    static const String HTML_TABLE_ID = "Table";
+const String mColorsKBlueStr = "blue";
+const String mColorsKGreenStr = "green";
+const String mColorsKRedStr = "red";
+
+//*********************************************
+final Map<String, mColors> gStrMapMColors = {
+    mColorsKBlueStr: mColors.kBlueDef,
+    mColorsKGreenStr: mColors.kGreenDef,
+    mColorsKRedStr: mColors.kRedDef,
+};
+
+mColors? mColorsFromString(String str) {
+    return gStrMapMColors[str];
 }
 
-class ITEM {
-    static const String ALLOW_TEST = "at";
-    static const double PI = 3.14159;
-    static const String TABLE = "table";
-    static const int _PERCENT = 100;
-    static const int NONE_ID = 0;
-    static const int ALLOW_TEST_ID = 1 << 0;
-    static const int PI_ID = 1 << 1;
-    static const int TABLE_ID = 1 << 2;
-    static const int _PERCENT_ID = 1 << 3;
-    static const int ALL_ID = 0xf;
+//*********************************************
+final Map<mColors, String> gMColorsMapStr = {
+    mColors.kBlueDef: mColorsKBlueStr,
+    mColors.kGreenDef: mColorsKGreenStr,
+    mColors.kRedDef: mColorsKRedStr,
+};
+
+String? stringFromMColors(mColors name) {
+    return gMColorsMapStr[name];
 }
 
-enum ITEM_COLORS {
-    BLUE,
-    GREEN, // green
-    RED,
+class node {
+    static const String htmlBlockId = "Block";
+    static const String htmlTableId = "Table";
 }
 
-class ITEM_NODE {
-    static const String BORDER = "border";
+class item {
+    static const String allowTest = "at";
+    static const double pi = 3.14159;
+    static const String table = "table";
+    static const int Percent = 100;
+    static const int noneId = 0;
+    static const int allowTestId = 1 << 0;
+    static const int piId = 1 << 1;
+    static const int tableId = 1 << 2;
+    static const int PercentId = 1 << 3;
+    static const int allId = 0xf;
 }
 
-enum ITEM_NODE_COLORS {
-    RED,
-    GREEN, // green
-    BLUE,
-}
-const String ITEM_NODE_COLORS_RED_STR = "RED";
-const String ITEM_NODE_COLORS_GREEN_STR = "GREEN";
-const String ITEM_NODE_COLORS_BLUE_STR = "BLUE";
-
-class ITEM_NODE_QUICK {
-    static const String ITEM = "item";
+enum itemColors {
+    blue,
+    green, // green
+    red,
 }
 
-class ITEM_NODE_QUICK_NODE {
+class itemNode {
+    static const String border = "border";
 }
 
-class CSS3 {
-    static const String X_WEBKIT_AIRPLAY = "x-webkit-airplay";
-    static const String _WEBKIT_TEXT_ZOOM = "-webkit-text-zoom";
-    static const String _WEBKIT_BACKDROP_FILTER = "-webkit-backdrop-filter";
-    static const String _WEBKIT_BORDER_HORIZONTAL_SPACING = "-webkit-border-horizontal-spacing";
-    static const String _WEBKIT_BORDER_VERTICAL_SPACING = "-webkit-border-vertical-spacing";
-    static const String _WEBKIT_BOX_ALIGN = "-webkit-box-align";
-    static const int NONE_ID = 0;
-    static const int X_WEBKIT_AIRPLAY_ID = 1 << 0;
-    static const int _WEBKIT_TEXT_ZOOM_ID = 1 << 1;
-    static const int _WEBKIT_BACKDROP_FILTER_ID = 1 << 2;
-    static const int _WEBKIT_BORDER_HORIZONTAL_SPACING_ID = 1 << 3;
-    static const int _WEBKIT_BORDER_VERTICAL_SPACING_ID = 1 << 4;
-    static const int _WEBKIT_BOX_ALIGN_ID = 1 << 5;
-    static const int ALL_ID = 0x3f;
+enum itemNodeColors {
+    red,
+    green, // green
+    blue,
+}
+
+const String itemNodeColorsRedStr = "RED";
+const String itemNodeColorsGreenStr = "GREEN";
+const String itemNodeColorsBlueStr = "BLUE";
+
+class itemNodeQuick {
+    static const String item = "item";
+}
+
+class itemNodeQuickNode {
+}
+
+class css3 {
+    static const String xWebkitAirplay = "x-webkit-airplay";
+    static const String WebkitTextZoom = "-webkit-text-zoom";
+    static const String WebkitBackdropFilter = "-webkit-backdrop-filter";
+    static const String WebkitBorderHorizontalSpacing = "-webkit-border-horizontal-spacing";
+    static const String WebkitBorderVerticalSpacing = "-webkit-border-vertical-spacing";
+    static const String WebkitBoxAlign = "-webkit-box-align";
+    static const int noneId = 0;
+    static const int xWebkitAirplayId = 1 << 0;
+    static const int WebkitTextZoomId = 1 << 1;
+    static const int WebkitBackdropFilterId = 1 << 2;
+    static const int WebkitBorderHorizontalSpacingId = 1 << 3;
+    static const int WebkitBorderVerticalSpacingId = 1 << 4;
+    static const int WebkitBoxAlignId = 1 << 5;
+    static const int allId = 0x3f;
 }

@@ -49,10 +49,12 @@ type ConstObject struct {
 	NamespaceToPrefix bool
 	freeze            bool
 	MacroDefine       bool
+	IdentMapStr       bool
+	StrMapIdent       bool
 	UpperIdent        bool
 	LowerIdent        bool
 	UpperIdentCamel   bool
-	lowerIdentCamel   bool
+	LowerIdentCamel   bool
 
 	enumSetValue bool
 }
@@ -85,6 +87,9 @@ func (obj *ConstObject) identRedefined(object *ConstObject, line int, column int
 }
 
 func (obj *ConstObject) addObject(object *ConstObject, line int, column int) {
+	if object.value == "space-all" {
+		return
+	}
 	if !obj.identRedefined(object, line, column) {
 		obj.Children = append(obj.Children, object)
 	}
@@ -118,8 +123,6 @@ func (obj *ConstObject) sortChildren(sortAsc bool, sortDesc bool, sortAscLex boo
 				return true
 			case !isAlphaA && isAlphaB:
 				return false
-			case isAlphaA:
-				return a < b
 			default:
 				return a < b
 			}
@@ -137,8 +140,6 @@ func (obj *ConstObject) sortChildren(sortAsc bool, sortDesc bool, sortAscLex boo
 				return true
 			case !isAlphaA && isAlphaB:
 				return false
-			case isAlphaA:
-				return a > b
 			default:
 				return a > b
 			}
@@ -165,10 +166,12 @@ func (obj *ConstObject) inheritedProperty(parent *ConstObject) {
 	obj.Suffix = parent.Suffix
 	obj.freeze = parent.freeze
 	obj.MacroDefine = parent.MacroDefine
+	obj.IdentMapStr = parent.IdentMapStr
+	obj.StrMapIdent = parent.StrMapIdent
 	obj.UpperIdent = parent.UpperIdent
 	obj.LowerIdent = parent.LowerIdent
 	obj.UpperIdentCamel = parent.UpperIdentCamel
-	obj.lowerIdentCamel = parent.lowerIdentCamel
+	obj.LowerIdentCamel = parent.LowerIdentCamel
 }
 
 /*
@@ -207,6 +210,18 @@ func (obj *ConstObject) applyProperty() {
 		}
 	}
 
+	if obj.IdentMapStr {
+		for _, constObj := range obj.Children {
+			constObj.IdentMapStr = obj.IdentMapStr
+		}
+	}
+
+	if obj.StrMapIdent {
+		for _, constObj := range obj.Children {
+			constObj.StrMapIdent = obj.StrMapIdent
+		}
+	}
+
 	// if obj upperIdent, children need upperIdent
 	if obj.UpperIdent {
 		for _, constObj := range obj.Children {
@@ -229,9 +244,9 @@ func (obj *ConstObject) applyProperty() {
 	}
 
 	// if obj snakeCaseIdent, children need snakeCaseIdent
-	if obj.lowerIdentCamel {
+	if obj.LowerIdentCamel {
 		for _, constObj := range obj.Children {
-			constObj.lowerIdentCamel = obj.lowerIdentCamel
+			constObj.LowerIdentCamel = obj.LowerIdentCamel
 		}
 	}
 }
@@ -241,6 +256,8 @@ func (obj *ConstObject) clearProperty() {
 	obj.Suffix = ""
 	// obj.freeze = false
 	// obj.MacroDefine = false
+	// obj.IdentMapStr = false
+	// obj.StrMapIdent = false
 	// obj.upperIdent = false
 	// obj.lowerIdent = false
 	// obj.upperIdentCame = false
@@ -278,8 +295,19 @@ func (obj *ConstObject) detectType(str string) {
 }
 
 func (obj *ConstObject) genValue(option *src.Options) {
-	// correct indent
-	correctIdent(obj)
+	// apply action option
+	bitFlag := false
+	bitFlagHex := false
+	toUpper := false
+	toLower := false
+	genEntity := false
+	genStr := false
+	genId := false
+
+	sortAsc := false
+	sortDesc := false
+	sortAscLex := false
+	sortDescLex := false
 
 	// apply prefix option
 	prefix, ok := obj.options[src.Option_Prefix]
@@ -293,64 +321,6 @@ func (obj *ConstObject) genValue(option *src.Options) {
 		obj.Suffix = src.UnquoteStr(suffix.Value)
 	}
 
-	// apply property option
-	obj.EnumToPrefix = false
-	obj.NamespaceToPrefix = false
-	obj.freeze = false
-	obj.MacroDefine = false
-	obj.UpperIdent = false
-	obj.LowerIdent = false
-	obj.UpperIdentCamel = false
-	obj.lowerIdentCamel = false
-
-	property, ok := obj.options[src.Option_Property]
-	if ok && len(property.Value) > 0 {
-		str := strings.ToLower(src.UnquoteStr(property.Value))
-
-		if strings.Contains(str, src.Option_EnumToPrefix) {
-			obj.EnumToPrefix = true
-		}
-
-		if strings.Contains(str, src.Option_NamespaceToPrefix) || strings.Contains(str, src.Option_NSToPrefix) {
-			obj.NamespaceToPrefix = true
-		}
-
-		if strings.Contains(str, src.Option_Freeze) {
-			obj.freeze = true
-		}
-
-		if strings.Contains(str, src.Option_MacroDefine) {
-			obj.MacroDefine = true
-		}
-
-		if strings.Contains(str, src.Option_UpperIdent) {
-			obj.UpperIdent = true
-		}
-
-		if strings.Contains(str, src.Option_LowerIdent) {
-			obj.LowerIdent = true
-		}
-
-		if strings.Contains(str, src.Option_UpperIdentCamel) {
-			obj.UpperIdentCamel = true
-		}
-
-		if strings.Contains(str, src.Option_LowerIdentCamel) {
-			obj.lowerIdentCamel = true
-		}
-	}
-
-	// apply action option
-	bitFlag := false
-	bitFlagHex := false
-	genStr := false
-	genId := false
-
-	sortAsc := false
-	sortDesc := false
-	sortAscLex := false
-	sortDescLex := false
-
 	action, ok := obj.options[src.Option_Action]
 	if ok && len(action.Value) > 0 {
 		str := strings.ToLower(src.UnquoteStr(action.Value))
@@ -361,6 +331,18 @@ func (obj *ConstObject) genValue(option *src.Options) {
 
 		if strings.Contains(str, src.Option_BitFlagHex) {
 			bitFlagHex = true
+		}
+
+		if strings.Contains(str, src.Option_ToUpper) {
+			toUpper = true
+		}
+
+		if strings.Contains(str, src.Option_ToLower) {
+			toLower = true
+		}
+
+		if strings.Contains(str, src.Option_GenEntity) {
+			genEntity = true
 		}
 
 		if strings.Contains(str, src.Option_GenStr) {
@@ -384,6 +366,91 @@ func (obj *ConstObject) genValue(option *src.Options) {
 		}
 	}
 
+	// first genEntity
+	if genEntity {
+		for _, constObj := range obj.Children {
+			constObj.Value = strconv.Quote(src.UnicodeToString(constObj.Value))
+			constObj.value = obj.Prefix + constObj.value + obj.Suffix
+		}
+
+		// clear Prefix/Suffix
+		obj.Prefix = ""
+		obj.Suffix = ""
+	}
+
+	// first change toUpper/toLower
+	if toUpper || toLower {
+		for _, constObj := range obj.Children {
+			if toLower {
+				constObj.Ident = strings.ToLower(constObj.Ident)
+				constObj.value = strings.ToLower(constObj.value)
+			} else if toUpper {
+				constObj.Ident = strings.ToUpper(constObj.Ident)
+				constObj.value = strings.ToUpper(constObj.value)
+			}
+		}
+	}
+
+	// correct indent
+	correctIdent(option, obj)
+
+	// apply property option
+	obj.EnumToPrefix = false
+	obj.NamespaceToPrefix = false
+	obj.freeze = false
+	obj.MacroDefine = false
+	obj.IdentMapStr = false
+	obj.StrMapIdent = false
+	obj.UpperIdent = false
+	obj.LowerIdent = false
+	obj.UpperIdentCamel = false
+	obj.LowerIdentCamel = false
+
+	property, ok := obj.options[src.Option_Property]
+	if ok && len(property.Value) > 0 {
+		str := strings.ToLower(src.UnquoteStr(property.Value))
+
+		if strings.Contains(str, src.Option_EnumToPrefix) {
+			obj.EnumToPrefix = true
+		}
+
+		if strings.Contains(str, src.Option_NamespaceToPrefix) || strings.Contains(str, src.Option_NSToPrefix) {
+			obj.NamespaceToPrefix = true
+		}
+
+		if strings.Contains(str, src.Option_Freeze) {
+			obj.freeze = true
+		}
+
+		if strings.Contains(str, src.Option_MacroDefine) {
+			obj.MacroDefine = true
+		}
+
+		if strings.Contains(str, src.Option_IdentMapStr) {
+			obj.IdentMapStr = true
+		}
+
+		if strings.Contains(str, src.Option_StrMapIdent) {
+			obj.StrMapIdent = true
+		}
+
+		if strings.Contains(str, src.Option_UpperIdent) {
+			obj.UpperIdent = true
+		}
+
+		if strings.Contains(str, src.Option_LowerIdent) {
+			obj.LowerIdent = true
+		}
+
+		if strings.Contains(str, src.Option_UpperIdentCamel) {
+			obj.UpperIdentCamel = true
+		}
+
+		if strings.Contains(str, src.Option_LowerIdentCamel) {
+			obj.LowerIdentCamel = true
+		}
+	}
+
 	// pre-check bitFlag||bitFlagHex
 	if (bitFlag || bitFlagHex) && len(obj.Children) > int(src.BitFlagMax) {
 		fmt.Fprintf(os.Stderr, "\"%s\" sub-items exceeds the maximum value of the type, can't exec bitflag.\n", obj.Ident)
@@ -401,109 +468,124 @@ func (obj *ConstObject) genValue(option *src.Options) {
 		// apply property to all children
 		obj.applyProperty()
 
-		// first check type
-		typo := obj.Typo
+		if !genEntity {
+			// first check type
+			typo := obj.Typo
 
-		// check enum if set value
-		obj.enumSetValue = false
-		for _, constObj := range obj.Children {
-			if len(constObj.Value) != 0 {
+			// check enum if set value
+			enumOrderValue := ""
+			obj.enumSetValue = false
+			for _, constObj := range obj.Children {
+				if len(constObj.Value) != 0 {
+					obj.enumSetValue = true
+
+					// if has sort, keep last order value and clear constObj.Value
+					if sortAsc || sortDesc || sortAscLex || sortDescLex {
+						enumOrderValue = constObj.Value
+						constObj.Value = ""
+					} else {
+						break
+					}
+				}
+			}
+
+			// if has sort, need change first order value
+			if (sortAsc || sortDesc || sortAscLex || sortDescLex) && len(enumOrderValue) > 0 && len(obj.Children) > 0 {
+				obj.Children[0].Value = enumOrderValue
+			}
+
+			// gen enum value
+			if bitFlag || bitFlagHex {
 				obj.enumSetValue = true
-				break
-			}
-		}
 
-		// gen enum value
-		if bitFlag || bitFlagHex {
-			obj.enumSetValue = true
-
-			if len(typo) == 0 {
-				typo = bitFlagType(uint64(len(obj.Children)), option.BitFlagNoneAll)
-			}
-
-			allValue := 0
-			for idx, constObj := range obj.Children {
-				constObj.Typo = typo
-				constObj.Value = "1 << " + strconv.FormatInt(int64(idx), 10)
-				if bitFlagHex && bitFlagCount != 0 {
-					constObj.Value = fmt.Sprintf("0x%0*X", bitFlagCount, 1<<idx)
+				if len(typo) == 0 {
+					typo = bitFlagType(uint64(len(obj.Children)), option.BitFlagNoneAll)
 				}
-				constObj.value = constObj.Value
-				allValue |= 1 << idx
-			}
 
-			if option.BitFlagNoneAll {
-				// add None object
-				none := NewConstObject(obj, TypeEnumValue)
-				none.inheritedProperty(obj)
-				none.Ident = option.BitFlagNone
-				none.Typo = typo
-				none.Value = "0"
-				if bitFlagHex && bitFlagCount != 0 {
-					none.Value = fmt.Sprintf("0x%0*X", bitFlagCount, 0)
+				allValue := 0
+				for idx, constObj := range obj.Children {
+					constObj.Typo = typo
+					constObj.Value = "1 << " + strconv.FormatInt(int64(idx), 10)
+					if bitFlagHex && bitFlagCount != 0 {
+						constObj.Value = fmt.Sprintf("0x%0*X", bitFlagCount, 1<<idx)
+					}
+					constObj.value = constObj.Value
+					allValue |= 1 << idx
 				}
-				none.value = option.BitFlagNone
-				obj.Children = append([]*ConstObject{none}, obj.Children...)
 
-				// add All object
-				all := NewConstObject(obj, TypeEnumValue)
-				all.inheritedProperty(obj)
-				all.Ident = option.BitFlagAll
-				all.Typo = typo
-				all.Value = "0x" + strconv.FormatInt(int64(allValue), 16)
-				if bitFlagHex && bitFlagCount != 0 {
-					all.Value = fmt.Sprintf("0x%0*X", bitFlagCount, allValue)
+				if option.BitFlagNoneAll {
+					// add None object
+					none := NewConstObject(obj, TypeEnumValue)
+					none.inheritedProperty(obj)
+					none.Ident = option.BitFlagNone
+					none.Typo = typo
+					none.Value = "0"
+					if bitFlagHex && bitFlagCount != 0 {
+						none.Value = fmt.Sprintf("0x%0*X", bitFlagCount, 0)
+					}
+					none.value = option.BitFlagNone
+					obj.Children = append([]*ConstObject{none}, obj.Children...)
+
+					// add All object
+					all := NewConstObject(obj, TypeEnumValue)
+					all.inheritedProperty(obj)
+					all.Ident = option.BitFlagAll
+					all.Typo = typo
+					all.Value = "0x" + strconv.FormatInt(int64(allValue), 16)
+					if bitFlagHex && bitFlagCount != 0 {
+						all.Value = fmt.Sprintf("0x%0*X", bitFlagCount, allValue)
+					}
+					all.value = option.BitFlagAll
+					obj.Children = append(obj.Children, all)
 				}
-				all.value = option.BitFlagAll
-				obj.Children = append(obj.Children, all)
-			}
-		} else {
-			if len(typo) == 0 {
-				typo = uintType(uint64(len(obj.Children)))
-			}
+			} else {
+				if len(typo) == 0 {
+					typo = uintType(uint64(len(obj.Children)))
+				}
 
-			var lastValue int64 = 0
-			hasNegativeNum := false
+				var lastValue int64 = 0
+				hasNegativeNum := false
 
-			if obj.enumSetValue {
-				// enum generate value
+				if obj.enumSetValue {
+					// enum generate value
+					for _, constObj := range obj.Children {
+						constObj.Typo = typo
+
+						if len(constObj.Value) == 0 {
+							constObj.Value = strconv.FormatInt(int64(lastValue), 10)
+						} else {
+							intVal, err := strconv.ParseInt(constObj.Value, 0, 64)
+							if err == nil {
+								lastValue = intVal
+
+								//check is negative
+								if intVal < 0 {
+									hasNegativeNum = true
+								}
+							}
+							constObj.Value = strconv.FormatInt(int64(lastValue), 10)
+						}
+						lastValue++
+					}
+				} else {
+					// enum default value
+					for _, constObj := range obj.Children {
+						constObj.Value = strconv.FormatInt(int64(lastValue), 10)
+						lastValue++
+					}
+				}
+
+				// reset enum typo
+				if hasNegativeNum {
+					typo = intType(lastValue)
+				} else {
+					typo = uintType(uint64(lastValue))
+				}
+
+				obj.Typo = typo
 				for _, constObj := range obj.Children {
 					constObj.Typo = typo
-
-					if len(constObj.Value) == 0 {
-						constObj.Value = strconv.FormatInt(int64(lastValue), 10)
-					} else {
-						intVal, err := strconv.ParseInt(constObj.Value, 0, 64)
-						if err == nil {
-							lastValue = intVal
-
-							//check is negative
-							if intVal < 0 {
-								hasNegativeNum = true
-							}
-						}
-						constObj.Value = strconv.FormatInt(int64(lastValue), 10)
-					}
-					lastValue++
 				}
-			} else {
-				// enum default value
-				for _, constObj := range obj.Children {
-					constObj.Value = strconv.FormatInt(int64(lastValue), 10)
-					lastValue++
-				}
-			}
-
-			// reset enum typo
-			if hasNegativeNum {
-				typo = intType(lastValue)
-			} else {
-				typo = uintType(uint64(lastValue))
-			}
-
-			obj.Typo = typo
-			for _, constObj := range obj.Children {
-				constObj.Typo = typo
 			}
 		}
 
@@ -514,13 +596,14 @@ func (obj *ConstObject) genValue(option *src.Options) {
 				genObj.inheritedProperty(obj)
 				genObj.Ident = constObj.Ident + src.UnderScore + src.ConstSTR
 				if len(genObj.Suffix) > 0 {
-					genObj.Ident = constObj.Ident + src.UnderScore + genObj.Suffix + src.UnderScore + src.ConstSTR
+					// always use constObj.Ident
+					// genObj.Ident = constObj.Ident + src.UnderScore + genObj.Suffix + src.UnderScore + src.ConstSTR
 					genObj.Suffix = ""
 				}
 				genObj.Typo = src.Typo_Str
 
-				// always use constObj.Ident
-				genObj.Value = strconv.Quote(constObj.Ident) // strconv.Quote(genIdentName(option, "", constObj))
+				// always use constObj.value
+				genObj.Value = strconv.Quote(constObj.value) // strconv.Quote(genIdentName(option, "", constObj))
 
 				obj.genObjs = append(obj.genObjs, genObj)
 			}
@@ -604,6 +687,26 @@ func (obj *ConstObject) genValue(option *src.Options) {
 
 					obj.genObjs = append(obj.genObjs, genObj)
 				}
+			}
+		}
+
+		// gen str
+		if genStr && len(obj.Children) > 0 {
+			for _, constObj := range obj.Children {
+				genObj := NewConstObject(obj, TypeObj)
+				genObj.inheritedProperty(obj)
+				genObj.Ident = constObj.Ident + src.UnderScore + src.ConstSTR
+				if len(genObj.Suffix) > 0 {
+					// always use constObj.Ident
+					// genObj.Ident = constObj.Ident + src.UnderScore + genObj.Suffix + src.UnderScore + src.ConstSTR
+					genObj.Suffix = ""
+				}
+				genObj.Typo = src.Typo_Str
+
+				// always use constObj.value
+				genObj.Value = strconv.Quote(constObj.value) // strconv.Quote(genIdentName(option, "", constObj))
+
+				obj.genObjs = append(obj.genObjs, genObj)
 			}
 		}
 

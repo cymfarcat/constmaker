@@ -37,9 +37,14 @@ func UnquoteStr(str string) string {
 	return result
 }
 
-func UpperCamelCase(ident string) string {
+func UpperCamelCase(ident string, toLower bool) string {
 	// split by UnderScore="_"
-	parts := strings.Split(strings.ToLower(ident), UnderScore)
+	var parts []string
+	if toLower {
+		parts = strings.Split(strings.ToLower(ident), UnderScore)
+	} else {
+		parts = strings.Split(ident, UnderScore)
+	}
 
 	var result string
 	for _, part := range parts {
@@ -58,9 +63,14 @@ func UpperCamelCase(ident string) string {
 	return result
 }
 
-func LowerCamelCase(ident string) string {
+func LowerCamelCase(ident string, toLower bool) string {
 	// split by UnderScore="_"
-	parts := strings.Split(strings.ToLower(ident), UnderScore)
+	var parts []string
+	if toLower {
+		parts = strings.Split(strings.ToLower(ident), UnderScore)
+	} else {
+		parts = strings.Split(ident, UnderScore)
+	}
 
 	var result string
 	for idx, part := range parts {
@@ -81,6 +91,24 @@ func LowerCamelCase(ident string) string {
 		result += string(r)
 	}
 
+	return result
+}
+
+// like this: "U+02269 U+0FE00"
+func UnicodeToString(unicodeStr string) string {
+	unicodeStr = UnquoteStr(unicodeStr)
+
+	parts := strings.Fields(unicodeStr)
+	var result string
+	for _, part := range parts {
+		if len(part) > 2 {
+			// remove "U+"
+			codePoint, err := strconv.ParseInt(part[2:], 16, 32)
+			if err == nil {
+				result += string(rune(codePoint))
+			}
+		}
+	}
 	return result
 }
 

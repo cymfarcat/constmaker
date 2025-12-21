@@ -3,83 +3,79 @@
 /**
  *this is a test
  */
-pub const TABLE: &str = "table"; // hello word
-pub const ALLOW_TEST: &str = "at";
-pub const PERCENT: i8 = -100;
+pub const table: &str = "table"; // hello word
+pub const allowTest: &str = "at";
+pub const percent: i8 = -100;
 
 /** pi */
-pub const PI: f32 = 3.14159;
+pub const pi: f32 = 3.14159;
 
 /**
  * colors
  */
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
-pub enum COLORS {
-    K_NONE_DEF = 0,
-    K_BLUE_DEF = 1 << 0,
-    K_GREEN_DEF = 1 << 1,
-    K_RED_DEF = 1 << 2,
-    K_ALL_DEF = 0x7,
+pub enum mColors {
+    kBlueDef,
+    kGreenDef,
+    kRedDef,
 }
-pub const COLORS_K_NONE_DEF_STR: &str = "NONE";
-pub const COLORS_K_BLUE_DEF_STR: &str = "blue";
-pub const COLORS_K_GREEN_DEF_STR: &str = "green";
-pub const COLORS_K_RED_DEF_STR: &str = "red";
-pub const COLORS_K_ALL_DEF_STR: &str = "ALL";
+pub const mColorsKBlueStr: &str = "blue";
+pub const mColorsKGreenStr: &str = "green";
+pub const mColorsKRedStr: &str = "red";
 
-// namespace NODE
-pub const NODE_HTML_BLOCK_ID: &str = "Block";
-pub const NODE_HTML_TABLE_ID: &str = "Table";
+// namespace node
+pub const nodeHtmlBlockId: &str = "Block";
+pub const nodeHtmlTableId: &str = "Table";
 
-// namespace ITEM
-pub const ITEM_ALLOW_TEST: &str = "at";
-pub const ITEM_PI: f32 = 3.14159;
-pub const ITEM_TABLE: &str = "table";
-pub const ITEM__PERCENT: i8 = 100;
-pub const ITEM_NONE_ID : u8 = 0;
-pub const ITEM_ALLOW_TEST_ID : u8 = 1 << 0;
-pub const ITEM_PI_ID : u8 = 1 << 1;
-pub const ITEM_TABLE_ID : u8 = 1 << 2;
-pub const ITEM__PERCENT_ID : u8 = 1 << 3;
-pub const ITEM_ALL_ID : u8 = 0xf;
+// namespace item
+pub const itemAllowTest: &str = "at";
+pub const itemPi: f32 = 3.14159;
+pub const itemTable: &str = "table";
+pub const itemPercent: i8 = 100;
+pub const itemNoneId : u8 = 0;
+pub const itemAllowTestId : u8 = 1 << 0;
+pub const itemPiId : u8 = 1 << 1;
+pub const itemTableId : u8 = 1 << 2;
+pub const itemPercentId : u8 = 1 << 3;
+pub const itemAllId : u8 = 0xf;
 
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
-pub enum ITEM_COLORS {
-    BLUE,
-    GREEN, // green
-    RED,
+pub enum itemColors {
+    blue,
+    green, // green
+    red,
 }
 
-// namespace ITEM_NODE
-pub const ITEM_NODE_BORDER: &str = "border";
+// namespace itemNode
+pub const itemNodeBorder: &str = "border";
 
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
-pub enum ITEM_NODE_COLORS {
-    RED,
-    GREEN, // green
-    BLUE,
+pub enum itemNodeColors {
+    red,
+    green, // green
+    blue,
 }
-pub const ITEM_NODE_COLORS_RED_STR: &str = "RED";
-pub const ITEM_NODE_COLORS_GREEN_STR: &str = "GREEN";
-pub const ITEM_NODE_COLORS_BLUE_STR: &str = "BLUE";
+pub const itemNodeColorsRedStr: &str = "RED";
+pub const itemNodeColorsGreenStr: &str = "GREEN";
+pub const itemNodeColorsBlueStr: &str = "BLUE";
 
-// namespace ITEM_NODE_QUICK
-pub const ITEM_NODE_QUICK_ITEM: &str = "item";
+// namespace itemNodeQuick
+pub const itemNodeQuickItem: &str = "item";
 
-// namespace ITEM_NODE_QUICK_NODE
+// namespace itemNodeQuickNode
 
-// namespace CSS3
-pub const CSS3_X_WEBKIT_AIRPLAY: &str = "x-webkit-airplay";
-pub const CSS3__WEBKIT_TEXT_ZOOM: &str = "-webkit-text-zoom";
-pub const CSS3__WEBKIT_BACKDROP_FILTER: &str = "-webkit-backdrop-filter";
-pub const CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING: &str = "-webkit-border-horizontal-spacing";
-pub const CSS3__WEBKIT_BORDER_VERTICAL_SPACING: &str = "-webkit-border-vertical-spacing";
-pub const CSS3__WEBKIT_BOX_ALIGN: &str = "-webkit-box-align";
-pub const CSS3_NONE_ID : u8 = 0;
-pub const CSS3_X_WEBKIT_AIRPLAY_ID : u8 = 1 << 0;
-pub const CSS3__WEBKIT_TEXT_ZOOM_ID : u8 = 1 << 1;
-pub const CSS3__WEBKIT_BACKDROP_FILTER_ID : u8 = 1 << 2;
-pub const CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING_ID : u8 = 1 << 3;
-pub const CSS3__WEBKIT_BORDER_VERTICAL_SPACING_ID : u8 = 1 << 4;
-pub const CSS3__WEBKIT_BOX_ALIGN_ID : u8 = 1 << 5;
-pub const CSS3_ALL_ID : u8 = 0x3f;
+// namespace css3
+pub const css3XWebkitAirplay: &str = "x-webkit-airplay";
+pub const css3WebkitTextZoom: &str = "-webkit-text-zoom";
+pub const css3WebkitBackdropFilter: &str = "-webkit-backdrop-filter";
+pub const css3WebkitBorderHorizontalSpacing: &str = "-webkit-border-horizontal-spacing";
+pub const css3WebkitBorderVerticalSpacing: &str = "-webkit-border-vertical-spacing";
+pub const css3WebkitBoxAlign: &str = "-webkit-box-align";
+pub const css3NoneId : u8 = 0;
+pub const css3XWebkitAirplayId : u8 = 1 << 0;
+pub const css3WebkitTextZoomId : u8 = 1 << 1;
+pub const css3WebkitBackdropFilterId : u8 = 1 << 2;
+pub const css3WebkitBorderHorizontalSpacingId : u8 = 1 << 3;
+pub const css3WebkitBorderVerticalSpacingId : u8 = 1 << 4;
+pub const css3WebkitBoxAlignId : u8 = 1 << 5;
+pub const css3AllId : u8 = 0x3f;

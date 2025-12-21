@@ -5,12 +5,15 @@ package consts
 
 import (
 	"math"
+	"strconv"
 	"strings"
 
 	src "github.com/cymfarcat/constmaker/src"
 )
 
 // ////////////////////////////////////////////////////////////////////////////
+var identUsedString = make(map[string]bool)
+
 func getIdentName(option *src.Options, ident string, object *ConstObject) string {
 	if option.UpperIdent || object.UpperIdent {
 		ident = strings.ToUpper(ident)
@@ -19,9 +22,9 @@ func getIdentName(option *src.Options, ident string, object *ConstObject) string
 	}
 
 	if option.UpperIdentCamel || object.UpperIdentCamel {
-		return src.UpperCamelCase(ident)
-	} else if option.LowerIdentCamel || object.UpperIdentCamel {
-		return src.LowerCamelCase(ident)
+		ident = src.UpperCamelCase(ident, true)
+	} else if option.LowerIdentCamel || object.LowerIdentCamel {
+		ident = src.LowerCamelCase(ident, true)
 	}
 
 	return ident
@@ -46,14 +49,30 @@ func genIdentName(option *src.Options, prefix string, object *ConstObject) strin
 	return getIdentName(option, ident, object)
 }
 
-func correctIdent(object *ConstObject) {
+func correctIdent(option *src.Options, object *ConstObject) {
 	// keep origin value
 	object.value = object.Ident
+
+	identUsedString[object.value] = true
 
 	if strings.Contains(object.Ident, src.HyphenChar) {
 		// replace with HyphenChar="-"
 		result := strings.ReplaceAll(object.Ident, src.HyphenChar, src.UnderScore)
 		object.Ident = result
+
+		// 有可能infinity/-infinity在lower-ident-camel变成相同
+		value := strings.ReplaceAll(object.value, src.HyphenChar, "")
+		if identUsedString[value] {
+			for i := 1; i < 64; i++ {
+				if identUsedString[value+strconv.Itoa(i)] {
+					continue
+				} else {
+					object.Ident += strconv.Itoa(i)
+					identUsedString[value+strconv.Itoa(i)] = true
+					break
+				}
+			}
+		}
 	}
 }
 

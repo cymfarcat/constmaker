@@ -8,82 +8,78 @@
 /**
  *this is a test
  */
-NSString *const TABLE = @"table"; // hello word
-NSString *const ALLOW_TEST = @"at";
-const int8_t PERCENT = -100;
+NSString *const table = @"table"; // hello word
+NSString *const allowTest = @"at";
+const int8_t percent = -100;
 
 /** pi */
-const float PI = 3.14159;
+const float pi = 3.14159;
 
 /**
  * colors
  */
-typedef NS_ENUM(uint16_t, COLORS) {
-    K_NONE_DEF = 0,
-    K_BLUE_DEF = 1 << 0,
-    K_GREEN_DEF = 1 << 1,
-    K_RED_DEF = 1 << 2,
-    K_ALL_DEF = 0x7
+typedef NS_ENUM(uint8_t, mColors) {
+    kBlueDef,
+    kGreenDef,
+    kRedDef
 };
-NSString *const COLORS_K_NONE_DEF_STR = @"NONE";
-NSString *const COLORS_K_BLUE_DEF_STR = @"blue";
-NSString *const COLORS_K_GREEN_DEF_STR = @"green";
-NSString *const COLORS_K_RED_DEF_STR = @"red";
-NSString *const COLORS_K_ALL_DEF_STR = @"ALL";
+NSString *const mColorsKBlueStr = @"blue";
+NSString *const mColorsKGreenStr = @"green";
+NSString *const mColorsKRedStr = @"red";
 
-// namespace NODE
-NSString *const NODE_HTML_BLOCK_ID = @"Block";
-NSString *const NODE_HTML_TABLE_ID = @"Table";
+// namespace node
+NSString *const nodeHtmlBlockId = @"Block";
+NSString *const nodeHtmlTableId = @"Table";
 
-// namespace ITEM
-NSString *const ITEM_ALLOW_TEST = @"at";
-const float ITEM_PI = 3.14159;
-NSString *const ITEM_TABLE = @"table";
-const int8_t ITEM__PERCENT = 100;
-const uint8_t ITEM_NONE_ID_ID = 0;
-const uint8_t ITEM_ALLOW_TEST_ID_ID = 1 << 0;
-const uint8_t ITEM_PI_ID_ID = 1 << 1;
-const uint8_t ITEM_TABLE_ID_ID = 1 << 2;
-const uint8_t ITEM__PERCENT_ID_ID = 1 << 3;
-const uint8_t ITEM_ALL_ID_ID = 0xf;
+// namespace item
+NSString *const itemAllowTest = @"at";
+const float itemPi = 3.14159;
+NSString *const itemTable = @"table";
+const int8_t itemPercent = 100;
+const uint8_t itemNoneId_ID = 0;
+const uint8_t itemAllowTestId_ID = 1 << 0;
+const uint8_t itemPiId_ID = 1 << 1;
+const uint8_t itemTableId_ID = 1 << 2;
+const uint8_t itemPercentId_ID = 1 << 3;
+const uint8_t itemAllId_ID = 0xf;
 
-typedef NS_ENUM(uint8_t, ITEM_COLORS) {
-    BLUE,
-    GREEN, // green
-    RED
+typedef NS_ENUM(uint8_t, itemColors) {
+    blue,
+    green, // green
+    red
 };
 
-// namespace ITEM_NODE
-NSString *const ITEM_NODE_BORDER = @"border";
+// namespace itemNode
+NSString *const itemNodeBorder = @"border";
 
-typedef NS_ENUM(uint8_t, ITEM_NODE_COLORS) {
-    RED,
-    GREEN, // green
-    BLUE
+typedef NS_ENUM(uint8_t, itemNodeColors) {
+    red,
+    green, // green
+    blue
 };
-NSString *const ITEM_NODE_COLORS_RED_STR = @"RED";
-NSString *const ITEM_NODE_COLORS_GREEN_STR = @"GREEN";
-NSString *const ITEM_NODE_COLORS_BLUE_STR = @"BLUE";
+NSString *const itemNodeColorsRedStr = @"RED";
+NSString *const itemNodeColorsGreenStr = @"GREEN";
+NSString *const itemNodeColorsBlueStr = @"BLUE";
 
-// namespace ITEM_NODE_QUICK
-NSString *const ITEM_NODE_QUICK_ITEM = @"item";
+// namespace itemNodeQuick
+NSString *const itemNodeQuickItem = @"item";
 
-// namespace ITEM_NODE_QUICK_NODE
+// namespace itemNodeQuickNode
 
-// namespace CSS3
-NSString *const CSS3_X_WEBKIT_AIRPLAY = @"x-webkit-airplay";
-NSString *const CSS3__WEBKIT_TEXT_ZOOM = @"-webkit-text-zoom";
-NSString *const CSS3__WEBKIT_BACKDROP_FILTER = @"-webkit-backdrop-filter";
-NSString *const CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING = @"-webkit-border-horizontal-spacing";
-NSString *const CSS3__WEBKIT_BORDER_VERTICAL_SPACING = @"-webkit-border-vertical-spacing";
-NSString *const CSS3__WEBKIT_BOX_ALIGN = @"-webkit-box-align";
-const uint8_t CSS3_NONE_ID_ID = 0;
-const uint8_t CSS3_X_WEBKIT_AIRPLAY_ID_ID = 1 << 0;
-const uint8_t CSS3__WEBKIT_TEXT_ZOOM_ID_ID = 1 << 1;
-const uint8_t CSS3__WEBKIT_BACKDROP_FILTER_ID_ID = 1 << 2;
-const uint8_t CSS3__WEBKIT_BORDER_HORIZONTAL_SPACING_ID_ID = 1 << 3;
-const uint8_t CSS3__WEBKIT_BORDER_VERTICAL_SPACING_ID_ID = 1 << 4;
-const uint8_t CSS3__WEBKIT_BOX_ALIGN_ID_ID = 1 << 5;
-const uint8_t CSS3_ALL_ID_ID = 0x3f;
+// namespace css3
+NSString *const css3XWebkitAirplay = @"x-webkit-airplay";
+NSString *const css3WebkitTextZoom = @"-webkit-text-zoom";
+NSString *const css3WebkitBackdropFilter = @"-webkit-backdrop-filter";
+NSString *const css3WebkitBorderHorizontalSpacing = @"-webkit-border-horizontal-spacing";
+NSString *const css3WebkitBorderVerticalSpacing = @"-webkit-border-vertical-spacing";
+NSString *const css3WebkitBoxAlign = @"-webkit-box-align";
+const uint8_t css3NoneId_ID = 0;
+const uint8_t css3XWebkitAirplayId_ID = 1 << 0;
+const uint8_t css3WebkitTextZoomId_ID = 1 << 1;
+const uint8_t css3WebkitBackdropFilterId_ID = 1 << 2;
+const uint8_t css3WebkitBorderHorizontalSpacingId_ID = 1 << 3;
+const uint8_t css3WebkitBorderVerticalSpacingId_ID = 1 << 4;
+const uint8_t css3WebkitBoxAlignId_ID = 1 << 5;
+const uint8_t css3AllId_ID = 0x3f;
 
 #endif // CONSTMAKER_GENERATED_TEST1_H

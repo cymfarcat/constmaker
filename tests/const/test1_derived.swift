@@ -3,86 +3,82 @@
 /**
  *this is a test
  */
-static let TABLE: String = "table" // hello word
-static let ALLOW_TEST: String = "at"
-static let PERCENT: Int8 = -100
+static let table: String = "table" // hello word
+static let allowTest: String = "at"
+static let percent: Int8 = -100
 
 /** pi */
-static let PI: Float = 3.14159
+static let pi: Float = 3.14159
 
 /**
  * colors
  */
-enum COLORS: UInt16 {
-    case K_NONE_DEF = 0
-    case K_BLUE_DEF = 1 << 0
-    case K_GREEN_DEF = 1 << 1
-    case K_RED_DEF = 1 << 2
-    case K_ALL_DEF = 0x7
+enum mColors: UInt8 {
+    case kBlueDef
+    case kGreenDef
+    case kRedDef
 }
-static let COLORS_K_NONE_DEF_STR: String = "NONE"
-static let COLORS_K_BLUE_DEF_STR: String = "blue"
-static let COLORS_K_GREEN_DEF_STR: String = "green"
-static let COLORS_K_RED_DEF_STR: String = "red"
-static let COLORS_K_ALL_DEF_STR: String = "ALL"
+static let mColorsKBlueStr: String = "blue"
+static let mColorsKGreenStr: String = "green"
+static let mColorsKRedStr: String = "red"
 
-struct NODE {
-    static let HTML_BLOCK_ID: String = "Block"
-    static let HTML_TABLE_ID: String = "Table"
+struct node {
+    static let htmlBlockId: String = "Block"
+    static let htmlTableId: String = "Table"
 }
 
-struct ITEM {
-    static let ALLOW_TEST: String = "at"
-    static let PI: Float = 3.14159
-    static let TABLE: String = "table"
-    static let _PERCENT: Int8 = 100
-    static let NONE_ID: UInt8 = 0
-    static let ALLOW_TEST_ID: UInt8 = 1 << 0
-    static let PI_ID: UInt8 = 1 << 1
-    static let TABLE_ID: UInt8 = 1 << 2
-    static let _PERCENT_ID: UInt8 = 1 << 3
-    static let ALL_ID: UInt8 = 0xf
+struct item {
+    static let allowTest: String = "at"
+    static let pi: Float = 3.14159
+    static let table: String = "table"
+    static let Percent: Int8 = 100
+    static let noneId: UInt8 = 0
+    static let allowTestId: UInt8 = 1 << 0
+    static let piId: UInt8 = 1 << 1
+    static let tableId: UInt8 = 1 << 2
+    static let PercentId: UInt8 = 1 << 3
+    static let allId: UInt8 = 0xf
 
-    enum COLORS: UInt8 {
-        case BLUE
-        case GREEN // green
-        case RED
+    enum colors: UInt8 {
+        case blue
+        case green // green
+        case red
     }
 }
 
-struct ITEM_NODE {
-    static let BORDER: String = "border"
+struct itemNode {
+    static let border: String = "border"
 
-    enum COLORS: UInt8 {
-        case RED
-        case GREEN // green
-        case BLUE
+    enum colors: UInt8 {
+        case red
+        case green // green
+        case blue
     }
-    static let COLORS_RED_STR: String = "RED"
-    static let COLORS_GREEN_STR: String = "GREEN"
-    static let COLORS_BLUE_STR: String = "BLUE"
+    static let colorsRedStr: String = "RED"
+    static let colorsGreenStr: String = "GREEN"
+    static let colorsBlueStr: String = "BLUE"
 }
 
-struct ITEM_NODE_QUICK {
-    static let ITEM: String = "item"
+struct itemNodeQuick {
+    static let item: String = "item"
 }
 
-struct ITEM_NODE_QUICK_NODE {
+struct itemNodeQuickNode {
 }
 
-struct CSS3 {
-    static let X_WEBKIT_AIRPLAY: String = "x-webkit-airplay"
-    static let _WEBKIT_TEXT_ZOOM: String = "-webkit-text-zoom"
-    static let _WEBKIT_BACKDROP_FILTER: String = "-webkit-backdrop-filter"
-    static let _WEBKIT_BORDER_HORIZONTAL_SPACING: String = "-webkit-border-horizontal-spacing"
-    static let _WEBKIT_BORDER_VERTICAL_SPACING: String = "-webkit-border-vertical-spacing"
-    static let _WEBKIT_BOX_ALIGN: String = "-webkit-box-align"
-    static let NONE_ID: UInt8 = 0
-    static let X_WEBKIT_AIRPLAY_ID: UInt8 = 1 << 0
-    static let _WEBKIT_TEXT_ZOOM_ID: UInt8 = 1 << 1
-    static let _WEBKIT_BACKDROP_FILTER_ID: UInt8 = 1 << 2
-    static let _WEBKIT_BORDER_HORIZONTAL_SPACING_ID: UInt8 = 1 << 3
-    static let _WEBKIT_BORDER_VERTICAL_SPACING_ID: UInt8 = 1 << 4
-    static let _WEBKIT_BOX_ALIGN_ID: UInt8 = 1 << 5
-    static let ALL_ID: UInt8 = 0x3f
+struct css3 {
+    static let xWebkitAirplay: String = "x-webkit-airplay"
+    static let WebkitTextZoom: String = "-webkit-text-zoom"
+    static let WebkitBackdropFilter: String = "-webkit-backdrop-filter"
+    static let WebkitBorderHorizontalSpacing: String = "-webkit-border-horizontal-spacing"
+    static let WebkitBorderVerticalSpacing: String = "-webkit-border-vertical-spacing"
+    static let WebkitBoxAlign: String = "-webkit-box-align"
+    static let noneId: UInt8 = 0
+    static let xWebkitAirplayId: UInt8 = 1 << 0
+    static let WebkitTextZoomId: UInt8 = 1 << 1
+    static let WebkitBackdropFilterId: UInt8 = 1 << 2
+    static let WebkitBorderHorizontalSpacingId: UInt8 = 1 << 3
+    static let WebkitBorderVerticalSpacingId: UInt8 = 1 << 4
+    static let WebkitBoxAlignId: UInt8 = 1 << 5
+    static let allId: UInt8 = 0x3f
 }

@@ -9,9 +9,12 @@
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>false</IdentMapStr>
+    <StrMapIdent>false</StrMapIdent>
     <UpperIdent>false</UpperIdent>
     <LowerIdent>false</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>false</LowerIdentCamel>
   </const>
   <const id="allow_test" type="str" value="&#34;at&#34;" comment="">
     <Prefix></Prefix>
@@ -20,9 +23,12 @@
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>false</IdentMapStr>
+    <StrMapIdent>false</StrMapIdent>
     <UpperIdent>false</UpperIdent>
     <LowerIdent>false</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>false</LowerIdentCamel>
   </const>
   <const id="percent" type="i8" value="-100" comment="">
     <Prefix></Prefix>
@@ -31,9 +37,12 @@
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>false</IdentMapStr>
+    <StrMapIdent>false</StrMapIdent>
     <UpperIdent>false</UpperIdent>
     <LowerIdent>false</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>false</LowerIdentCamel>
   </const>
   <const id="pi" type="f32" value="3.14159" comment="">
     <Prefix></Prefix>
@@ -42,81 +51,77 @@
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>false</IdentMapStr>
+    <StrMapIdent>false</StrMapIdent>
     <UpperIdent>false</UpperIdent>
     <LowerIdent>false</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>false</LowerIdentCamel>
   </const>
   <EnumToPrefix>false</EnumToPrefix>
   <NamespaceToPrefix>false</NamespaceToPrefix>
   <MacroDefine>false</MacroDefine>
+  <IdentMapStr>false</IdentMapStr>
+  <StrMapIdent>false</StrMapIdent>
   <UpperIdent>false</UpperIdent>
   <LowerIdent>false</LowerIdent>
   <UpperIdentCamel>false</UpperIdentCamel>
-  <enum id="Colors" type="u16" value="" comment="">
+  <LowerIdentCamel>false</LowerIdentCamel>
+  <enum id="M_Colors" type="u8" value="" comment="">
     <Prefix></Prefix>
     <Suffix></Suffix>
     <CommentDoc>/**&#xD;&#xA; * colors&#xD;&#xA; */</CommentDoc>
-    <const id="NONE" type="u16" value="0" comment="">
+    <const id="blue" type="u8" value="0" comment="">
       <Prefix>K</Prefix>
       <Suffix>Def</Suffix>
       <CommentDoc></CommentDoc>
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>true</IdentMapStr>
+      <StrMapIdent>true</StrMapIdent>
       <UpperIdent>true</UpperIdent>
-      <LowerIdent>false</LowerIdent>
+      <LowerIdent>true</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>true</LowerIdentCamel>
     </const>
-    <const id="blue" type="u16" value="1 &lt;&lt; 0" comment="">
+    <const id="green" type="u8" value="1" comment="">
       <Prefix>K</Prefix>
       <Suffix>Def</Suffix>
       <CommentDoc></CommentDoc>
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>true</IdentMapStr>
+      <StrMapIdent>true</StrMapIdent>
       <UpperIdent>true</UpperIdent>
-      <LowerIdent>false</LowerIdent>
+      <LowerIdent>true</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>true</LowerIdentCamel>
     </const>
-    <const id="green" type="u16" value="1 &lt;&lt; 1" comment="">
+    <const id="red" type="u8" value="2" comment="">
       <Prefix>K</Prefix>
       <Suffix>Def</Suffix>
       <CommentDoc></CommentDoc>
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>true</IdentMapStr>
+      <StrMapIdent>true</StrMapIdent>
       <UpperIdent>true</UpperIdent>
-      <LowerIdent>false</LowerIdent>
+      <LowerIdent>true</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
-    </const>
-    <const id="red" type="u16" value="1 &lt;&lt; 2" comment="">
-      <Prefix>K</Prefix>
-      <Suffix>Def</Suffix>
-      <CommentDoc></CommentDoc>
-      <EnumToPrefix>false</EnumToPrefix>
-      <NamespaceToPrefix>false</NamespaceToPrefix>
-      <MacroDefine>false</MacroDefine>
-      <UpperIdent>true</UpperIdent>
-      <LowerIdent>false</LowerIdent>
-      <UpperIdentCamel>false</UpperIdentCamel>
-    </const>
-    <const id="ALL" type="u16" value="0x7" comment="">
-      <Prefix>K</Prefix>
-      <Suffix>Def</Suffix>
-      <CommentDoc></CommentDoc>
-      <EnumToPrefix>false</EnumToPrefix>
-      <NamespaceToPrefix>false</NamespaceToPrefix>
-      <MacroDefine>false</MacroDefine>
-      <UpperIdent>true</UpperIdent>
-      <LowerIdent>false</LowerIdent>
-      <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>true</LowerIdentCamel>
     </const>
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>true</IdentMapStr>
+    <StrMapIdent>true</StrMapIdent>
     <UpperIdent>true</UpperIdent>
-    <LowerIdent>false</LowerIdent>
+    <LowerIdent>true</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>true</LowerIdentCamel>
   </enum>
   <namespace id="Node" type="" value="" comment="">
     <Prefix></Prefix>
@@ -129,9 +134,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="Table" type="str" value="&#34;Table&#34;" comment="">
       <Prefix>html</Prefix>
@@ -140,16 +148,22 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>false</IdentMapStr>
+    <StrMapIdent>false</StrMapIdent>
     <UpperIdent>false</UpperIdent>
     <LowerIdent>false</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>false</LowerIdentCamel>
   </namespace>
   <namespace id="ITEM" type="" value="" comment="">
     <Prefix></Prefix>
@@ -162,9 +176,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="pi" type="f32" value="3.14159" comment="">
       <Prefix></Prefix>
@@ -173,9 +190,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="table" type="str" value="&#34;table&#34;" comment="">
       <Prefix></Prefix>
@@ -184,9 +204,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="_percent" type="i8" value="100" comment="">
       <Prefix></Prefix>
@@ -195,16 +218,22 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>false</IdentMapStr>
+    <StrMapIdent>false</StrMapIdent>
     <UpperIdent>false</UpperIdent>
     <LowerIdent>false</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>false</LowerIdentCamel>
     <enum id="Colors" type="u8" value="" comment="">
       <Prefix></Prefix>
       <Suffix></Suffix>
@@ -216,9 +245,12 @@
         <EnumToPrefix>false</EnumToPrefix>
         <NamespaceToPrefix>false</NamespaceToPrefix>
         <MacroDefine>false</MacroDefine>
+        <IdentMapStr>false</IdentMapStr>
+        <StrMapIdent>false</StrMapIdent>
         <UpperIdent>false</UpperIdent>
         <LowerIdent>false</LowerIdent>
         <UpperIdentCamel>false</UpperIdentCamel>
+        <LowerIdentCamel>false</LowerIdentCamel>
       </const>
       <const id="GREEN" type="u8" value="1" comment="/// green">
         <Prefix></Prefix>
@@ -227,9 +259,12 @@
         <EnumToPrefix>false</EnumToPrefix>
         <NamespaceToPrefix>false</NamespaceToPrefix>
         <MacroDefine>false</MacroDefine>
+        <IdentMapStr>false</IdentMapStr>
+        <StrMapIdent>false</StrMapIdent>
         <UpperIdent>false</UpperIdent>
         <LowerIdent>false</LowerIdent>
         <UpperIdentCamel>false</UpperIdentCamel>
+        <LowerIdentCamel>false</LowerIdentCamel>
       </const>
       <const id="RED" type="u8" value="2" comment="">
         <Prefix></Prefix>
@@ -238,16 +273,22 @@
         <EnumToPrefix>false</EnumToPrefix>
         <NamespaceToPrefix>false</NamespaceToPrefix>
         <MacroDefine>false</MacroDefine>
+        <IdentMapStr>false</IdentMapStr>
+        <StrMapIdent>false</StrMapIdent>
         <UpperIdent>false</UpperIdent>
         <LowerIdent>false</LowerIdent>
         <UpperIdentCamel>false</UpperIdentCamel>
+        <LowerIdentCamel>false</LowerIdentCamel>
       </const>
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </enum>
     <namespace id="NODE" type="" value="" comment="">
       <Prefix></Prefix>
@@ -260,16 +301,22 @@
         <EnumToPrefix>false</EnumToPrefix>
         <NamespaceToPrefix>false</NamespaceToPrefix>
         <MacroDefine>false</MacroDefine>
+        <IdentMapStr>false</IdentMapStr>
+        <StrMapIdent>false</StrMapIdent>
         <UpperIdent>false</UpperIdent>
         <LowerIdent>false</LowerIdent>
         <UpperIdentCamel>false</UpperIdentCamel>
+        <LowerIdentCamel>false</LowerIdentCamel>
       </const>
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
       <enum id="Colors" type="u8" value="" comment="">
         <Prefix></Prefix>
         <Suffix></Suffix>
@@ -281,9 +328,12 @@
           <EnumToPrefix>false</EnumToPrefix>
           <NamespaceToPrefix>false</NamespaceToPrefix>
           <MacroDefine>false</MacroDefine>
+          <IdentMapStr>false</IdentMapStr>
+          <StrMapIdent>false</StrMapIdent>
           <UpperIdent>false</UpperIdent>
           <LowerIdent>false</LowerIdent>
           <UpperIdentCamel>false</UpperIdentCamel>
+          <LowerIdentCamel>false</LowerIdentCamel>
         </const>
         <const id="GREEN" type="u8" value="1" comment="/// green">
           <Prefix></Prefix>
@@ -292,9 +342,12 @@
           <EnumToPrefix>false</EnumToPrefix>
           <NamespaceToPrefix>false</NamespaceToPrefix>
           <MacroDefine>false</MacroDefine>
+          <IdentMapStr>false</IdentMapStr>
+          <StrMapIdent>false</StrMapIdent>
           <UpperIdent>false</UpperIdent>
           <LowerIdent>false</LowerIdent>
           <UpperIdentCamel>false</UpperIdentCamel>
+          <LowerIdentCamel>false</LowerIdentCamel>
         </const>
         <const id="BLUE" type="u8" value="2" comment="">
           <Prefix></Prefix>
@@ -303,16 +356,22 @@
           <EnumToPrefix>false</EnumToPrefix>
           <NamespaceToPrefix>false</NamespaceToPrefix>
           <MacroDefine>false</MacroDefine>
+          <IdentMapStr>false</IdentMapStr>
+          <StrMapIdent>false</StrMapIdent>
           <UpperIdent>false</UpperIdent>
           <LowerIdent>false</LowerIdent>
           <UpperIdentCamel>false</UpperIdentCamel>
+          <LowerIdentCamel>false</LowerIdentCamel>
         </const>
         <EnumToPrefix>false</EnumToPrefix>
         <NamespaceToPrefix>false</NamespaceToPrefix>
         <MacroDefine>false</MacroDefine>
+        <IdentMapStr>false</IdentMapStr>
+        <StrMapIdent>false</StrMapIdent>
         <UpperIdent>false</UpperIdent>
         <LowerIdent>false</LowerIdent>
         <UpperIdentCamel>false</UpperIdentCamel>
+        <LowerIdentCamel>false</LowerIdentCamel>
       </enum>
       <namespace id="Quick" type="" value="" comment="">
         <Prefix></Prefix>
@@ -325,16 +384,22 @@
           <EnumToPrefix>false</EnumToPrefix>
           <NamespaceToPrefix>false</NamespaceToPrefix>
           <MacroDefine>false</MacroDefine>
+          <IdentMapStr>false</IdentMapStr>
+          <StrMapIdent>false</StrMapIdent>
           <UpperIdent>false</UpperIdent>
           <LowerIdent>false</LowerIdent>
           <UpperIdentCamel>false</UpperIdentCamel>
+          <LowerIdentCamel>false</LowerIdentCamel>
         </const>
         <EnumToPrefix>false</EnumToPrefix>
         <NamespaceToPrefix>false</NamespaceToPrefix>
         <MacroDefine>false</MacroDefine>
+        <IdentMapStr>false</IdentMapStr>
+        <StrMapIdent>false</StrMapIdent>
         <UpperIdent>false</UpperIdent>
         <LowerIdent>false</LowerIdent>
         <UpperIdentCamel>false</UpperIdentCamel>
+        <LowerIdentCamel>false</LowerIdentCamel>
         <namespace id="NODE" type="" value="" comment="">
           <Prefix></Prefix>
           <Suffix></Suffix>
@@ -342,9 +407,12 @@
           <EnumToPrefix>false</EnumToPrefix>
           <NamespaceToPrefix>false</NamespaceToPrefix>
           <MacroDefine>false</MacroDefine>
+          <IdentMapStr>false</IdentMapStr>
+          <StrMapIdent>false</StrMapIdent>
           <UpperIdent>false</UpperIdent>
           <LowerIdent>false</LowerIdent>
           <UpperIdentCamel>false</UpperIdentCamel>
+          <LowerIdentCamel>false</LowerIdentCamel>
         </namespace>
       </namespace>
     </namespace>
@@ -360,9 +428,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="_webkit_text_zoom" type="str" value="&#34;-webkit-text-zoom&#34;" comment="">
       <Prefix></Prefix>
@@ -371,9 +442,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="_webkit_backdrop_filter" type="str" value="&#34;-webkit-backdrop-filter&#34;" comment="">
       <Prefix></Prefix>
@@ -382,9 +456,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="_webkit_border_horizontal_spacing" type="str" value="&#34;-webkit-border-horizontal-spacing&#34;" comment="">
       <Prefix></Prefix>
@@ -393,9 +470,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="_webkit_border_vertical_spacing" type="str" value="&#34;-webkit-border-vertical-spacing&#34;" comment="">
       <Prefix></Prefix>
@@ -404,9 +484,12 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <const id="_webkit_box_align" type="str" value="&#34;-webkit-box-align&#34;" comment="">
       <Prefix></Prefix>
@@ -415,15 +498,21 @@
       <EnumToPrefix>false</EnumToPrefix>
       <NamespaceToPrefix>false</NamespaceToPrefix>
       <MacroDefine>false</MacroDefine>
+      <IdentMapStr>false</IdentMapStr>
+      <StrMapIdent>false</StrMapIdent>
       <UpperIdent>false</UpperIdent>
       <LowerIdent>false</LowerIdent>
       <UpperIdentCamel>false</UpperIdentCamel>
+      <LowerIdentCamel>false</LowerIdentCamel>
     </const>
     <EnumToPrefix>false</EnumToPrefix>
     <NamespaceToPrefix>false</NamespaceToPrefix>
     <MacroDefine>false</MacroDefine>
+    <IdentMapStr>false</IdentMapStr>
+    <StrMapIdent>false</StrMapIdent>
     <UpperIdent>false</UpperIdent>
     <LowerIdent>false</LowerIdent>
     <UpperIdentCamel>false</UpperIdentCamel>
+    <LowerIdentCamel>false</LowerIdentCamel>
   </namespace>
 </Test1>
