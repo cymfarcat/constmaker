@@ -52,6 +52,7 @@ const (
     Option_MacroDefine string = "macro-define"
     Option_IdentMapStr string = "ident-map-str" // IdentMapStr
     Option_StrMapIdent string = "str-map-ident" // StrMapIdent
+    Option_strMapQName string = "str-map-qname" // strMapQName
     Option_UpperIdent string = "upper-ident"
     Option_LowerIdent string = "lower-ident"
     Option_UpperIdentCamel string = "upper-ident-camel" // UpperCamelCase

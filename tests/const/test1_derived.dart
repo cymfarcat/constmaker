@@ -41,8 +41,8 @@ final Map<mColors, String> gMColorsMapStr = {
     mColors.kRedDef: mColorsKRedStr,
 };
 
-String? stringFromMColors(mColors name) {
-    return gMColorsMapStr[name];
+String? stringFromMColors(mColors value) {
+    return gMColorsMapStr[value];
 }
 
 class node {

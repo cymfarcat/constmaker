@@ -51,6 +51,7 @@ type ConstObject struct {
 	MacroDefine       bool
 	IdentMapStr       bool
 	StrMapIdent       bool
+	StrMapQName       bool
 	UpperIdent        bool
 	LowerIdent        bool
 	UpperIdentCamel   bool
@@ -168,6 +169,7 @@ func (obj *ConstObject) inheritedProperty(parent *ConstObject) {
 	obj.MacroDefine = parent.MacroDefine
 	obj.IdentMapStr = parent.IdentMapStr
 	obj.StrMapIdent = parent.StrMapIdent
+	obj.StrMapQName = parent.StrMapQName
 	obj.UpperIdent = parent.UpperIdent
 	obj.LowerIdent = parent.LowerIdent
 	obj.UpperIdentCamel = parent.UpperIdentCamel
@@ -222,6 +224,12 @@ func (obj *ConstObject) applyProperty() {
 		}
 	}
 
+	if obj.StrMapQName {
+		for _, constObj := range obj.Children {
+			constObj.StrMapQName = obj.StrMapQName
+		}
+	}
+
 	// if obj upperIdent, children need upperIdent
 	if obj.UpperIdent {
 		for _, constObj := range obj.Children {
@@ -258,6 +266,7 @@ func (obj *ConstObject) clearProperty() {
 	// obj.MacroDefine = false
 	// obj.IdentMapStr = false
 	// obj.StrMapIdent = false
+	// obj.StrMapQName = false
 	// obj.upperIdent = false
 	// obj.lowerIdent = false
 	// obj.upperIdentCame = false
@@ -401,6 +410,7 @@ func (obj *ConstObject) genValue(option *src.Options) {
 	obj.MacroDefine = false
 	obj.IdentMapStr = false
 	obj.StrMapIdent = false
+	obj.StrMapQName = false
 	obj.UpperIdent = false
 	obj.LowerIdent = false
 	obj.UpperIdentCamel = false
@@ -432,6 +442,10 @@ func (obj *ConstObject) genValue(option *src.Options) {
 
 		if strings.Contains(str, src.Option_StrMapIdent) {
 			obj.StrMapIdent = true
+		}
+
+		if strings.Contains(str, src.Option_strMapQName) {
+			obj.StrMapQName = true
 		}
 
 		if strings.Contains(str, src.Option_UpperIdent) {

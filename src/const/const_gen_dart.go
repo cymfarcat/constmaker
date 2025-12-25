@@ -215,14 +215,60 @@ func (obj *ConstObject) genDartStrMapIdent(identName string, option *src.Options
 	builder.WriteString("\n" + option.GetTabWidth() + "};\n")
 
 	//
-	str := "String? " + src.LowerCamelCase("stringFrom_"+identName, false) + "(" + mapValue + " name) {"
+	str := "String? " + src.LowerCamelCase("stringFrom_"+identName, false) + "(" + mapValue + " value) {"
 	builder.WriteString("\n" + option.GetTabWidth() + str)
 
 	option.Level++
-	builder.WriteString("\n" + option.GetTabWidth() + "return " + mapName + "[name];")
+	builder.WriteString("\n" + option.GetTabWidth() + "return " + mapName + "[value];")
 
 	option.Level--
 	builder.WriteString("\n" + option.GetTabWidth() + "}")
+}
+
+// HACK for qualified_name
+func (obj *ConstObject) genDartQName(namespace *NameSpace, prefix string, option *src.Options, builder *strings.Builder) {
+	mod := ""
+	mod_namespace := ""
+	mod_namespace_URI := ""
+
+	for _, constObj := range namespace.Children {
+		if constObj.Ident == "mod" {
+			mod = src.UnquoteStr(constObj.Value)
+			mod_namespace = src.LowerCamelCase(mod+"_namespace", true)
+			mod_namespace_URI = src.LowerCamelCase(mod+"_namespace_URI", true)
+		}
+	}
+
+	qualified_name := "QualifiedName"
+	is_node := strings.Contains(strings.ToLower(obj.Ident), "_node")
+	if is_node {
+		builder.WriteString("\n" + option.GetTabWidth() + "class " + strings.ToUpper(mod) + qualified_name + " extends " + qualified_name + " {")
+		option.Level += 1
+		builder.WriteString("\n" + option.GetTabWidth() + strings.ToUpper(mod) + qualified_name + "(super.prefix, super.localName, super.namespaceUri, [super.flag = 0, super.namespace = 0, super.nodeId = 0]);")
+		option.Level -= 1
+		builder.WriteString("\n" + option.GetTabWidth() + "}\n")
+
+		qualified_name = strings.ToUpper(mod) + qualified_name
+	}
+
+	for _, constObj := range obj.Children {
+
+		arg := ""
+		if is_node {
+			arg = "gEmptyStr, " + genIdentName(option, prefix, constObj) + "Str, " + mod_namespace_URI + ", 1, " + mod_namespace + ", " + genIdentName(option, prefix, constObj)
+		} else {
+			arg = "gEmptyStr, " + genIdentName(option, prefix, constObj) + "Str, gEmptyStr" + ", 1, " + mod_namespace + ", " + genIdentName(option, prefix, constObj)
+		}
+
+		str := ""
+		if obj.parent != nil && !(obj.NamespaceToPrefix || option.NamespaceToPrefix) {
+			str = "\n" + option.GetTabWidth() + "final " + qualified_name + " " + genIdentName(option, prefix, constObj) + "Tag = " + qualified_name + "(" + arg + ");"
+		} else {
+			str = "\n" + option.GetTabWidth() + "final " + qualified_name + " " + genIdentName(option, prefix, constObj) + "Tag = " + qualified_name + "(" + arg + ");"
+		}
+
+		builder.WriteString(str)
+	}
 }
 
 /*
@@ -234,6 +280,14 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 	// doc comment
 	if len(obj.CommentDoc) > 0 {
 		builder.WriteString("\n\n" + option.IndentComment(obj.CommentDoc))
+	}
+
+	// HACK for qualified_name
+	for _, constObj := range obj.Children {
+		if constObj.Ident == "mod" {
+			builder.WriteString("\nimport 'package:lib_appbase/lib_appbase.dart';")
+			builder.WriteString("\nimport '../dom/qualified_name.dart';\n")
+		}
 	}
 
 	if obj.parent == nil {
@@ -284,6 +338,11 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 	if obj.StrMapIdent {
 		builder.WriteString("\n")
 		obj.genDartStrMapIdent(prefix, option, builder)
+	}
+
+	if obj.StrMapQName {
+		builder.WriteString("\n")
+		obj.genDartQName(obj, prefix, option, builder)
 	}
 
 	if obj.parent == nil {
@@ -386,6 +445,12 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 			enumName = option.GetPrefixes(enumName)
 			builder.WriteString("\n")
 			enumObj.genDartStrMapIdent(enumName, option, builder)
+		}
+
+		if enumObj.StrMapQName {
+			enumName = option.GetPrefixes(enumName)
+			builder.WriteString("\n")
+			enumObj.genDartQName(obj, enumName, option, builder)
 		}
 	}
 

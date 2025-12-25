@@ -57,6 +57,7 @@ namespace Option {
 	MacroDefine     = "macro-define"
 	IdentMapStr     = "ident-map-str"	  /// IdentMapStr
 	StrMapIdent     = "str-map-ident"	  /// StrMapIdent
+	strMapQName		= "str-map-qname"	  /// strMapQName
 	UpperIdent      = "upper-ident"
 	LowerIdent      = "lower-ident"
 	UpperIdentCamel = "upper-ident-camel" /// UpperCamelCase

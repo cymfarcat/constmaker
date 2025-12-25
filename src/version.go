@@ -15,7 +15,8 @@ type Version struct {
 }
 
 var versionList = []Version{
-	{Parts: [3]int{1, 6, 0}, Meta: []string{"dart strMapIdent/identMapStr", "build20251231"}},
+	{Parts: [3]int{1, 6, 1}, Meta: []string{"dart QName", "build20251225"}},
+	{Parts: [3]int{1, 6, 0}, Meta: []string{"dart strMapIdent/identMapStr", "build20251223"}},
 	{Parts: [3]int{1, 5, 1}, Meta: []string{"bug fixed", "build20251221"}},
 	{Parts: [3]int{1, 5, 0}, Meta: []string{"sqlite consts", "build20251031"}},
 	{Parts: [3]int{1, 0, 0}, Meta: []string{"initial release", "build20250531"}},
