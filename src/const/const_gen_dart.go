@@ -312,7 +312,9 @@ func (obj *NameSpace) GenDart(option *src.Options, builder *strings.Builder) {
 
 		if obj.NamespaceToPrefix || option.NamespaceToPrefix {
 			option.Level = 0
-			builder.WriteString(option.GetEnterCount(len(obj.CommentDoc)) + "typedef " + getIdentName(option, option.GetPrefixes(""), &obj.ConstObject) + " = String;")
+			if obj.IdentMapStr || obj.StrMapIdent {
+				builder.WriteString(option.GetEnterCount(len(obj.CommentDoc)) + "typedef " + getIdentName(option, option.GetPrefixes(""), &obj.ConstObject) + " = String;")
+			}
 		} else {
 			option.Level = 0
 			builder.WriteString(option.GetEnterCount(len(obj.CommentDoc)) + option.GetTabWidth() + "class " + getIdentName(option, option.GetPrefixes(""), &obj.ConstObject) + " {")
