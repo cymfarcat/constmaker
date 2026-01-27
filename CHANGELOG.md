@@ -1,3 +1,5 @@
+- 1.6.2 dart bug fixed.
+
 - 1.6.1 dart QName.
 
 - 1.6.0 dart strMapIdent/identMapStr.

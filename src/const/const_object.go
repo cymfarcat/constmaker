@@ -517,6 +517,7 @@ func (obj *ConstObject) genValue(option *src.Options) {
 				}
 
 				allValue := 0
+				obj.Typo = typo //
 				for idx, constObj := range obj.Children {
 					constObj.Typo = typo
 					constObj.Value = "1 << " + strconv.FormatInt(int64(idx), 10)
@@ -562,6 +563,7 @@ func (obj *ConstObject) genValue(option *src.Options) {
 
 				if obj.enumSetValue {
 					// enum generate value
+					obj.Typo = typo //
 					for _, constObj := range obj.Children {
 						constObj.Typo = typo
 
