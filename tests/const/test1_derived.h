@@ -18,7 +18,7 @@ const float pi = 3.14159;
 /**
  * colors
  */
-enum class mColors : uint8_t {
+enum class mColors : uint16_t {
     kBlueDef,
     kGreenDef,
     kRedDef,

@@ -72,11 +72,11 @@
   <LowerIdent>false</LowerIdent>
   <UpperIdentCamel>false</UpperIdentCamel>
   <LowerIdentCamel>false</LowerIdentCamel>
-  <enum id="M_Colors" type="u8" value="" comment="">
+  <enum id="M_Colors" type="u16" value="" comment="">
     <Prefix></Prefix>
     <Suffix></Suffix>
     <CommentDoc>/**&#xD;&#xA; * colors&#xD;&#xA; */</CommentDoc>
-    <const id="blue" type="u8" value="0" comment="">
+    <const id="blue" type="u16" value="0" comment="">
       <Prefix>K</Prefix>
       <Suffix>Def</Suffix>
       <CommentDoc></CommentDoc>
@@ -91,7 +91,7 @@
       <UpperIdentCamel>false</UpperIdentCamel>
       <LowerIdentCamel>true</LowerIdentCamel>
     </const>
-    <const id="green" type="u8" value="1" comment="">
+    <const id="green" type="u16" value="1" comment="">
       <Prefix>K</Prefix>
       <Suffix>Def</Suffix>
       <CommentDoc></CommentDoc>
@@ -106,7 +106,7 @@
       <UpperIdentCamel>false</UpperIdentCamel>
       <LowerIdentCamel>true</LowerIdentCamel>
     </const>
-    <const id="red" type="u8" value="2" comment="">
+    <const id="red" type="u16" value="2" comment="">
       <Prefix>K</Prefix>
       <Suffix>Def</Suffix>
       <CommentDoc></CommentDoc>

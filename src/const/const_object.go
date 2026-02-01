@@ -592,10 +592,12 @@ func (obj *ConstObject) genValue(option *src.Options) {
 				}
 
 				// reset enum typo
-				if hasNegativeNum {
-					typo = intType(lastValue)
-				} else {
-					typo = uintType(uint64(lastValue))
+				if len(typo) == 0 {
+					if hasNegativeNum {
+						typo = intType(lastValue)
+					} else {
+						typo = uintType(uint64(lastValue))
+					}
 				}
 
 				obj.Typo = typo

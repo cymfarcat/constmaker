@@ -18,7 +18,7 @@ const float pi = 3.14159;
 /**
  * colors
  */
-typedef NS_ENUM(uint8_t, mColors) {
+typedef NS_ENUM(uint16_t, mColors) {
     kBlueDef,
     kGreenDef,
     kRedDef

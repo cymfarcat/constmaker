@@ -13,7 +13,7 @@ static let pi: Float = 3.14159
 /**
  * colors
  */
-enum mColors: UInt8 {
+enum mColors: UInt16 {
     case kBlueDef
     case kGreenDef
     case kRedDef

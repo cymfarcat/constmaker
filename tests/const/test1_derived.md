@@ -10,9 +10,9 @@
 colors
 >|ident|type|value|comment|
 >|---|---|---|---|
->|mColorsKBlueDef|uint8|0||
->|mColorsKGreenDef|uint8|1||
->|mColorsKRedDef|uint8|2||
+>|mColorsKBlueDef|uint16|0||
+>|mColorsKGreenDef|uint16|1||
+>|mColorsKRedDef|uint16|2||
 >|mColorsKBlueStr| string | "blue"||
 >|mColorsKGreenStr| string | "green"||
 >|mColorsKRedStr| string | "red"||

@@ -13,7 +13,7 @@ const val pi: Float = 3.14159f
 /**
  * colors
  */
-enum class mColors(val value: UByte) {
+enum class mColors(val value: UShort) {
     kBlueDef,
     kGreenDef,
     kRedDef
